@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, request, jsonify, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 # from flask_cors import CORS
