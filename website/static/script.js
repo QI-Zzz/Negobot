@@ -35,7 +35,7 @@ class Chatbot{
         let user_input = {name: "user", message: text1}
         this.wholemessage.push(user_input);
 
-        fetch('http://127.0.0.1:5000/chatbot', {
+        fetch('/chatbot', {
             
             method: 'POST',
             body: JSON.stringify({message: text1}),
