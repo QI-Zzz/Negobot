@@ -1,0 +1,690 @@
+- Yes, A go pro is something I have been interested in for a while, how does $243 for it sound?
+- Oh, Ive own a piece from them in the past, it only lasted 5 years. Would you take $30?
+- All I have on me right now is $38, if you'd accept that, I can pick it up in under an hour.
+- I won't be around tomorrow. But I can come right now if you'll take $38
+- I will take it, if you are willing to take $150 off the listing price.
+- Sorry, I can only pay $1660 per month
+- i'll give you $10 for it
+- anyways..I could do 230?
+- Cool. The price listed doesn't match my budget though. I have $1786 that I can afford
+- Yes It is I was wondering if I offered you $75.00 for the desk if I could pick it up myself and throw in a xbox to give to you 
+- hi there! I am very interested in your car! But, it is a little pricey. Would you accept $3000?
+- Yes, but it's dirty, there isn't XM in the radio, and its only a 5 speed. The gas mileage is also very low on this vehicle, so how about $4000?
+- The highest I am willing to go is $4250. Cash in hand. I can pick it up in 10 minutes. 
+- Well, I happened to have bought a used Samsung Galaxy S6 last week for $30
+- Well, I plan to resell this phone for $25, so I can't offer more than $18.
+- Sounds good. So the amount that I can propose is $1672
+- If you could lower the price to 2000 I would still take it. 
+- I have decent credit but I just broke up with my boyfriend and all I can afford right now is to pay a little over 2000. I really need a place to live. 
+- Well, for a 6 year old used phone that may or may not work, that has been replaced by a new phone that costs only $75, I'm willing to take a chance and offer $15.
+- No, I have to stay firm at $15, there's a good chance that the phone is in a permanent bootloop state that I can't do anything to recover, and then I'd have to just recycle it. 
+- I'll do $17, that's my best offer.
+- I can take if off your hands for $7500 cash in hand. The car is nearing 100000 miles and I think it's a fair price for cash.
+- I don't have that much cash. That's pretty far from the middle. What about $7750?
+- Okay good.  How does 400 sound? I can pay cash and pick it up today or tomorrow.
+- Hi, I'm interested in it. Do you think we could maybe do $2000 for the place.
+- 2350 still seems too much for the place given the fact that I have to use coins to use the laundry. Can we met half way at 2100?
+- 2150
+- sweet! would you be willing to take $200 for the chair?
+- well they list at office max for $299 and this one is used. so the highest i would go is about $225
+- im sorry i cannot go that high $227 is im highest offer take it or leave it
+- i am looking to spend no more than 2000
+- not $2000?
+- I'd really only like to pay 1890 then. 
+- If you could come down a little to say 6800, I would take it happily.
+- The listing price is 8000.
+- There are no washer/dryer. I would consider it if you can make an offer of $1300
+- I'd like to offer you 8000 for this 
+- I am interested in it, but it only fits my budget if I can pay $3876?
+- That sounds great. That countertop looks very outdated. I am stuck at 1350 but if the countertop was updated I could probably go much higher...
+- I think 1750 would be fair with a new countertop.
+- I see.... I am sorry I was looking in the low 1100's.... I will have to look somewhere else then
+- Ok that is clearly out of my price range. I have 2200 cash I was looking to pay up front as 1st and last so I will have to look elsewhere
+- Well as per your ad, the listing item is for $7668. I wonder why you're asking 9000?
+- As per your listing price, I am willing to pay 7200? 
+- How about 7800?
+- thats a bit high can you go any lower? say 1650
+- thats a great deal but I really can't afford 1700 would you consider 1625
+- this is really high and I understand you are throwing in a free month lets say we do 1650
+- hey there. im interested in the bed you have for sale. I want to buy a new bed but Id be willing to purchase a used one for around 250
+- I found a different one that I think I could probably make do with for 180, but if I could get what I really want for not much more than that, it would totally be worth it. 
+- I was hoping closer to 240?
+- Yeh, I'm not that into it. I think I'd go 250, but that's my max. 
+- Nah. The Hollon is a good one, but I don't know that it's worth 70 more than the one that will do. It's getting stuck in the back of a closet. . . Sell me with some amazing facts, or 250 is the magic number. 
+- Ok, I'm thinking that's a bit high.  I would like to pay $2479.
+- $120 is what I can pay and fits my budget
+- That is great; I'm glad to hear it. What would you think of an offer of 350 for the item?
+- I'm willing to meet you in the middle since it is an exceptional item, but my budget is a bit tight. How about 450? 
+- Last offer, I can do 475 max.
+- Oh, that kind of makes me iffy. You want 150 for the phone? Right?
+- i have $65 and i can come pick it up please work with me i acually needed somthing with higher amps
+- Hi. I am interested in your desk. Would you be willing to accept and offer of $45?
+- No, the best I could do with the condition of the desk is $15.
+- Yes, the room seems adequate for my needs but the payment seems much too high. I want to shoot you another offer, I'm thinking 1300 is more than reasonable.
+- Ah okay I see, well in the case I can understand the price but I am still on a tight budget. I am really looking to spend no more than 1410 for the room.
+- I understand, can we settle for somewhere in-between maybe 1800?
+- I've seen similar trucks for sale go for around $8,000.
+- The other 1955 Chevy Belair I was looking at is $9000 and it has the same amount of miles and in the same condition.  But it's a different color.  I'd be willing to give you $9500 for this and I have cash in hand.
+- $10,000 is the highest I can go.  That's my final offer.  
+- Hello! I saw your ad and was wanting to see if you would be willing to take $195 for it.
+- okay, I can offer $225.
+- $250 and you have a deal.
+- Well since you really did not give me much information about it, highest I can offer is 48 dollars. If this is ok I can come pick it up right now, as I could really use a desk for tomorrow.
+- But you didn't tell me anything about the appearance of it and there is no picture either. Since I really do need it quickly I can go up to 55 but that is my final offer. I can pick it up right away.
+- I like the table, but I only have $20 cash on me. 
+- I would be, I could offer you 600. Do you deliver?
+- Oh ok. Wel I suppose I could get a friend who has a truck to help me. Would you take 600 for the both of them then?
+- Ok that sounds fair, I will bring a truck,, 675 it is thanks!
+- Ok, I feel like $500 is quite a lot, Can you do $300?
+- I am interested in this, but since this model is so outdated I would be willing to pay you $10
+- The technology is outdated I would pay you $12
+- I would do $14, but that is my final offer.
+- I could get you $3000 in cash immediately and pick up the costs for the title transfer.
+- alright cool, I can do 7200
+- The most I can do 7350
+- I can only do 390 unless something really great is added to the deal...
+- Sounds good, would you consider 60 for it if I can come pick it up?
+- thats a good deal can you lower the price to 180 and i pick up and it's a deal
+- Ah, yes I am a fine connasuer of bikes! I notice that the wheel size for this bike is difficult to come by these days and also that brakes tend to wear over time, even when not in use. So I am prepared to offer you 1400 for the bicycle. How does that sound?
+- Since it's in mint condition, how about 1600? It will take me quite a while to find fresh treads for these wheels!
+- That's a bummer. $2050 sounds a little to high ecspcailly since electricty isn't included
+- Ah the lowest we can pay is probably around $1500 a month.
+- $1550 sounds great that extra $50 a month won't be hard to come up with.
+- I know EC Technology is world renown for its top notch acoustics. I'll give you $6 for it.
+- Okay true. EC is worth $7.50 when I consider their high quality documentation. If that doesn't work for you please submit a counter offer.
+- I'm sorry, I find homeopathy and any other pseudoscience to be profoundly upsetting as well. I'd be willing to go as high as $5100.
+- Well, if I need to replace the hv in 10,000 miles, that's roughly around $3000, plus tax and inspection. I'd still be willing to buy the car, but I don't think I could do better than $5500, in light of the work it will soon need.
+- saw one on amazon for 115
+- yes it evenships free i offer you $120 
+- will $125 work i'l have it picked up
+- I can come and get it. I can make the deal if you lower it $500. You can pick the type of cookies I make. :)
+- 147
+- can you do $175,  thats what I have for cash on hand and I can't find my ATM card. Where in Europe are you going?
+- I really like this bike, but there is not enough information in the description for me to pay $160. I have $100 in cash right now and can meet you at your house. 
+- I see, well considering I have to hire someone to help me and rent a truck to transport this item, I think $152 is reasonable 
+- I understand sir. I'll tell you what. I can lower the price to 300 and throw in the center for free because I have no idea what I'm doing here.
+- I will give you $70 for it and come pick it up to get it out of your way!
+- How about $73?
+- What if I threw in a brand new helmet? I have 2 new helmets and I don't need both.
+- $250 
+- would you do $299 and I'll come pick it up? 
+- How about $325 and we call it a deal? 
+- Thanks for that,  Would you be able to drop it to $2700?  I can pay cash tonight.
+- Sure will, about 7. 
+- I would really have liked to see a picture of the bike before making an offer, but if I pick it up myself, I am willing to pay $24 for it.
+- Yes, I was hoping to get it for about $4000. I see you are selling it for $5100.
+- How about the 4500? The odometer is pretty high.
+- GReat, but the price is a little high for me do you think we can come to some sort of arrangement would you possibly take $1300 a month?
+- the Highest i could possibly go is 1800 + deposit would that be ok with you?
+- yes, I am, but I am only able to pay $1,200 for the item...Are you willing to negotiate on price?
+- I don't know...I've seen similar items go for around $1325 from other sellers in the past few months
+- Since that is separate. Can you go lower to 2128?
+- I am looking to pay $1200. It also depends on the state of the apartment. It is an old building. Are the appliances new and is there wifi?
+- I am, but I don't have a lot of money this month.  If I pick it up today could you do $12
+- Wow, So the list price is $18 but now you are trying to highball me over the list price?  I will go $15, but that's it
+- Awesome. Would you be willing to take $243 for the camera?
+- 2009 camry's with 90k miles in great condition usually sell for around $6,500, so that's my offer
+- i'll split the difference with you and pay 6750 since you have newer breaks and tires
+- perfect! If I drive the 1000 miles to come get it, could you accept 4300?
+- 4600 and you have a deal
+- I see. Well I'd be happy to give you 10k for it, the dealer would buy it back at lower than that
+- Well my first car was used from a relative under similar conditions, so it's not that rare, but my budget's around 11000. Does this work for you?
+- It does have some amenities and it is low on mileage, I'll give you that, meet me in the middle at 11500. That's already above my budget.
+- that is pretty heavy but I am willing to pick it up. Would you take $80 for it
+- Thats a really nice studio. I see it has been on the market for 2+ years now. The price is simply too high. If you do $1000 I can take it right now!
+- Thats a start for sure. Its still too high for me, My bottom price is $1464.
+- Thanks. Can you go down a little bit. I have a $1400 budget
+- Err.. how about $1500 and I will guarantee you that I will take the apartment for 2 years. I go to a college near there and I will finish my study in about 2 years, or more maybe.. 
+- i can offer you 200 for it
+- how about 303 and i'l even come pick it up
+- all i have to spare is $303 deal are no deal
+- ok! Is it possible you would be willing to go a bit lower than 250?
+- Ok well it looks like a mover is going to charge me around $70 to pick up and deliever. I can come today to get it from you for $500.
+- Would you be willing to take 1850 for it?
+- I am wondering if you can do $13, and I can come pick it up.
+- Would you be willing to pay $285?
+- I understand, $300 is all I have, will that work for you?
+- Hmm, I am desperate and your bike is the only one listed near me. I really cant do anything over 400
+- Yes, but you need it gone correct. Probably just sitting there collecting dust. How about $550. Knock 100 bucks off for a girl!
+- Awesome! How does $3000 a month sound?
+- its too much I can afford $4600
+- how about 5000
+- actually I would rather pay 14 dollars for it, what do you say
+- That is much to expensive. I will buy it at a maximum price of $9750. How does that sound?
+- Ok, I saw this advertisement online with great features. I am willing to pay you $35 for the couch. Does that look like a deal to you my friend?
+- i can find lots of apartments for that price can you give me a better deal say $2000
+- can i have it for $3031 then and it's a deal
+- i really can't go that high my limit would be $3031.
+- Make it 11 and you've got yourself a deal
+- Awesome. I'd love to offer $2000 today!
+- between 1500 and 2500
+- $321?
+- $321?
+- If it is in good condition, I'll come pick it up for $25 so you can get it out of your hair.
+- My budget really allows for around $1500 right now.
+- Since it's an older model (generations old), can you go $50? I just want a phone for my daughter to take on school trips and such.
+- I'll pay $60 and send a courier to collect it so that we don't have to deal with postage. 
+- Would you accept $1710?
+- can you do 2000?
+- What about $6,500 and you pay for tune-up? 
+- Sorry. Gotta stay closer to $6,000. I can pay cash though.
+- 6,500 for the car and tune-up? 
+- Since it is in the ghetto is there flexibility in the price? I would like to pay around $1000
+- I have children and I will need to pay extra to protect them (security system, etc). Therefore I would like to pay $1000. However I am willing to pay $1200
+- Okay that is fine. Are you flexible on the price? I have a large family and $2800 is not in my budget. We were looking for somewhere around $1600.
+- Well I am currently on welfare and my monthly checks are $1800 so that is the highest I could go. This house would be perfect for my babies though. Could you consider $1800 for us?
+- How about this. I would willing to sign a longer lease, say 6 months, if we could get the price down to say $2200/month.
+- That sounds fantastic! I am very interested but I just can't comfortably afford $3,395. Would you take $2,500?. 
+- Well, an 8 year old car with 80,000 miles on it? I'd like to pay $4800.
+- If you're willing to come down to $5500, I'll come pick it up today.
+- I love the color of it, as well.  I saw something like this in another store and it was around $400 new...  Is there a way we can get that price a little lower?
+- Given the year of usage and my personal budget, I would feel comfortable at $200.  I have friends with a truck.  So, you won't have to lift a finger.
+- Little to no use? That's a plus!  Could we meet at the "new" middle of $250?  I really need another sofa... 
+- Nice bike you got there. But it's a bit pricey. How about I pay you 390 and I come and take it off your hand? 
+- I can definitely come and pick it up. How about we do 525? We have a deal then
+- Great. I'm strapped for cash so would you accept $55 for it?
+- Hi, I am interested in your piano. Will you take $50 for it? I want it for my daughter.
+- That's nice. I was wondering how much it would cost to get it tuned. Do you think you can do $80? I need to borrow a truck and get some help to load it.
+- Hello, I am interested in your USB Cables. Would you be willing to take $10?
+- I only have $11 cash, would that be okay?
+- I can't go $499. Can you do $300, since I am meeting you and loading myself? 
+- Elfa sounds like Ikea to me. I would hardly call it designer. $410
+- It needs to disassembled before I get there. If I have to disassemble, I must go back and insist on $400
+- I am sorry, I misread that. I will take it for 400, I pack up and disassemble. We have a deal? 
+- How about 590 and I will pick up? I have cash in hand, ready to go into your hand
+- Oh, that's totally fine. I appreciate you making a concession. Does 2000 sound good? We have no credit issues etc. so the transaction would be pretty easy.
+- I'm assuming that for a two bedroom arrangement, and I'm planning to be single for quite a while. Any chance you have a one bedroom apartment for sale? I was hoping to only pay a $1000 month. 
+- What a bargain. I've got a better one for you. I'll do some work around the complex for you in exchange for cheaper rent. How's 10-20 hours labor a month and I'll pay $1050 in cash every month for rent.
+- I can definitely understand that! I have seen a few similar bikes listed around $550 would you be willing to take $575?
+- Oh, like 400, I can't see the looks, but I want to help you get rid of them.
+- 450 and you hve deal
+- Can we do 100? Doesn
+- Alright, I'll be there around 5, cya then
+- oh I see.  would you be willing to accept $36 if I pick it up tonight?
+- The best I can do is 40 I'm in a budget crunch but I'd really like to have this table.
+- Alright. Well, I'm gonna throw out an offer of $40
+- Ok. Sounds reasonable, but you need to make sure in the future that your cars goes through this process if you want to sell them. I will do $5000 since this car lacks the requirements for sale.
+- I understand but I cannot risk buying a car that has internal damage. That is a liability to me and I will end up spending thousands in repairs. I will do $6300
+- If you are able to get the airbag fixed I will go up to $6500, you probably wont get better than that from anyone my friend.
+- That would be good of you but only if you have the time and supplies. Would you be willing to accept $10 for it. I'll even pick it up.
+- I appreciate the effort you are willing to put into it but I'm poor. How about $18?
+- Would you be willing to take 59 dollars for it if I picked it up
+- only 1 bathroom, correct? The houses I've been looking at in this area have at least 1.5 bathrooms and they are on the market for around $2000
+- the location is convenient. Is that a 2 car garage or does the other garage belong to another house?
+- I can do $2200. Can I install indoor/outdoor security cameras from my current home?
+- Yeah but its very expensive for me. I am a student and can't afford this much. Would you be willing to sell it for me at about $3060?
+- That sounds really good.  Since I will have to purchase the additional mount, would you accept 200?
+- I could do that...Agreed at $215?
+- I bet it's a little old and needs tuning, how about I offer you 80 dollars
+- ok sure but only have 90 dollars in this moment
+- yes good i can get the 30 dollars in the afternoon
+- Okay, well, I'm interested. I'd like to pay $6400
+- If you can come down to $7200 I'll come pick the car up.
+- Sounds Great the price seems pretty steep, if you do not mind may you please accept my offer of $1500.
+- I am interested although the limit I had set for myself was $500.00. Would you consider taking a bit less than what you are asking?
+- I see. I would like to offer $265 and I will come and pick it up.
+- Ok I can do $300 that seems fair. I can come over later today to pick it up.
+- Ok I can do $300 that seems fair. I can come over later today to pick it up.
+- Oh that sounds great. Can I offer 110 because of the crack?
+- What a deal! If I were to pick it up, would you be willing to take $130?
+- Ok, but I'm looking to pay more towards $225 if I have to pick it up and do all of that myself. It looks huge.
+- I think you'd need to do most of the work for that price, you could consider the extra $50 a delivery fee. 
+- Excellent. If I picked them up, would you be willing to let them go for $459?
+- It appears to be in pretty good condition from the photos but I'm not sure that I could come pick it up. I may have to rent a truck. Would $250 sound good to you? I can provide cash.
+- I think I could do 7400
+- How about 7800 and I will throw in a free car wash
+- Can you do 6750? Since it's such high miles
+- Okay how about we meet halfway then, how about 8400?
+- indeed but it is still used and i will have to to get it in my house myseld. 350 dollars?
+- Would you be willing to take $8000? 2013 is getting kind of old. 
+- Sounds good. $399 is a bit over my budget, Do you think you'd be able to take $199 for it? Especially being that I need to haul it myself. I'll probably need to hire some help, so factoring that in to the cost.
+- The most I can really afford to pay is 300. 
+- I could go as high as 350. The old phone is in good condition it just has a crack in the screen. It is an android and I'd rather have an iPhone.
+- Hello. I was hoping to buy your battery for $32
+- Well, it is unopened. How about $50 if I come to you?
+- No, this is not a good book, I can only pay $65. my final offer.
+- Will you take 58 cash today?
+- Ok, makes sense. So, I would like to get it, but it's a bit too expensive for me. I would like to offer 250 for it.
+- Hi, I really like the bike and description.  Any way you would consider letting it go for $60?
+- I can pay $80 if you deliver and throw in a helmet and lock for the bike. Deal?
+- I am interested in your device and would like to offer $40 cash for it.
+- I could offer $45
+- ok, well I have $450 in cash to spend does that sound good? I can come to you to pick it up and save you gass
+- I really only have $450 and I would be saving your the gas and time..that's worth $15 yeh?
+- ok, well i can buy it brand new for 500 so i will just do that
+- I see...well I'm probably the only old guy clinging to my Blackberry...can you come down to 7 maybe?
+- I'm probably the only guy in town still using this old Blackberry...would you take $5 for them?
+- I'm sorry, I just noticed that.  I see you are asking $10 for them.  Can you go any lower than that?
+- tell you what, i'll give you 7 bucks. i'll come and pick it up 
+- Oh okay. I saw these on sale earlier for less. Could you sell these to me for $5?
+- Okay I'll come up to 7 because they are new.
+- They should come with the earbud covers, come on you can't sell second hand items for retail price! 7 bucks
+- I would take it off your hands for $5 and pick it up today!
+- If I come to pick it up when you want and haul it away, would you be willing to do $525?
+- Well I appreciate you doing all that maintenance with the car incl. new plugs and oil. The mileage is a little high, but I want to work with you on a good deal for the both of us. Is $2500 decent?
+- 2900 and you have a deal
+- Yes. I see you have a couch for 50 dollars. That is a bit too much for me. Can you lower your price a bit?
+- That sounds good. How about 35 dollars then? That would be good for me, since I have to use gas to come and get it. 
+- I see they run around $225 brand new, I was hoping I could get it for like $150
+- You're kind of a long drive away but how about $175 and I'll come pick it up?
+- Well sure only $600 if your rich and gay, which I'm not, well one of those ! LOL
+- Well, since you said it's clean, and you'll deliver, and it's practically BRAND neeew, we'll give you $420, and no we are straightedge, ha!
+- Only if you go on a date with us honey, never negotiate with a gay man, $400.
+- Oh I can't believe that, you gotta give me a reason, why are your credit cards so high? Ok, $420, that's high enough...
+- Oh, it's not that I can't pay you $450, but like I said we aren't rich. So we are willing to pay a fair price. Really any material object is only worth 1/3 of the price of the list, especially after it's been used by any other person. Therefore, technically, and reasonably I could only give you $200 in order for me to not be a foolish capitalist. So, giving you even $420 with good humor is still way too much. So I'll double the reasonable offer a strong capitalist knows it is worth and give you $400. You need it, you have to pay the divorcee.
+- Would you take 3,500
+- I can give you $3,800 or 2006 honda atv, perfect condition, clean title and new large tires.
+- No, one or the other, the truck is not worth anything over 3,800
+- 3,800 firm, if not good luck trying to find someone to pay that much. 
+- Would you be willing to lower it to 2500? It would help me out a bit as I am on a budget. 
+- Hi, I'm interested in the IKEA desk...will you take $35?
+- I have $45 cash. I can come pick it up today.
+- LOL. come on! the price is still high. i will give you $1750 right now for the car. i am ready to take it home with me right at this moment!
+- i know that you are not high! well, i am a young broke college student. i was able to save some of my financial aid money in order to buy this very nice car. i really need it. Do you know how many times i have to ask people for rides. This is a great opportunity for me to buy a car. i am willing to pay $1800.
+- I am interested, but $5500 is too high of a price for a 10 year old truck. I have $3,800 cash in my hand. I could come and pick it up right now and take it off your hands
+- 173k miles on a ford ranger really is a lot of miles, the most I can offer is $4,400 cash
+- At $4,800 can you include a full tank of gas? I'm ready to head over right now
+- To be honest, I think 50 is a little high. I don't care much for the floral pattern, but I do need a couch. How does 35 sound, I'll even pick it up myself. 
+- Would you consider going a little lower for a 2003, say $3200?
+- Very interested! however i dont have 6200 at the moment. I have 5500 and can borrow 80 for a final price of 5580 in cash today would you accept that?
+- I could borrow a little more and give you 5800 but tha's as high as i can possibly go.
+- Would you consider $135 for it?
+- I am sure he will fuck it up. I've only got $45 on me and I gotta go pick up my daughter before my wife kick my nuts. Will that work?
+- Shit, let me check, uh... I've got a quarter and a penny and oh a dime and here a pokemon card, listen I gotta roll, my wife is gonna kick my nuts so hard. $45 and what us 31 cents.
+- Yes very interested.  I can offer you 1470.  I have a tight budget.
+- Would you consider $75 for it?
+- Ok how about $130
+- Hi, I am, I would consider something cheaper though. How does 4900 sound, it has alot of miles
+- yeah hi, I like the bike but it looks scratched, would you sell it for 25? 
+- well, I can't go above 30 for a piece of junk. Send me your offer, I'll probably reject it just like that junky bike. 
+- Yup, and I'm an FBI agent, even we have issues finding these things for bureau activities. Would you take 45?
+- Yup, I'll give you 48 and pick it up ASAP, I'm around the corner.
+- I was looking for a desk around $15 or so but I liked the look of this one. How would you feel about 25 for the desk?
+- There doesn't seem to be much to the desk. It's pretty plain. How about around 35?
+- I would be willing to go to 40 but that is my highest for the desk
+- I see well i can get them new on amazon for 20 but would like them today would you accept 10 dollars if i came and got them asap?
+- That's still a bit higher than what I wanted to spend. Would you take $30 for it? I'll even come by with a pick up truck and pick it up myself.
+- It looks nice. I have a canon camera so it will sync and work well with the common software. I'll give you 7 bucks
+- 7 for the printer, sold to the highest bidder
+- Would you take 235 if I come and pick it up?
+- 2300 and its a deal
+- I'd really like to have it but my budget is around 500. Could you lower the price at all?
+- Okay I think I could come up with maybe another 50. Would you take 550? It would be coming to a good home to someone who really appreciates it!
+- How about $18?
+- Okay if you throw in the chair I will give you 60 for both items.
+- Great! But I'm going to be honest. $2800 is a bit steep for me. Can you work with me on the price?
+- I understand, but I'm on a really tight budget right now. I honestly can afford much more than $1400 a month.
+- Yes I am. Would you accept $90 for your phone? 
+- Lets call it $120 and I'll head over right now. Does that work? 
+- I know you are asking 600 for it but I also noticed that you have had this ad up for over a month so I was hoping that you would be willing to take 200 for it?  I could come get it right away.
+- Is there anyway you can come down a bit in price? I'm strapped for cash but really need a bed. Maybe $100?
+- Okay well I see that they are online refurbished for 53 so would you be willing to take $40 for it today?
+- I was hoping to get if for less than 10 but the ink carts sound pretty good. I can do the 10 if you would be willing to meet me somewhere in between both our locations possibly?
+- Shesh, that is a little steep for such an old truck. Could I meet you in the $5000 range?
+- I was just looking for something to give to my son... I'm not trying to break the bank. Could we agree on $5500? 
+- Hows $5700? Thats honestly the best I can do.
+- How about selling it to someone who would put it to good use for $125?
+- You make a tempting offer. My budget is pretty tight though, would you be able to knock it down to 1550 for that deal? 
+- I don't need a bunny but is your grandma single? How about I take her out for a nice steak dinner and give you $4400 for the truck?
+- Would you accept $5000 and I'll give her 100 Sensi Star clones
+- I appreciate your offer but I don't really have space for a table, my unit is pretty small. Would you be willing to knock the price of the couch down to $35 without the table?
+- Okay so it is kind of old. Would you take 100 for it?
+- Yes.   I can give you $3100 cash today. 
+- Will you accept $4500?  That's stretching it for me.  The car is almost 10 years old. 
+- I could do $4480 cash and pick it up today 
+- The bed looks to be in good condition but $150 is a little steep for a 3year old mattress. Would you take 135?
+- For only a mattress that is used that's a little out of my price range. I could pay 135 in cash and pick it up today if that works for you?
+- Wow, thats really steep. Its only a 1999. I can really only go 3,000.
+- Great! If you are willing to drop the price to $420 I could come pick it up now and pay cash.
+- Can we meet at $445? 
+- $450 and I can be there as soon as you give me the address. 
+- Yes, but are you firm at 60$?
+- I was thinking maybe around 30$
+- I could go 40$ and pick it up.
+- I see they are used, hopefully you can go down to $14?  Would that be reasonable if I came to pick it up today?
+- I could, but then I wouldn't have enough money for food this week since my purse was stolen too. Would you mind accepting $35 I really wouldn't usually ask but considering my situation I could really use the help.
+- What about one more offer at $35 and I can come pick it up?
+- thats okay. I am busy today. can you lower the price a bit for the poor college student? I can offer 1700
+- How about 1800 and I pay today?
+- Will you take $2,000 that's kind of where my budget is right now
+- I can come up to 2400 if you throw in utilities that possible?
+- I dont really need all the accessories with it, so is $45 an offer youre willing to accept?
+- Thats still a little high, how about $50?
+- Would you be interested in lowering the price to, say $225, if I were to able to get it today and pay all in cash?
+- I was wondering if you would accept $65 cash
+- I'm not sure I understand. Will you sell for $65 cash?
+- If I can to you and picked it up would you be willing to do 200?
+- I will do 250, that is my highest offer. 
+- Wow, steep! Its old. How about 35
+- Thats all great! How about 50 and I pick it up? 
+- Yes, I would be willing to pay 100 for the sofa
+- I will pick up the sofa and pay 125.
+- how about 130?
+- Is there any way you could come off a couple bucks? I've got 18 bucks on me now and really don't want to go to the bank since I don't have a car.
+- I'm interested in your couch. I'll come pick it up right now, cash in hand, $125?
+- That's a higher listed price than the original. 135$ is all I can afford right now
+- Hmm. Okay. Is there any chance you could do 10$ for it?
+- That is true, your price is not unreasonable, however I am on a budget. Could I pick it up myself and pay 12 for it?
+- Lets split the difference, and call it 14 and I will see you in an hour.
+- Money is tight for me, but I really want this. Would you take $50 and I can pick up now
+- 100 is still a little too high. Would you take 75?
+- Do you accept $14?
+- How about 140 with delivery? That ten bucks would be much appreciated.
+- Hello! I'm interested in your chair. I have 200 cash right now and I'm willing to come pick it up!
+- How about I throw in 10 more dollars. That's the most I can do.
+- It looks like a good bike. Could you go any lower on the price? Say $10?
+- So yes to $10?
+- It looks like a good bike. Could you go any lower on the price? Say $10?
+- So yes to $10?
+- No I can't go $18. If I come and pick it up today would you accept $14?
+- Understood. Would you be willing to accept $210 for the chair?
+- I can't pay out that much. Would you be willing to accept $240 for it?
+- $255 and we have a deal.
+- Hello im interested in the sofa but thats alittle high for me i could give you 100 and ill pick it up and load it so no inconvience for you.
+- i could do 125 that is about i can afford for a used sofa bed. I am willing to pick it up and load it up on my own.
+- Well I don't really need the training wheels or knee pads. I can pick the bike up today for $40.
+- Hi. Would you do 10$ on the bike and I'll come pick it up right now. My child has been dying for a bike and money is a little tight. I can do 10 if that's okay with you.
+- 15 is the most I can do, please. I'll come get it!
+- I was thinking more around the 45$ range
+- I'll do 42$ for the bike and 10$ for the acssesories
+- Let's negotiate please, can we do 15?
+- Come on 15. 
+- ok great, i would  be willing to pay $150 cash for it, and I can pick it up ASAP
+- Money is tight for me right now. Are you willing to negotiate? I'm looking to spend closer to $75
+- Can you do $90? I can come pick it up today.
+- Not bad at all. You're asking 20.  How about 12?
+- Delivery and 15 and we have a deal!
+- Great, if I come today and pay cash , would you consider accepting $270 for this chair?
+- Hmm. Would you be willing to sell it to me for $135? I could come pick it up myself. 
+- Cool. Will you accept $67?
+- I was hoping we could make a deal for something close to $35. I'd be willing to come to your house or where ever you'd like to pick up the bike,
+- I could do $37. I make wonderful pies too, and I'd be more than happy to bake one for you! Whatever kind you like! :) 
+- Understood. Would you accept $37?
+- $38 and we have a deal. I'll pick it up.
+- I'm interested in this item, but the description says it is untested. How does $105 sound?
+- That bed is gorgeous. I would be willing to drive and pick it up for $320.
+- Ok, I'd be willing to up my offer to $335.
+- i would give 50 
+- how about 100 cash
+- This apartment looks great, but it is a bit above my price range. Would you accept $2400?
+- Yeah, that's why I am interested in this apartment. I do not think I can make the open house, but I really want an apartment in this area. Will you accept a bid around 2450?
+- I like white. How about 17?
+- OK, 220 is a but high for me at the moment. Would $200 work? Is the color gold or am I seeing it wrong?
+- I could use this bed but am on a budget , would you consider 250.00
+- hi, i like your apartment, the photos are nice.  your asking price is slightly over though, i can offer 1435
+- great, i see it's close to a hospital too... helps with my wife's condition. i can do 1850 today, will pay in cash
+- okay awesome. I still would not be able to afford 2050 a month with having to keep my gym membership. But, I would be able to save on not going out every friday night so I could probably afford about 1500. would you be will to go down in price?
+- if you throw wifi in with it then I would be able to do 2050.
+- Taking in to account the minor chipping, I could offer you $15 today. Cash in hand, will pick up today.
+- No more questions and I can offer you $135 and pick it up from wherever you are today.
+- ok, i can do 60... i am slightly tight on budget
+- i could.. if you can pay one month's bill.. i don't use the phone much, so bill shouldn't be more than 10$
+- guess that's pretty good for a 9 year old car. the kbb for these are around 5K i believe
+- Great looking car. I wonder if you'd entertain an offer of $7400 CASH today? Willing to pick up myself
+- Ok, Can i get the bike for $5?
+- I was hoping to pay $5 so I could by a new seat and new handle bar pads.
+- Can you drop it off if I pay the $10?
+- I see that this was your sister's project and sadly she passed away before she could finish it. I would like to inform you that i also have a gift for refurbishing things and would finish up this project in a way that would make her very proud. I am even willing to send you photos when the project is complete. My budget is far lower than your asking price but, I could pick it up tonight if you would accept 1250 cash. I will come to you
+- I love this phone would love to have it for 56.00. 
+- I will take the 70.00 deal if you throw in a pair of headphones .
+- I understand completely. If I was to come today, with cash in hand, would you take $2000?
+- hmm.. i know 10$ is cheap but can you do 7.5 because of the condition?
+- umm.. that's slightly inconvenient for me because of my physical condition... let's do 9 with you arranging for delivery
+- I can imagine. I am into vintage items and would like to get this before someone else does. I really only want to spend $75 on it, but could offer a deposit on it if that is too low.
+- I am a little slack on $220 I do have $200 cash on me. Your add says obo..Is that a reasonable offer?
+- I'll give you 50 bucks for it.
+- Awesome. Would you be willing to sell it for $10, I will come and pick it up today in about an hour with cash. does that work?
+- I am interested and would like to pick it up today. I think $10 is kind of high would you be willing to take $5?
+- How about $7 and I will be on my way now with cash?
+- looks like you will donate it if it doesn't sell quickly? how about 2000 instead of that? :D
+- yes, i am taking a bit of a gamble without the pictures because i don;t want you to donate it! can you do 2100? i can swing by in a couple of hours to take a look and pay up in cash!
+- I would be willing to take it off your hand right noow if you will accept 2565. I will do all grounds keeping and shoveling in the winter as well. Will you accept 2565?
+- I hope that we can reach a price on such a rare item! You can treat yourself to a new birthday present. I only have $160 in cash. 
+- How about $5000?
+- Hello I am very interested in your item. I can pay $198 for it.
+- I just sank myself in debt building this music studio. $200 is the highest I can go.
+- Okay, so the listing is at $8400. What do you say if I pay $7500 in cash today and pick up the car myself, no need to even check the airbag light?
+- Id love to take it off your hands for $50
+- argh... id really like this.. how about $75?
+- Hi! I would like to make an offer of 100 dollars for the Shortwave Radio.
+- What else is there to know? It's untested, I need to pick it up, and I need to pay cash. I can maybe go as high as 110 dollars.
+- Hello, I just moved here from Colorado. I am starting my medical residency at the local hospital and I need a car desperately. I am very interested in your car and I am willing to pay $5880 cash and I can come right away with my mechanic and fill out the paper work.
+- I was hoping for $540. Can you come down a little lower so I can come pick it up today?
+- I am willing to pay $3600 
+- Does $3700 work? I really cant afford much just now as I have to pay off my student loans. I would appreciate you helping me out here. I mean I can give you the amount right away as that what I have saved for my car. 
+- Ok can you negotiate on the price with me? I'm willing to pay $1552 a month and I'll sign a 2 year lease.
+- Surely there is always negotiation room? Since they are used somewhat I would like to offer $30 for them.
+- Surely there is always negotiation room? Since they are used somewhat I would like to offer $30 for them.
+- That's way too high for me. If you deliver them, I would pay $60.
+- Yeah, I would definitely be willing to come scoop it up. It looks very well taken care of. I was thinking somewhere around 240?
+- Can i offer $2,500 cash?
+- What about $2,800
+- I am willing to add additional $200
+- Okay. The rust makes me a little nervous, but I'm willing to take a shot and see if I can repair it. How's $25 sound?
+- How about 2000?
+- The miles is high how about 2500?
+- $75,000 isn't bad for a car this age. 
+- I meant just 75,000. Haha, not in dollars. Well it is 16 (almost 17 years old), I was thinking $3450?
+- looks nice, price is a bit steep though. if i do a 2 year lease can you bring it down to $1000 a month?
+- 1000 a month for a 2 year lease. perfect! thank you
+- I would like to pay 100 dollars.
+- Excellent. I have done some pricing based on similar models, and I'm willing to offer you $292 for it.
+- i can offer you $30
+- ok i can do $47 if that works for you i'll pick it up no worries
+- Okay, that's great. I can meet you at your office for pick up, I trust that it's unlocked but I was really hoping to spend closer to $100. Do you think you could budge a little? How about $135?
+- Would you be willing to sell for $1500 if I move in right away and sign a longer lease?
+- 1109
+- $1200 is the highest I can pay.
+- Are you willing to accept 1200? 
+- 1300?
+- sorry then I have to pass on this. I can't go beyond 1300
+- Would $1256 be a good offer not sure if you can go lower?
+- would you be able to accept 55.00?  I would be able to be there in 20 minutes I have the cash and can unload it with my friend and we have a truck
+- I could do 1500 per mont for 1 year.
+- Awesome. There was no picture included so I had to ask. You are listing them for $70 but unfortunately  I am on a tight budget. will you take $49 for them? 
+- Will you accept $50? And I will come out today and pay in cash. 
+- thats great! i am by myself so money is somewhat of an issue, but i started a new job. how does 1150 sound?
+- Great. Will you accept $670?
+- I can move in as soon as this weekend if rent can be brought down to 2025. I am willing to sign a lease today!
+- Oh that's great. If I come pick it up, could you do 1100? 
+- 3779
+- 3801 not much detail offered and unbelievable 65000 miles on 2009 fusion 
+- Hi - I'm interested and I would take it immediately, as is, for cash for $1200
+- How about $1300 and a 1980 signed poster from Kiss
+- 200?  I'll accept that was a miskey not going more than $1400 that album is worth a grand and that and anything steve harris is gold
+- Sounds great. Would you accept $1600.
+- Would you take $1 for them, since you wan to get rid of them fast?
+- Okay, I am actually not that tall, but I really like the look of the chair, but since it is not brand new, I'd prefer to pay $200.
+-  I am in the middle of renovating my home office, so I am unable to surpass my $230 budget for the chair. I will come pick it up if that works.
+- I am trying to get the cost down by 600 is it's possible too?  I was wondering how close is the place to shopping and stuff because my car is broken down right now and I might have to buy a new one and if so that will take me some time to replace it.
+- Great. I saw the asking and was wondering if you would accept $15,300
+- I was thinking more of 1100! You said you are accepting offers, usually that entails more than 25 off.
+- Hi! I would like to purchase your outdated iPhone but your price is too high. I was thinking like $75?
+- I understand. But I have concerns with the bright spot on the phone. I don't like disorder. How about $100? I will come to your office.
+- Well i have a budget i have to stick in will you take 60 if i come and pick them up!
+- Selfie Clickers? That's interesting. I can use those. Heck, I'll just take all that's listed. It says your asking $2 but will you take $1.50? 
+- You seem to be giving me a great offer. I'll do $1.75. Can you send me your address and I'll be out to pick them up at your convenience. 
+- yes, I would like to pay $150 for it and can pick it ASAP
+- How about $160. That's all the money I have right now
+- That's great! I am remodeling my home office and have a budget for $250 for a new chair. However, since this one seems so nice, I'd be willing to pay $26(
+- Oh great thanks for the info. Can i offer you $12 dollars for it. Its really old you know
+- No. $14 is the highest i can go. Its old. Deal?
+- $14 Deal
+- Ok if I don't bring my cat and leave her with my mother would you be willing to accept 2587
+- So it's practically brand new. I'll pay $25.
+- Great. Then please bring me the bike and I'll pay $25 cash.
+- alright. I would like to do 5500 and i'll pay for a carfax report
+- Would you accept $50 for it if I pick it up?
+- I would like to pay 3000
+- I was hoping to pay 1800. Is that alright with you?
+- Can you take $400 for it if I pick it up myself and throw in a free cat?
+- How about $500 plus an old Iphone 6 in good condition?
+- How about $600 plus I pick it up, and give you the cat with cat food and litter box?
+- I am trying to get a bike today for my son who recently had his stolen. All the cash I have on me is $18. Can you part with it for that if I come pick it up today?
+- Thanks. I see you have it listed for $200 but would you accept $100?
+- I understand. I can't pay that much but would you accept $150 and I'll pick it up?
+- $540 
+- Great, so I see that you're asking 295 and was wondering if you could possible reduce to 265?
+- That all sounds wonderful but i have a very tight budget and a very high saving account because of it! Would you be willing to accept 1575 if i gave you security deposit and 6 months rent cash up front?
+- Well I was only wanting to pay $9450 but i'm willing to pay your asking price of $13500 if you have it detailed and deliver it to me in person. 
+- I like it. I'll offer you $125.
+- Hmm, $2875 seems a bit steep. I was hoping to find a 2 bedroom closer to the $2000 range per month if the unit doesn't include utilities. Do you at least pay for water, sewer and trash removal?
+- Great. I know you have it listed as $2200, but would you be willing to accept $1100?
+- I understand. Would $1800 work?
+- $1980 and we have a deal.
+- I can offer $6750. How does that sound?
+- How about 9500? Maybe thrown in a car wash
+- well I can offer you $4000 in cash and I can go pick it up tomorrow morning, what do you think
+- Awesome I see that you're asking 295 for it is that negotiable?
+- I would like to pay 265 if that's possible/
+- Hi. I have a few questions about the studio apartment. 1) It says it's a fourplex, how many are living there now? 2) Are the walls good and sound proofed?
+- That's good. I'm in a place right now, I know exactly what my neighbors are watching on TV. Okay, I want the apartment but could we get the price down. I'm good at lawn maintenance. If I took care of lot, would you be willing to cut the price to say... $700?
+- How about I pay $900, I'll mow the grass, trim the hedges, even plant you a garden if you buy the plants, and utilities are included?
+- I would like to pay something like 850 but I understand that is way off from what you want, is there any middle ground here?
+- Okay. Can i offer you $100?
+- Sorry i meant $1000. But i can add a 100 more. Can we make a deal for $1100?
+- Hmm, I was hoping for something better, any chance you can give me a 30% discount for the first year? I am willing to sig a 3-year contract and accept a raise of 20% for the last 2 years. What do you think?
+- It sounds nice, although not a fan of steam radiators but.. It's gonna be me and a friend. We were hoping to stay under $2300. Can you do that?
+- Nice! If you're price is negotiable, I have $800 cash today and could come pick up the furniture at your convenience.
+- I'm sure they are nice but that is just out of my budget right now. I can probably come up with $850.
+- Okay sounds good! Would you be willing to take $150 for it If I swing by in about 30 minutes to pick it up with cash? 
+- It looks great, would you be willing to ship it. It's a bit far to drive for something so small. Also would you take $10 for it?
+- Split the difference at $15?
+- Perfect, sorry about the dumb question. Its listed for 600, but I only have a budget of 400, could that work?
+- It's for such a good cause, I can't go as high as five though (I'm sorry) but I do have my mad money :-) It's not much, but I can get together 450...
+- Hi. I'm very much interested in your Vette. But the price is a bit high for my wallet. Could you go down to about 25000?
+- If you can do 28000 I'll come write you the check today and we'd have a deal. 
+- Well, I'm happy you are. Could you maybe come down a little on the price? Its a gift for my grandmother. Is $225 acceptable?
+- Would you consider $240 if I come get it?
+- Awesome! I could pick it up later from your place if that works for you. I have $30 in cash.
+- Excellent. I would have lost All interest if it had been painted. My mother always told me never to pay full price. $70?
+- Well you give in just a little more and go $75?
+- I want the bike cut can't afford the 1250, I can pay $625
+- Awesome! Would you accept $157 for it in cash? I can stop by today and pick it up.
+- Ok great, I need 6 so that will work! $1250 is a little out of my price range. I'm assuming it is pretty heavy, I can come get it and load it myself tonight if you'd be willing to accept $850.
+- That is great! I'm really not looking for a coffee table, but I'm sure they are also very nice. Can we do $1000? I'm already over my budget I agreed on with my husband...
+- Cool, would you be able to move the price down a bit if I sign a longer lease? I was thinking a year for 1980.
+- Would you accept $420 for it?
+- I understand. How about $500
+- It looks like you had it pretty weighted down. I didn't know Ikea furniture could hold that much weight. I'd like to buy it for 25
+- from the picture everything looks great, although I'd probably get a different saddle for it. Would you take 150?
+- Okay well the color is not good for me. Since I'll have to restain it, how about 75 for it?
+- Well, I don't have a car so I'll give you $5 for gas. That'll be $80 from me.
+- I was hoping to give you 22000 and then I may have some items that you would like that I could throw in to make it a fairer deal for you.
+- Okay I didn't really want to part with this but I see that you're looking for something very special and rare.  I just so happen so have something that you may consider.  These are special herbs from overseas and you cannot get them in USA.  These are coming from an ancient culture of indigenous peoples.  I met the shaman of the people and he gifted for me several pounds of this different types of herbs, I could part myself with 2lbs of this one that is very good for you and then give you 25000?  Will this work for you? 
+- I would like to pay 162 for it. Is that possible?
+- I can most definitely do that if the price is right. Since the place is so small, I'm willing to offer $800
+- Awesome. I can only do around 3600 right now. Is it cool if I pay you the rest in a month. We can draw up a contract?
+- I am! I was hoping for a lower price though. I was thinking $800
+- Perfect my 8 year old would love it.  Would you be willing to take $20 for it?  I can come right away.
+- Cool. I would be willing to pay the full 75 then. You got yourself a deal!
+- I was looking to pay around 1300
+- I really like the hanging wine-glass rack. Would you take $150? It is 20 years old after all.
+- I am actually wanting it for a project so I really don't want to spend too much.  Would you take $100 I mean it is rather old and dated.
+- Would you take $521 cash right now?
+- How about $690 and I will come right now to pick it up?
+- yes! I love the location of it and the access to everything. My only problem though is that I think 2250 is a lot for what looks like a small space, would you consider lowering the price?
+- Oh these are all sold together i thought they were individual. I was going to offer $2 for a selfie clicker and wall charger
+- Will you take $1000 for it?
+- I am, How firm on are on the $190 you are asking? Would you be willing to go lower on that price if I came soon with cash in hand?
+- Ideally I would like to pay $95 for this. It is an older used bike, The fact that it is super rare makes it harder to get any parts for it and I will have to deal with possible tire dry rot and anything else wrong with it.
+- Thanks for the information. I can't do $200, but would you be willing to accept $180 for it?
+- I'm sorry but I have nothing else to trade. I'll rent a truck and pick it up if you can do $190.
+- I can stop by in a few minutes and take them off your hands, but I'm only willing to give you $1.
+- $1.50?
+- Would you accept $372?
+- This looks like the car I have been searching for!  I would like to come see it and look at the service records but I am so excited I would like to offer you $21500 cash this week with title trade?
+- Would you be willing to throw in a fresh oil change and tire rotation?  If so I could swing $27000?
+- How about $1800 a month?
+- Excellent. Are you willing to work with me on the price? Money is tight for me right now, and I'm looking to spend closer to $80.
+- That's way higher than I can spend. I'm willing to come pick it up today for $104, but that is all the money I have.
+- I would like to offer $7696 for it
+- Would you take $9000?
+- Will you take $80?
+- I am sort of low in cash right now. How about $100 and I'll pick it up tomorrow?
+- this bike is in great working condition. everything is in working order. i'm looking for $150. its a nifty ride
+- awesome , i can give you $130 cash for it. i'll come and pick it up if you are ready
+- Hmm.. What condition is the phone in $480 seems a bit much.
+- I can offer $435. CASH!! I can come to you. And I can have a police escort if you feel uneasy!
+- Can we agree on $440?
+- It's a little more than I'm willing to pay. I've seen a few tables for a little less, and I'm looking or something cheap for my apartment. I'm looking to spend closer to $7.
+- that is awesome..I can't afford $5900 would you take any less?
+- I'm able to afford $4000 cash today
+- but the truck is over 10 years old...I could do 4200 and go right now to pick it up
+- I can'rt afford that much how about $4800 right now?
+- Great! Yes I am really interested but the price is high for me. Is there any room for negotiation here? I am ready to pay $7650
+- Thank you for clearing that up. I'm definitely interested in buying, is there anyway we could negotiate a price? I have about $280 to spend. I would be willing to trade you my current phone as well if that would help any? I'm also willing to drive to you to pick it up today.
+- What else does the phone come with? I'm pretty tight on a budget and $280 is already more than I was willing to spend, but I was hoping to come to some sort of agreement. I'm definitely not here to waste your time and appreciate you talking to me.
+- Would you take $290 and my current phone? You could sell it and make a profit close to what you're asking for. I'm also willing to come pick it up still.
+- Well, I'm a college student, so I'm on a budget. I could give you 25 and a coupon for a free pizza.
+- I have $1277 I can give you today for it.
+- I completely understand! I think I saw one just like it at a flea market recently, but the price was a bit lower...would you be willing to take $70.00 cash if I come today to get it?
+- I can't go that high right now...I'm sorry. The best I can do would be $80.
+- Awesome..  I have $2500 cash in hand and can come and get it now.
+- Would you accept $336 I can pay today and pick it up myself?
+- she was looking to pay no more than $900 but if that is not possible then she can go a little higher
+- okay I just talked it over with her, an she says she can sign the 18 month lease for $1200. She is willing to do a 1 bedroom
+- Oh good!!  It just gets too hot out!  Would you be willing to take $2950 for it in cash?  I can get it this evening.
+- is there anyway I can pay $6000?
+- for older cars I know it usually is more expensive to get work done on them thats why I was asking. Okay, is there anyway $7500 cash today will work I really want this car but my pockets aren't heavy.
+- Well I would love to get this for my son. I would like to offer $120/
+- I would like to pay $256 for it
+- I do tend to study mirrors. Narcissism mixed with OCD do not pair well. Would you discount it some? Say $135?
+- Yes, they are nice but a bit expensive. Could you come down on the price? I would like to pay $2000.
+- If I sign a 13 month lease, could you take $2500?
+- Oh wow that's a long time. Well I'd like to buy it from you today. Would you $70 if I come and pick it up from later this afternoon?
+- Great. We can pick it up tonight if that is okay? Could you possibly take $105 for it?  
+- Would you be willing to take $100 for it?
+- a dream come true! I do not have the full amount of $3992 I can afford $2794
+- Ok Im in the process of selling the other car. So it will not be an issue for much longer. I see the listing price as $2695
+- I was thinking $2425
+- Ah, that's good/ I see you have it for 160 but I can only afford to do 100. Would that work? I can pick it up.
+- I understand. How about this. I can do 112 and I also have a $25 Amazon gift card. Would that work?
+- Ok would you be willing to accept $90 if I come and pick it up from you later today? 
+- Ok, that sounds pretty good. I really could use a pair of chairs for my patio. Would you accept $40 for them?
+- That's too much for me. Are you willing to agree on $199?
+- does 200 work please? 
+- Is there any wiggle room on the price? I found another apartment close to this but it was about $600 cheaper. I'm trying to do some research.
+- I was hoping to do all in $1800 (water and trash included).
+- Great i can afford $60
+- i can afford $75 and i can pick it up
+- Hmmm,  I'll offer you $95 dollars since it is from '95.  That seems more than fair for this bike.
+- Will you meet me halfway at $105.
+- Cool! I see you are offering 3500 for this Benz. Are you willing to negogiate?
+- The book value for a car of this condition and make is only 1750. I'm willing to offer that?
+- I see. If I signed an 18 month lease, could I get it for $3592?
+- would you accept $1 for them?
+- Great! I need to be extremely close. Can you go any lower on the rent price. I have about 6 months of payments saved up to sign a 6 month lease. I dont have any pets and I dont smoke and I have amazing credit. Id be more in the range of 1640. If thats an option?
+- I was wanting to offer you $3150 for it
+- Before I see it, I have a few questions. Are any utilities included in the rent. $10995 is a bit much and are pets allowed?
+- Yeah, more people equals less per person, but I don't want too big a crowd. Some people just aren't clean. How about we start out at $5000 for 5 people and renegotiate later if I need to bring more people in?
+- Okay, I'm just trying to save you the eviction process if we can't pay. I think I can find 3 more people and get you $8000 but we'll need water and gas covered.
+- I sure am! No picture though, bummer. I could come by and look at it tonight or tomorrow though. If I pick up and load myself, could you do $8?
+- Hey, $12 and you have a deal.
+- Hey I'll give you 5000 for the place
+- Fine, 9800 final offer.
+- cool! Are you willing to accept 25 for it? Since they're used and only chairs?
+- that's too much. Can we come middle ground? Maybe 35?
+- wow that sounds great! and perfect for what I want to use it for. Would you be willing to take 100? I could pick it up today.
+- awesome! If I were tosign an 18 month lease how much would the monthly rent go down?
+- Sounds like a nice place!  Would you be willing to take $1886 for it?
+- Im thinking I want to be right at $200. Its for my son, and thats how much he has saved up to buy one. 
+- How about $240? 
+- $250 is fine. Thank you. 
+- The size is what concerns me, I am willing to offer $10
+- I could meet you at $12
+- Wow.. too bad I have a low budget. Can you accept $1400?
+- I am sorry. How about if I offer $1900 and I'll lease it for at least 2 years. I am going to attend school nearby and it will take at least 2 years. 
+- I can definitely offer cash. How does $85 sound to you?
+- I sure am, I seen you are asking $5900, The mileage is a bit on the high end. Would you be able to go a bit lower? That truck is 13 years old now. 
+- I could do $5300 in the morning If it works good for you, I would like to come check it out. 
+- Ok are you able to deliver? I have $13 cash right now that I can give you
+- I see you are asking $160. Does it have any scratches or anything? I see it is used. 
+- Could I perhaps pick it up in the morning for $140? 
+- I see you are asking for $1825, do you have any move in specials or anything?
+- 1825 is a little high for me, would you accept 1000?
+- I can do 1500 with the low deposit.  
+- I budgeted $4500 for a new truck.  Any chance you're willing to come down a little more?
+- OK I'm interested but it's a little out of my price range.   Could you do 7000?
+- Ok well how about 45 for them and I can pick them up?
+

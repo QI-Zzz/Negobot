@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>home</title>
+
+        <!-- font cdn link -->
+        <link rel="stylesheet" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         crossorigin="anonymous"
+        />
+
+        <!-- custom css file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+
+    </head>
+
+    <body>
+        <header>
+            <h1 >THANK YOU {{session['user_id']}}</h1>
+        </header>
+
+
+
+        <!-- jquery cdn link  -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+        <!-- custom js file link  -->
+        <!-- <script src="/script.js"></script>  -->
+    </body>
+
+</html>

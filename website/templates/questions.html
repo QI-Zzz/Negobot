@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>question</title>
+
+        <!-- font cdn link -->
+        <link rel="stylesheet" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         crossorigin="anonymous"
+        />
+
+        <!-- custom css file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+
+    </head>
+
+    <body>
+        <header>
+            <h1>JUST FEW QUESTIONS  {{session['user_id']}}</h1>
+        </header>
+        <section class="questions">
+            <form action="/questions", method="POST">
+                <table>
+                    <tr>
+                        <td><li> The chatbot is accurate </li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="q1" value=1>Highly disagree</td>
+                        <td><input type="radio" name="q1" value=2>Disagree</td>
+                        <td><input type="radio" name="q1" value=3>Natural</td>
+                        <td><input type="radio" name="q1" value=4>Agree</td>
+                        <td><input type="radio" name="q1" value=5>Highly agree</td>
+                    </tr>
+                    <tr>
+                        <td><li> The interaction with chatbot is consistent </li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="q2" value=1>Very disagree</td>
+                        <td><input type="radio" name="q2" value=2>disagree</td>
+                        <td><input type="radio" name="q2" value=3>natural</td>
+                        <td><input type="radio" name="q2" value=4>agree</td>
+                        <td><input type="radio" name="q2" value=5>Very agree</td>
+                    </tr>
+                    <tr>
+                        <td><li> The chatbot gives me a prompt response. </li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="q3" value=1>Very disagree</td>
+                        <td><input type="radio" name="q3" value=2>disagree</td>
+                        <td><input type="radio" name="q3" value=3>natural</td>
+                        <td><input type="radio" name="q3" value=4>agree</td>
+                        <td><input type="radio" name="q3" value=5>Very agree</td>
+                    </tr>
+                    <tr>
+                        <td><li> The chatbot has an excellent interface to communicate with. </li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="q4" value=1>Very disagree</td>
+                        <td><input type="radio" name="q4" value=2>disagree</td>
+                        <td><input type="radio" name="q4" value=3>natural</td>
+                        <td><input type="radio" name="q4" value=4>agree</td>
+                        <td><input type="radio" name="q4" value=5>Very agree</td>
+                    </tr>
+                    <tr>
+                        <td><li> I was absorbed in the conversation with the chatbot. </li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="q5" value=1>Very disagree</td>
+                        <td><input type="radio" name="q5" value=2>disagree</td>
+                        <td><input type="radio" name="q5" value=3>natural</td>
+                        <td><input type="radio" name="q5" value=4>agree</td>
+                        <td><input type="radio" name="q5" value=5>Very agree</td>
+                    </tr>
+                    <tr>
+                        <td><li> I enjoy a conversation with the chatbot.</li></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="q6" value=1>Very disagree</td>
+                        <td><input type="radio" name="q6" value=2>disagree</td>
+                        <td><input type="radio" name="q6" value=3>natural</td>
+                        <td><input type="radio" name="q6" value=4>agree</td>
+                        <td><input type="radio" name="q6" value=5>Very agree</td>
+                    </tr>
+
+
+
+
+
+                </table>
+
+                <button class="btn">Submit</a>
+            </form>
+        </section>
+
+        <!-- jquery cdn link  -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+        <!-- custom js file link  -->
+        <!-- <script src="/script.js"></script>  -->
+    </body>
+
+</html>

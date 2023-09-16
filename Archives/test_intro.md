@@ -1,0 +1,243 @@
+- hi there
+- Who is the manufacturer?
+- waddup, this looks so cool. I can finally replace my secretary, that worthless pos
+- Hi I am really interested in the apartment. Is it close to town?
+- This house looks perfect! Is there a basement?
+- So, what's wrong with this phone?
+- Hi. Do you have a picture of this item? I'm very interested.
+- hello
+- How new are the kitchen and bathroom?
+- Hello I am interested in buying.
+- hello
+- hello
+- Hello I would want to purchase the desk and chair. It says its quite old. Is it maintained well?
+- Hi! You have a nice item. If I buy it will it be shipped safely?
+- Hello
+- hi
+- Hello are you there?
+- Hi.  I am interested in your Chevy you have for sale
+- hello, I am interested in your console you've got for sale. Is there anything wrong with it?
+- Hi, I'm interested in buying your car, can you give me some information about it?
+- Hi
+- What are campy record parts? Is that the brand of the parts?
+- How many rooms are included in the apartment?
+- Small but very loud. I like that. It's just like me.
+- hi i would love to buy this bike
+- Hi, how old is your bike?
+- Hello, I'm interested in your corner desk.  What is it made of?
+- Hello! Why are you selling the bike?
+- I'm interested in buying the storage and closet organizer! It will be a great addition to my wife and I's first home. 
+- How are you?  I am interested in your 2016 Cannondale
+- Hello
+- looking  to buy
+- how are you
+- hi, how many miles are on your camry?
+- Hi! has the vehicle ever been smoked in?
+- Hey, nice car you have here, how long hve you hd?
+- hi , i am wondering if you could tell me some details
+- Hi I am interested in buying the piano. how heavy is it?
+- HI!
+- nice sofa
+- Hello, I am interested in the bike
+- Hi does the cabinet have any scratches or noticable dings?
+- Hi, I am interested in your place.
+- Hi there. how are you?
+- Hello, I am interested in purchasing your Moonra Ebike!
+- I love this bike!! How much are you asking?
+- hi , I am interested
+- Hi! I am very interested in purchasing this car from you!
+- hi
+- Hi! What price are you asking for the bike?
+- Hello, I am interested in the apartment you have for rent
+- HI! How much are you asking for on your IPhone?
+- Hi
+- Hello I am interested in the apartment. Are utilities included?
+- Hello, is the apartment still available?
+- I am very interested place you have for rent. Is it in a good, quiet community?
+- Is this listing for an apartment or the house?
+- I love the Sofa!  How long have you had it?
+- Hey, you have a nice townhouse here in Fremont CA?
+- Hello! How long have you had this bike?
+- Hey, what's the loveseat/sofa like? looks good
+- Hey there, I'm interested in your nice table
+- Hi, what type of finish is the pressedboard on the table?
+- Hi!
+- Hi, that's a nice table you have there.
+- Hello, I'm interested in your bike you have for sale
+- Hi I am interested in the house you just posted. 
+- Hello. I really liked this toyota highlander. Have been looking for it for a long time now, and this is something that caught my attention
+- Hi I see you have a go pro for sale
+- how we doing today
+- what conditions are the rubbers?
+- hello I am interested in your buying your bed
+- Hello, I'm interested in the Hollon safe.. Are you certain you will be able to transfer the warranty to me?
+- Hey! I am very interested in the mattress. Would you say it is more on the firm or soft side?
+- Hi there, I was looking at your ad for the couch you listed, about how old is it?
+- Hey so I'm interested in the closet rack, can you tell me about it?
+- Hey! Do you still have the couch available?
+- Hi, do you still have the 2013 Elantra in stock?
+- that is a nice sofa
+- hello
+- Hi, I saw your post and am interested in it. Can you tell me more about it?
+- Hi, are these orginal equipment
+- hey so they'r still new right? not gonna have greasy ear wax on them? 
+- Hello
+- Hey there, nice wagon you have here
+- Hello
+- Hey, I'd like to talk to you about your beach bike
+- OMG
+- Hi!
+- hello
+- Hi how are you
+- Hi how are you?
+- Hi how are you? I'm interested in your bike, what kind of shape is it in? How did you rebuild it? 
+- Hey there, nice phone you have here. you can't get a blackberry anymore
+- Hi how are you?
+- Hey, you still have that bike for sale?
+- Hey, nice printer you got, is it newish?
+- What is the lowest price you would take for the bike?
+- Hey do you still have the cornice?
+- Hi, is the house still for rent?
+- Hi I saw your post and was wondering if you still have the Parisian Cornice available?
+- Is the box springs and bed rail included?
+- Hi do you still have the Blackberry?
+- Hey! im interested in looking at your Toyota, could i get a few details before I come out to buy it?
+- Hi do you still have the bike?
+- Hi there, I am interested in your rental unit but would like to find out more.
+- Hi, is your truck still for sale?
+- Hello do you still have the mattress?
+- I am interested in your Toyota and would like to know more about it.
+- Hi! I am interested in the queen mattress you are selling.
+- Hello, could I interest you in a 1999 BMW?
+- Hi, I am interested in the sofa and loveseat if it's still available.
+- Nice cables you have.  Can you tell me about them? 
+- Hello, I'm looking to rent your apartment
+- hello
+- Hi, what is the lowest you'll be able to sell it for?
+- Hello, I would like to purchase your chair! It is everything I have been looking for. Would you be willing to come down in price?
+- Wow, this looks like a great bike!
+- Hi, i'm very interested in this bike. Are the tires in good shape? Brakes work well?
+- Hi there. I'm interested in your bicycle. Could you give me some details about it?
+- Hello, I am curious about the bike, is there anything wrong with it?
+- Hi I am interested in the sofa bed, what is the condition of this item?
+- Hi! I am interested in your bike. What size is it?
+- Hi
+- Do you still have the bike for sale?
+- Hello. I'm interested in buying the chair. Is it in excellent condition? How old is it?
+- Is the bike still available?
+- Hi Erica. I was interested in the bike you have for sale!
+- hows it going? interested in the chair you have for sale
+- I'm interested in your Ikea sofa bed.
+- Hello
+- Hi, I'm interested in buying this sleeper sofa. How long has it been in use? 
+- Hi! that is a cute bike
+- Hello. How old is the bike?
+- Is this an authentic item?
+- does the radio work
+- Hey. I'm interested in the desk/table. Is it in good condition?
+- Hey, I am interested in this product. Why are you selling it?
+- Hi , I love this bed and think it would go great with my bedroom decor. is it from a non smoking home?
+- hello, I am very interested in this apartment. I was wondering what the price included? it seems very high! Are there any amenities?
+- Hi is the radio still for sale?
+- hi, i am interested in your phone.. what's your best offer?
+- How long have you guys had the bike?
+- hello, I am very interested in this motor home.
+- that's a cute listing i must say
+- You still have the beats?
+- Hi there. Is the apartment still available?
+- Hey there! I'm in need of a deck. Is this IKEA deck/table good quality and sturdy wood? 
+- Hello, I am interested in the bike you have for sale. Are the wheels in good shape?
+- hey there. i have been looking for an air stream for so long!
+- Hi there how are you?
+- Wow, its hard to come past one of these used. May I ask why you are selling it?
+- I love your apartment. It is really a place I could call home. What amenities are included?
+- Hello- how old is the radio?
+- Hello, I saw your ad listed for the Mercedes E350. Im wondering how many miles are on the vehicle? Are you the only owner?
+- Hi is the apartment still available for rent? 
+- Hi is the headphones still available?
+- Hey, I'm interested in your twin sized bed. How firm is that price point?
+- Hello
+- Hi, how many miles does this car have?
+- Hello there. I am interested in this bike. Is it in good condition?
+- Good afternoon. I'm interested in the storage bed you have for sale.
+- nice dresser is it new
+- Hi, how long ago did you purchase the phone?
+- I like your place, can you tell me about it?
+- Hi im interested in your studio apartment 
+- Hello, you still have those headphones? 
+- hello i am interested in this apartment for rent
+- Hi, how many chairs are included in this set?
+- Hello!
+- Hi, I am interested in your Aeron Chair. Is it brand new?
+- Hi how are you doing?
+- Hi, I am very interested in your bike!
+- Hello, do you still have the cel phone accessories?
+- hi, how are you? I am extremely interested in this property.
+- HI can you tell me about the schools in the area
+- i'm very interested in your mercedes cna you tell me more about it?
+- Hello
+- Hello
+- Hello
+- Hello, how old is the bike?
+- Hello. Is the Hutch still available?
+- Hi there is the item avaialble?
+- Hi there how are you
+- Hi! I'm interested in your bookshelf. Are you willing to negotiate?
+- Hi. Is this car still for sale? 
+- Hello. Is the townhouse still available?
+- I am very interested in buying your car
+- Hello
+- Hello I am looking for a place in West Oakland!
+- Hi, I ahve a vintage singer cast iron machine and I think this will fit perfectly. I wonder how much rust there is?
+- Hi :-) what kind of shape is this in?
+- Hi! I'm interested in your chaise lounge. Is it in good condition?
+- Hi there!
+- Hello . How long have you owned the dresser? Do you have any idea how old it is?
+- I'm really interested in the bike. You say it has less than 50 miles on it. HOw long have you owned it?
+- Hello there!
+- Hello, are there any issues with the dresser I should know about?
+- Hi how are you?
+- Hello
+- Hi I am interested in your Ford Fusion. How does the A/C work?
+- Hi I am interested in the bike you have listed is it still for sale?
+- Hi! I'm interested in your Kitchen Hutch. How worn is it?
+- What condition is this phone?
+- Hello, how are you?
+- Hello, I am interested in the cell phone accessories you have
+- Hey there if you still have the bike, I am interested.
+- Your cell phone accessories look interesting. How old are they?
+- HI! is the convertible still available?  Is this the original engine?
+- Hey there
+- Good afternoon. I'm interested in the mirror you have for sale. What condition is it in?
+- Hi, I saw an add for this 6 bedroom apartment and I am interested in it.
+- Hi! That is a nice bike!
+- Hello. I am interested in your iphone!
+- Hello. I'm interested in the table you have for sale.
+- Hey Im interested in your truck that's for sale anything wrong with it?
+- Hello, I'm here to inquire what you're selling exactly?
+- Hi, how are you?
+- Hello I am interested in the Blade Z
+- Hi is the bicycle still for sale?
+- Hello 
+- Hi I was curious to know more about your scooter! How old is it?
+- Omg! please tell this house is still available
+- Hello is the bike still for sale?
+- Hello, I am interested in your ad for the garden furniture.
+- Hi do you have the phone still available?> 
+- Hello! I saw your beautiful condo listed for rent and was curious if it was still available?
+- Hello. I've seen your ad and interested in this car.
+- Hello! I saw your post about the apartment.
+- Hi there!
+- HI I am interested in your 1999 SL500 Mercedes Benz
+- Hi do you still have the chairs? 
+- hi i am very interested in this item!
+- hi, i am very interested in this condo
+- HI!  How are you?  I'm interested in your 3 bedroom you have available
+- Hello, Im interested in your iphone se. Any scratches? ICloud locked?
+- Hi, I am very interested in this set
+- HI! I am interested in your house. Can you tell me more about it?
+- Hi there is this available ?
+- hello
+- Hello, I was interested in purchasing your cherry wood mirror. 
+- Hello im very interested in your springy chairs. Why are you selling them? Are they in good condition?
+

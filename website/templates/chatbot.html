@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>chatbot</title>
+
+        <!-- font cdn link -->
+        <link rel="stylesheet" 
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         crossorigin="anonymous"
+        />
+
+        <!-- custom css file -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+
+    </head>
+
+    <body>
+        <header>
+            <h1 >LET'S CHAT {{session['user_id']}}</h1>
+        </header>
+        <section class="chatbot">
+            <div class="chatbox">
+                <div class="chatbox__header">
+                    <img src="./static/chatbox-icon.svg">
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                    <a href="/questions"><button class="btn">Finish</a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- custom js file link  -->
+        <!-- <script>
+            $SCRIPT_ROOT ={{ request.script_root|tojson }};
+        </script> -->
+        <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script> 
+
+    </body>
+
+</html>

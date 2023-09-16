@@ -1,0 +1,413 @@
+- Yes, very interested. Is the chair new?
+- Will the chair work for someone who is under 6 feet tall?
+- How old is it?
+- When can you deliver it?
+- What about a pool?
+- do you have a secretary?
+- Okay and is it fully furnished?
+- What is wrong with the phone?
+- Is it fully furnished? 
+- Its in an excellent standing, and before we get down to the price. What is the deposit?
+- Well, are there any other problems with the phone besides the boot screen problem you mentioned?
+- Okay. How wide is the shelf?
+- Do you have exact measurements?
+- Okay. How much are you looking to sell it for?
+- Does the bathroom have a shower and a bath?
+- And could you tell me what color it is?
+- Is that for any of the local businesses or just one in particular?
+- How old is this car?
+- has it ever been in an accident?
+- Have the tires been changed recently?
+- Just one last question then. How is the oil?
+- Great thanks. So do you accept cash or credit?
+- how good is its condition?
+- how about the price?
+- nothing less than that?
+- and will you be delivering it?
+- I see that, and what is the price?
+- What is the color? 
+- Okay and how about the smog test?
+- What are your thoughts on taking less? I've been thinking of getting one, but that's kinda pricey. 
+- Sorry?
+- Understandable. What are you expecting for the item?
+- Is the interface still quick? Is the phone still up to date as far as updates?
+- Is there a warranty?
+- I think that might work for me. Can you tell me anything else about the table, any defects?
+- Well I see it's near Berkeley, but I was wondering exactly how close it is to say restaurants around the area and how convenient it would be to travel around?
+- What if you sell just the storage bed?
+- Yes but is it a wooden one, a metal one? Colored wood?
+- What condition is the table in?
+- Are you totally firm on the price?
+- That is good to know. How is the condition, it appears to be in very nice shape but do they have any scratches or damage?
+- It looks like a nice car. Is the inspection on it current?
+- 2008 makes it 10 years old. Would you be willing to accept a lower price?
+- I see that it also comes with the video player, can you tell me a little more about that?
+- where in the car is the video player located?
+- Yeah, where are you located, could I get a lower price if I pick it up?
+- Is it in good condition, does it have any dents or scratches?
+- How big is the backyard space?
+- Are utilities included in the monthly rent? 
+- How do you prevent the snowman from melting... is this refrigerated storage we're talking about...because that sounds expensive to maintain...
+- I think I am. For the right price. What's the sound really like on that thing?
+- A haunted car?
+- Has the HV battery been inspected?
+- How much longer does the HV battery have before it needs to be replaced?
+- Is it in good condition? I see it has been stored for 27 years, but being stored improperly can damage a bike.
+- Sounds great! How does homemade oreos sound to you?
+- It looks pretty good.  Are the tires in good shape?
+- Are you willing to take an offer?
+- great.  when can I pick it up?
+- does that price include delivery and set up?
+- Excellent, and can you tell me what condition it's in?
+- Allright, does it have drawers?
+- What are your reasons for selling the bike?
+- I know it only has 30 miles on it but does anything need replacing or work?
+- That's awesome, is there any damage to it?  
+- Are you wiling to go any lower on the price? 
+- What do you like about the white Queen leather bed? I like the wood finish.
+- I see, it look perfect. i'm willing to buy it today if it comes with free shipping?
+- How are the local schools and the neighborhood.. 
+- Awesome! i do however have a very large dog would that be a problem?
+- can i have pets? i HAVE A big dog and small cat,plus fish in a aquarium.
+- Are lights,cable and internet included or is that separate?
+- how old are the tires?
+- and the breaks?
+- I am!  Do you have any images of the chair?
+- Does it have a cushion or is it just solid wood?
+- Sounds good.  Would it fit into the back of my car or would I need an SUV or truck?
+- What is the gas mileage like?
+- I see, so about how much mileage?
+- That is good to know, is interent included?
+- What year is the apartment?
+- Oh great. And does it have a parking space?
+- when can i pick it up
+- Awesome! Are you selling just the bike? Or are you also throwing in a helmet/water bottle holder/ect?
+- Ok. Is it still under a warranty? 
+- Ok are you willing to deliver to the Armoire or would I need to arrange picking it up from you?
+- is this a pet friendly building?
+- lol, ok great. I was also wondering abotu parking, what is the situation with that?
+- so it is included in the price?
+- I see, well I am looking at your listing, I am wondering if we can make a deal?
+- yes does it till have the warranty ?
+- I gues we could that, but can you take care of shipping since it's small?
+- yes thank you, and yours i 555-555-5555,  correct ?
+- I wanted to know if there was an accident report on the vehicle?
+- Ok and has the car ever had to have any major repairs?
+- Awesome! Can you tell me about some of the features? Why should I buy from you?
+- is there a fire place i can go up a thousand
+- Yes.  How long have you had them?
+- What's the least you'll accept for them?
+- Would I be able to move in right away?
+- I am. Can I make an offer?
+- Are you moving out?
+- Do you have any flexibility on your pet policy?
+- Okay I appreciate the flexibility. Let's do that. Where do we start?
+- Are you able to include any utilities in the price?
+- Can you tell me some details? Curious as to your pet policy
+- even for a goldfish?
+- lol, very true! what is the parking situation?
+- but is that extra or included?
+- Yes, can you tell me the accident history?
+- What's the mileage?
+- Has there been any other owners?
+- Okay, its in great shape, did you have any questions?
+- Does it have new appliances?
+- Yes. Is it pet friendly?
+- I like everything about it. Is there any room on the monthly price?
+- Oh, I love Whole Foods! Does it come with any amenities like washer/dryer, dishwasher?
+- That's a pretty big loss.. Is there street parking?
+- I probably should walk more anyway... Alright, what would you be willing to let me rent it for without the parking spot?
+- I suppose, is there anything wrong with it?
+- Cool. That was a good find. It looks well used. Have you tested it to make sure it works?
+- I think that's a deal. Can I come look at it first though? 
+- Are you the original owner? Is this the actual picture of your item? Are there any dings, dents, chips in paint? Thanks for initiating convo!
+- Okay. Is this heavy? Will you be available to help load? 
+- The half bath downstairs, is that just a toilet/vanity?
+- Oh yeah, when are you around?
+- Are they comfortable?
+- Has the car gone through a documented inspection? Does it come with an accident/ damages report?
+- I do need one but I see that I would have to paint it so that's work for me. Does it have any other defects?
+- Is the paint intact? Does it need ant TLC?
+- I see its been remodeled. Can you tell me what has been upgraded? 
+- How many times have you used it?
+- Are there any problems with the car?
+- I like the details on the house and it seems nice. How is the neighborhood? How are the apartment neighbors?
+- I am interested. Would you be able to deliver?
+- How old is the set?
+- yes sure you can you tell me more about it?
+- I see that you have this table for sale.  How many people can it ft?
+- Awesome, I definitely prefer soft. Does it come with any sort of warranty?
+- Makes sense. Does this include a boxspring as well?
+- How's the condition, is it nice?
+- Is it already disassembled, or do I have to do that? 
+- Makes sense. Can they hold a lot of weight?
+- Ah great - a few questions? Have any pipe smokers driven the car or has it been in any accidents?
+- Great how flexible are you on the price?
+- What if I paid with a bag full of cash? Would that change the price?
+- What condition is it in? Has it been in any accidents? 
+- Okay that sounds good. How many miles does it have on it?
+- Possibly, what kind of gas mileage does it get?
+- Have you had it long? Anything wrong with it? Stains, scratches, etc.?
+- Oh, haha. So did you have any problems with this powerstation when you used it?
+- Oh cool. Why are you selling it, did you get another one instead?
+- Since it's brand new, why are you selling it? 
+- yes, mine was stolen so I need a new one, what kind of shape is it in?
+- Awesome, are they in good condition?
+- I can pick up whenever.  How much are you selling for?
+- What condition is the shelving in?
+- I am, but my budget is somewhat limited. Can you tell me a little more about the car? How long have you had it?
+- So do we have a deal?
+- Have you ever had it cleaned? By a professional, honey?
+- HS this truck ever been in an accident?
+- Yes I am. Is it in good condition and everything?
+- I would like to move in asap. But, would you be willing to lower the price a bit for me?
+- What is your reason for selling this truck?
+- How many miles does it have on it? 
+- What I already am here, I'm out front, yeah hold on I have some more change oh shit another quarter, Hold On, damn fucking wife and shit kids, uh okay I'm like 20 cents short what do you know my wife or something?
+- I am well i would love your cables what condition are they in?
+- I'm definitely interested. But I'm concerned about the quality. You said in the ad you had to rebuild it?
+- Yes I just had a couple questions. Are pets allowed? And does it come with appliances?
+- Okay is there any way you can bring the price down?
+- I had some questions about it. What is it made of and what is the condition like?
+- Would you be willing to throw in free shipping?
+- Is the desk in good condition? My current desk has wobbly legs so I need something better. 
+- Okay does it come with the swivel chair in the picture?
+- Could you tell me a little more about it?  How tall is it and what material is it made out of?
+- And is it in pretty good condition?
+- Is there anything at all wrong with it?
+- Im glad you have a clean title, but I'm curious, how many miles does the truck have?
+- Well, shoot. What are you asking for it?
+- How old is the bike and is it in good condition?
+- Are you able to offer any other amenities or incentives for that price?
+- how many miles?
+- How old is it?
+- Does it have new tires, and how many miles does it have on it? 
+- Does it come from a pet/smoke free home?
+- Does it come with the charger and any accessories?
+- And there is nothing wrong with them?
+- Honestly I just need a bike to be able to get to work right now. Someone stole my car which had my purse and all my stuff in it I have been down on my luck and this bike sounds perfect. How low are you willing to go?
+- It seems good, is it in a god neighborhood?
+- How far away is it from stores and what is the flooring like also does it come with any appliances?
+- That's good. The house is kind of in a bad part of town so I think it's a little overpriced are you flexible at all when it comes to the price?
+- Really? Is it new?
+- Very cool! Does it come with the helmet for the price?
+- Does it come with the helmet?
+- How much??
+- Can you deliver?
+- Great, do you have any wiggle room on the price?
+- Honest.. I like it. Is it for adult or kids?
+- Ok, Is it in good condition?
+- How much would you like for it?
+- Do you still have the bike for sale?
+- Is the bike still available?
+- Yeah I guess how much are you selling it for?
+- is it a comfy chair?
+- I am interested. My son needs a new bike. Is this one in great condition? The tires are good and everything?
+- Yes I would like to take a look at it. Can you knock off a few bucks for the drive?
+- That is a little much because it is used. Its used right? 
+- It looks very nice, how soon could I see it in person?
+- Does it work fine?
+- Oh great. Do you mind if I ask how old the bike is?
+- How old is it?
+- How long ago did you purchase the bed?
+- that is pretty cheap. what color is it?
+- Awesome. Yes, I'll pick it up. Is tonight good for you?
+- It's a beautiful bed, but a little out of my price range. Can you tell me more about this bed?
+- how old is it? and what all does it include? refrigerator, dishwasher, bathtub?
+- is there gym access for this apartment complex? a pool?
+- Yes I am. How extensive is the chipping on them?
+- and what all is included?
+- what's the mileage on it? I see it's loaded 
+- Cool. Is it red? 
+- That's what I was wondering. Is there a Mcqueen graphic on it?
+- Ok, and I see the handle pads and the seat are torn. I can replace them if needed, but is there a seat at all or is the vinyl just ripped?
+- Any damage to it?
+- I am looking to buy pretty quickly. What year is it?
+- i see, is it in all good condition or does it have some wear and tear that i have to take care of?
+- That is an awesome radio! Would you be willing to test it to see if it works?
+- Yes. Is it still available?
+- Yes I am. I am relocating and am in need of an apartment. It is super cute. Is the internet provided or do I pay for it myself?
+- How is the engine?
+- Oh that's ok. My old car's engine light says on all the time even though the engine is fine. What year model is it?
+- Wonderful. How much are you asking? is there room to negotiate?
+- Okay. When did you want me to come get it?
+- Yes! My last apartment burned down a few days ago, so I'm desperate for a place. Can you tell me about it?
+- Yeah the pictures all look really good and that's great utilities are included. When's the soonest I could move in?
+- May i know the car millege?
+- Is there any accident history?
+- Okay. Where is car located?
+- What payment options do you have?
+- Saw your post for a red bike. Is it still available?
+- Yes I am wondering how bad the scratches are? And could you take less?
+- How is the motor? How many miles?
+- Would you offer any warranty?
+- Do you have receipts for all the parts you have replaced?
+- Sounds good. Can I come and take a look at it?
+- Are you willing to lower the price a bit?
+- what kind of wood is it
+- is it in very good condition
+- That's perfect. I trust that it's working fine, but i do have any problems with it after trying to set it up, can I call you?
+- Yes I could be willing to do that. How good is the area, and what condition is this property in?
+- how much are you willing to negotiate?
+- Okay great, do you have any animals or smoke?
+- well, I checked out the AD and I really need some wireless headphones like this and just in my color! Can you tell me are they brand new or used? 
+- Does it come in their original packaging? 
+- Yes its brand new right?
+- Do you have a selection of colors or its just this one?
+- Does it work for any carrier?
+- What fabric is the upholstery? 
+- are you the original owner any accidents any major work on the car about how many miles is this the original paint ion car do you have the title 
+- how many miles on the 2009 fusion
+- Okay. My cat would have to stay with my mother. Are there any schools in the area?
+- Great. My daughters in elementary school but she'll be graduating soon. Are there any Jr. high schools in the area as well?
+- Great. Sometimes I like to soak in the tub as oppossed to just taking showers. Does the bathroom come with a bath tub?
+- Yes. I could come tomorrow. Would that be Okay?
+- I am well thanks. Can you tell me about your cell phone accessories?
+- How many of them are there?
+- Yes I am but I have some questions if that's okay?
+- Oh that's perfect, thank you for doing that.  When can we get started?
+- Can you tell me about the following?  Neighbors, condition of interior, condition of appliances?
+- It looks really beautiful. The rent price seems a bit high but, if utilities are included then it would be understandable! are utilities included?
+- oh wow! You guys blow your competitors out of the water! I will be by tonight to sign a lease. is that okay?
+- Looks to me like the item is kind of very old. How hold is the sewing machine?
+- How much does it weigh and how big is the sewing machine it can lift
+- How low can you go then. Can I pay 13.50. Seems to me its okay at the price. 
+- How are the schools
+- Will you allow me to have my cat
+- How long did you have it?
+- It would be great if you could bring it to me. Would I have to pay extra?
+- Yes I am. Is it in good condition?
+- Sounds good. Can I come by and take a look at it?
+- Can you knock off a couple bucks since I am driving there?
+- Yes I do. Are you the original owner?
+- How old is the loveseat?
+- I am very interested. This seems like a great offer. Is there anything wrong with the car at all?
+- Can I come by and take a look at it?
+- Great, can you lower the price at all?
+- Is the bookcase still available?
+- Can you tell me if there are scratches?
+- Great. Can I come by and see it today?
+- Are you flexible on the price?
+- Great. If I decide to buy, are you willing to deliver?
+- Is it used?
+- how old is it? 
+- and what color is it I cant see any picture here so just wondering?
+- Very well thanks! Can you tell me a little about the property?
+- Can the shelf support sound equipment?
+- How clean is it on the inside? Has it been recently detailed?
+- Nope. I live right across town. Then we have a deal? 
+- Yes. What else can you tell me about it?
+- How old is it?
+- Yes how many miles does it have? Are you the 1st owner?
+- How about the interior? Is it in great condition? does the radio/cd work?
+- I sure am, can you give me more specif details about the mileage?
+- are you the only owner that it has?
+- Awesome that sounds nice is the price negotiable?
+- Okay great. Is the Studio Furnished?
+- Yes Will you accept Cheque?
+- Nice apartment, although too expensive, can I ask you a couple of questions about it?
+- Thanks. This is a gated community? Are any playgrounds for kids nearby?
+- Yes sure. But I am really concerned about the price, any special offers?
+- I was hoping to save at least 100-200 on the rent from your asking price is this possible?
+- I am. Can you tell me if there are any defects?
+- Perfect. What pieces come in the set? 
+- I understand they have different sizes for these bikes? I'm on the short side, would it work for me?
+- I do see it has a lot of aftermarket additions...Would you at least be able to meet me in the middle between your listing price and my offer?
+- Yes I sure am! What can you tell me about it?
+- It's a unique looking piece, which is part of why I'm so interested. I've never seen one like it before. Has it ever been painted?
+- Yes I am! Can you tell me how many people it can sit?
+- Is the neighborhood nice?
+- Well I have a john boat and also some tools and I have some other things, is there anything in particular that you would want?
+- Great. I would like to come by and take a look at it. Can you lower the price at all?
+- Yes I am and this place looks awesome but over my budget. Can you work with me?
+- Yes, are utilities included and does it have washer and dryer hookups?
+- Awesome, how many miles does this baby have on it?
+- Wow, that's incredible. How firm is that price?
+- I see that, it looks great. What would you be willing to go down to?
+- I plan on staying in this area for quite awhile. What could you do for a 5 year lease with 2 months rent up front?
+- Is it in good shape?  And do you have any idea what the age recomendation is for this size?
+- I am! Would you be willing to go down if I signed a multi-year lease?
+- Its says fair condition, any scuffs or scratches in the wood?
+- Will the charger work on any phone? I have both a Samsung and an iPhone and it would be great if it worked on both
+- Yes, I was wondering if you accept pets as well?
+- Is the yard fenced by chance. i like to let my dogs run wild.
+- Why are you getting rid of it? Is it trashed?
+- For myself. Is there any major dents or scratches?
+- But what year did you buy them?
+- Awesome! I wanted to ask if you were willing to negotiate the price on the phone?
+- Can you tell me how many sq the apartment is?
+- Everything is great? and is it for adult or kids?
+- Any rust?
+- Great. Is it locked to a network?
+- How long have you had it for?
+- is there anything wrong with the truck?
+- when was the last service done?
+- Can I ask some questions first?
+- When was this unit builded?
+- How are the neighbors? Loud or rude?
+- How many bathrooms?
+- If I can give you that can you pay my first month of utilities?
+- Yes..  How many miles does this have on it?  Any problems?  Been up to date w/maintenance?  Does it come from a smoke free home?
+- Ok..  Anything wrong with the hardtop?
+- Good.  How is your day going?
+- I have a few questions for you.  First, what is the mileage?
+- sitting for 10 years must have really hurt the car.  I could use some parts, though.  What's the asking price?
+- Do you have a Iphone for sale?
+- What condition?
+- Is it unlocked?
+- Do you have certain days or times where people can come look at them?
+- Does it have any dents?  
+- I was factoring in the rust spots...how much do you think it will cost me to get that repaired?
+- Yes how old is it? How long have you had it?
+- And problems with it?
+- Yes how old is it? How long have you had it?
+- And problems with it?
+- yes he said he wanted an iphone for his birthday so I'm trying to see just how responsible he will be in taking care of it. Is the price negotiable for this phone?
+- Oh good. Good. Also, what size is this mirror? Any scratches or defects?
+- Ok great! Is anything wrong with it? 
+- How long have you owned it?
+- I am great and you? 
+- Any scratching or anything? Only 5 months old, may I ask why you're selling?
+- That would be awesome! I can actually pick it up tomorrow if that works?
+- Is it pet friendly 
+- Ok sounds good how far away is the mall?
+- how are the schools in that area?
+- how is the parking i have 3 cars
+- Yes, I am/ What condition is it in?
+- Ok great. Is anything wrong with it?
+- How long have you owned it for? The pictures look great.
+- I see in your ad it says that the chairs are weathered some but still functional, about how old are they?
+- And how old is it? 
+- and any scratches or anything visible?
+- Is it just the one bedroom? All I saw was the Master bedroom listed. 
+- is this still for sale
+- how fast does it go
+- Absolutely, can you tell me about it?
+- It seems nice, but a little old.  What are you asking for it?
+- Yes. Can you please provide additional information about this Mercedes. Do I need to do any additional repairs?
+- yes. I see you have a collection of them. Do they look good on the cellphone?
+- thats great. Do you have them in various colors? 
+- okay sounds good to me. They're new correct? Never used?
+- Yes I do. How are the insides of the car? Is the interior in good shape?
+- I am looking to add an additional car and this Benz looks like it would be good to have. How many miles does it have?
+- I am interested but I wanna know how old are these?
+- any stains or anything that makes it look used?
+- are utilities included?
+- Yes can you have pets?
+- Ok well I'm all good there.  Just a small dog.  Is that a garage I see in the picture? Is it extra for it?
+- I can do that.  When is it available?
+- Ok and you said it has the apple care, how much longer until it expires?
+- Ok, Would you be willing to negotiate? Does it have any other accessories besides the apple care warranty?
+- is it near restaurants and grocery store?
+- Are there issues I need to be aware of?
+- yes! How long has it been used?
+- does it ride smooth?
+- Are you willing to lower the price?
+- I see that you are selling an Ikea desk does it have any scratches?
+- what is the security deposit?
+- How would you rate the safety of the neighborhood?
+- When would I be able to move in?
+- What floor is the apartment on?
+- Is cable included in the rent?
+- How about the cushions? Are they in good shape? Do they have any smell?
+

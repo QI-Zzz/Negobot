@@ -1,0 +1,44 @@
+- well is there anyway you could allow me to bring my cat along? I know you said no pets but I don't want to get rid of him
+- Thank you so much you won't regret this!
+- then my price is not adjustable unfortunately.  
+- well you should have placed the add differently. I don't feel you open to offers then.
+- My credit would be excellent with no doubt.
+- I cannot do that at that price
+- That being the case I don't think I'm interested after all. I'm looking for something that will actually be in pretty good condition and that will be durable. I'm afraid your desk just isn't a good deal for me.
+- No, sorry. The snapped leg being glued back on really decided things for me and I'm going to have to decline that offer. Too bad.
+- Hmmm superlative... I'm not sure I would want to store a child underneath but I do need a bed...
+- That sounds great! I really want to buy this bike, but I don't think I can afford the full price. Any chance you can lower it a bit for me? I will give you homemade cookies in exchange.
+- I am coming to get because you said you do not deliver that's why I have to hire help because that is too much for me to do alone
+- no 152
+- no, that is just out of my price range
+- I understand...how much would you drop from that price if I pick up the item myself.  You said you would drop it off, but you didn't realize that I am about 800 miles away
+- i don't have it bub
+- Yes, but I would need to see it in person first, the picture doesn't show me enough for me to make a decesion rite now.
+- Okay I'll figure it out. I don't want to let this go so I'll take it!
+- oh, gotcha, I misread the statement. Would you consider negotiating the price? I love the phone, but not the price, hahahaha
+- And is that a hard stance on no pets? Just been shopping round and this place does look really nice..
+- Well I am not going to make an offer without some details!
+- I was thinking about buying it for my Nana, you know how old couches get a little soft and hard to get out of. Are you sure you couldn't deliver? It would be a little difficult for me to pay so much and still have to pick it up, I mean, it's a 3 year old couch.
+- Hmz, well we are worried about if you had a cat or dog, I'm mean it's not a big deal, but...
+- No, to high, the truck does not have any additions, it is a plain fleet work Truck and most likely doesn't even have power windows. 
+- oh why would they do that? thats not fair
+- Lol! that is very important. i want a car that get me anywhere i need to go. This is a nice car; however, you are asking for too much. you know, it is not a brand new BMW.
+- Ok, I don't think  Iwil lcoem across a deal like this again, so I accept.
+- Yeah, yeah, it's for my son, he's a real lunatic and smashes the bikes. I don't know what's up with that. He keeps jumping off them and letting them fly into shit?!
+- I do like the proximity to Whole Foods, but the unit doesn't have its own laundry room, I would have to share the on-site one.
+- Wow, thats not bad at all. Lets do it!
+- Oh okay, so I wanted to make an offer. I don't have a lot to spend, but my daughters birthday is coming up and I know this would make her so happy
+- Ok no worries, I'm mostly isnterested in it as an antique for my collection. 
+- No problem. I appreciate you taking the time to do that.
+- Cool. Where is the rust at on the bike? Want to make sure it's not is a serious place.
+- that's too much for me. I can't afford that
+- Okay that is a plus for me since I don't have to come all the way to pick it up! 
+- Oh I don't have any pets so that is no problem for me!
+- Nice :-) so no rusty bits or problems with chains or gears? I like why your're selling it, btw
+- Not yet which is why I can't pay too much until I have stable income.
+- I don't have a truck so I would need it delivered.
+- but im not looking to make money i need it to get to work otherwise i'll loose my job
+- The parts wouldn't be worth that much to me
+- Sorry sir. We won't be able to reach a deal. Good luck in your in search for a prospective buyer.
+- Not too bad of a deal, sure, that will work
+

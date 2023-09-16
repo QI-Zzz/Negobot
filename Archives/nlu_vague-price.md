@@ -1,0 +1,215 @@
+- what is yoru lowest price?
+- alright, looks like we are at an impasse. Juts too high a price for me.
+- If this is the lowest you can go I'll have to agree
+- what is your lowest you take?
+- Thank you for the information. However, the price is too high for me. can we work on it?
+- What's the lowest u can go
+- how much would you come down to for the price?
+- Well my son is a plumber and my daughter is a electrician and can provide repairs for your apartment at no cost if you're willing to go lower. My children are well behaved.
+- As much as I really need this 900 seems too high for me. 
+- that is too high cant you come lower
+- and that is too high for me
+- Is there a way we can make a deal to go lower please this is too perfect but out of my price range
+- Cool, are you willing to come down on the price some?
+- I see that it doesn't come with a saddle... would you be willing to come down on the price because of this...
+- That sounds great. The price is a little steep, would you be willing to come down a bit?
+- Its got a salvaged title, that price is way too high for a salvaged title. the only way id go that high is if you would throw in an more premium steering wheel and tires
+- Okay I could do that, would you be willing to come down on the price a little if I cover the gas?
+- I can see in the picture that there's some wear on the surface.  I was hoping to gift this to my daughter.  Would you be willing to come down in price it all since its condition isn't mint?
+- The asking price is a bit too high for me, is there anything you can throw in to make it a better deal ?
+- great, the price you are asking is very high for the amount of space, are you willing to come down on the rent?
+- Well, I'm interested, but the list price is too high.
+- Yeah, interested in the Prius.  I do see that it's had two owners, plus been in an accident, what's the lowest you're willing to go?
+- Oh, ok. I just started a new job so money is a little tight. Could you come down on the rent a little? I could mow the grass if you could discount the rent.
+- Cool, is your price fixed or can you come down some?  It's a little out of my price range/
+- That's just too high for my budget.  Can you come down any lower?
+- if i were to drive to you and pick up the car, would you be willing to come down a bit on the listed price?
+- Okay, that works for me. If I've got all cash would it be possible to come down a little on the price?
+- No I can't. Would you be willing to go lower?
+- Well I don't mind getting pedals for it.  Could you come down on the price then since I would have to buy them? 
+- It looks nice, whats the lowest you are willing to go on selling it?
+- Would you be willing to come down a bit on the price at all? If so what would you be comfortable with offering for it?
+- Awesome. Are you willing to come down on the price just a little?
+- I'm great! That's a very nice Victorian Dresser you have. What would be the lowest price you could sell it for?
+- The price is too too high for me. I can only afford a certain budget. 
+- But the price that's listed is way too high. Can we work on it?
+- Good but the price is way too high are you willing to go down? 
+- Great. The price is way too high for me. can we negotiate on that?
+- what would be your lowest price?
+- What would you be willing to come down to? 
+- Hey! Yeah, I've been needing a dining room table for the longest now. Is there anyway you'd be able to come down on the price?
+- Well that is great. Would you be willing to come down at all in the price?
+- hello there! whats your lowest amount?
+- I'm just not sure if I can do that. There is no way you are allowed to go lower?
+- You must be really busy, long time for your responses. Are you willing to come down in price?
+- Awesome! How much is the lowest you will go?
+- Good to know, I am wondering if you could come down in price? I am a student.
+- I saw that any chance you would come down in price?
+- Ok cool! What is the lowest you will go in price?
+- Hmmm. Well what is the lowest you can go?
+- I was looking at something similar but in a full size. Can you come down on the price? If the price is good, I can get different sheets etc.
+- This price is too high for me, perhaps you could go lower?
+- Could you go a bit lower than that?I can provide full transportation of this piece of furniture. In addition I would give your store the highest recommendation.
+- The price is way too high for me perhaps if you have some room for negotiation that would be great!
+- What is the lowest you would take?
+- That's too high for me. Can we maybe work on that ?
+- Oh I see. Would you be willing to come down on the price since the chairs need some repair?
+- What is the lowest you'll take?
+- I am on a budget. Anyway you can come down in the price?
+- What is the lowest amount you are willing to sell the desks for?
+- No, that is a bit out of my price range for a used bike.  Are you willing to go lower?
+- Yeah, the price a little too high though. 
+- Similar items online are going for 35000, so you're current price is just too high for me. What about 37500?
+- I am interested in them. However, since the warranty is outdated now, would you be willing to come down on the price?
+- Okay, great! Are you willing to come down on the price some? I am serious about buying this bike. However, like I said, it is a bit of a drive for me to come and get it.
+- good morning.  What is the height of the bike at the lowest seat level?
+- Yes. I think the photo of the unit is nice but I think the price is a little too high considering the lack of amenities. Would you be willing to negotiate a lower price? 
+- I don't think I can wing that, but would you come down if I picked up and paid in straight cash, no check or other nosense?
+- Yes I am interested in this hutch but I would like to now if you are willing to come down on the price?
+- I would suggest you put your items back in storage buddy because the ones I saw online have comments from verified sellers, your price is just too high 
+- I am but the price is a little too high
+- How firm are you in your asking price? Are you willing to come down a little? 
+- fair enough. do you think you could come down some in rent then?
+- The price is too high for such a small apartment in that area. Can you go down at all? 
+- Are you willing to come down on the price a little bit?
+- Would you be able to come down on the price at all?
+- Okay that's great. Would you be willing to come down on the price a little bit?
+- Anything else you can throw in, that's still too high.
+- Sorry that's too high. Is the glass in good condition? How old is it?
+- Ok. The price seems a bit high for a smaller hutch. Would you be willing to come down? 
+- I like the car. But I feel like the asking price is a bit steep. Could you come down to say, 10 grand?
+- That would be awesome. Would you be willing to come down a little on the price?
+- Are you willing to come down on the price at all?  What is you best price?
+- I like the lamp. But those older style bulbs put out a lot of heat and use a ton of electricity. It's gonna cost me some extra to get in converted over to normal bulbs. Can you come down on the price?
+- Would you be able to come down in cost?
+- What is the lowest you can go?
+- Great, how much can you reasonably come down to?
+- HI, I am really interested in your apartment at 1921 Francisco. I would like to talk about the rent.  The price is a little too high for my budget and it seems a bit higher than other apartments in that area. But, I really like the location. Are you willing to negotiate the rent a little?
+- Oh okay that's good. Could you come down on the price at all? I've seen some used ones going for a lot less.
+- I am, but I think that's a bit much for a used bike. Would you go lower?
+- The price is a little high for me?  Would you be willing to come down?
+- Yes and it is a fair price. But, would you be willing to come down a little bit on the price?
+- Yeah, I really can't do that. I need your rock bottom lowest price, that's just too much for it, or at least for me.
+- Yes, I'm very interested but the price is too high for my budget. Are there any issues with it? What't the best deal you can offer?
+- It might be a little too high in price for me. Is there any way that you can lower it?
+- Yea, I see the feature list is pretty loaded, but how old is that thing? I haven't seen a 720p screen in ages, everything, including the cheapo stuff from Walmart is like at least 1080p nowadays. Is there anyway you can come down on the price?
+- You can get much newer 70 inch TVs for that price, could you come down a little on it? 
+- That's super. I'm really hoping we can come down on the price a bit. This is a great place it's just a little out of my comfortable budget at the moment. I'd be stretching it at this price. Are you willing to come down on the price?
+- I am but the price is a little too high for me. Would you be willing to lower your price?
+- Wow, that is awesome. I am really interested in buying the bed, but the price is a little too high for me. What is the lowest you are willing to take?
+- My son would love this bike! Are you willing to come down on the price at all?
+- Very much, I think it is the perfect fit. The price is just a little bit too high for me.
+- Ok great. Do you still have the all the maintence records? Whats the lowest you can go? I'm on a bit of a budget.
+- My only issue is the area it's in has a high crime rate, can you come down on the price?
+- Sure I could come today to get them but can you come down on the price at all?
+- What is the lowest you will take for the set? 
+- It sounds great. It's more than I can afford though. Can you come down on the price?
+- That is a little steep for my current budget. Is there any chance you'd be able to come down a bit?
+- I am a single professional myself. I don't listen to loud music or party. I think I would fit in well here. Are you willing to come down some on the rent?
+- Hi there, if I would pick this bike up from your home, are you willing to go lower on the price?
+- thats too high for me plus it looks like the tires need to be replaced 
+- I do. I feel like that price is a bit too high, though. I don't suppose you can come down? 
+- Are you willing to come down a bit on the price?
+- Hi. Yes, I am. But I am on a budget. What is the lowest you can go on price?
+- Wow that sounds incredible, I am very excited, but the price is a little high for me, can you come down at all? 
+- Are you willing to negotiate on the price a bit? It is a bit too high for me.
+- That is still a bit high for a used bike and I can't really afford it for a new one. I also see the tire is cracked and that will have to be replaced.  Would you be able to come down on the price at all? If you could lower it I could come pick it up right away and pay cash.
+- Oh, I see, can you come down in the price?
+- I wasn't looking to pay such a high price for a car that's fifteen years old, wear and tear alone are going to cost me, are you sure you aren't willing to come down a bit?
+- I like it a lot, are you willing to come down on price?
+- Okay, Would you willing to come down a little in price?
+- I don't blame you. I can't imagine what the shipping costs would be. This is perfect for my son. Would you be willing to come down on the price a little?
+- Would you be willing to come down on the price? I can pick it up myself, so you would not have to pay for transport.
+- I like that it is not very old but at the same time there is no way to know how well it was maintained over that time or what kind of trails you took it on. For a used bike I'm afraid that is a bit out of my price range. Would you be willing to come down on the price at all if I were to come pick it up right away and pay cash?
+- Well that is nice, Are you willing to come down a little in the price?
+- that's still too high for me. what if I agree to furnish the place myself?
+- Cool. Are you willing to come down a little on the price?
+- Are you willing to come down on price?
+- That's too high for me. Would you be willing to go any lower. I can come pick it up right now.
+- That is too high for me, especially since all of the apartments near that area are almost half of that price
+- Nice. Could you come down on the price?
+- I am interested in your end table, however it seems kind of expensive given it is used. Can you come down a bit?
+- Are you willing to go lower on price
+- That's a great location. My budget is very limited however. Is there any way you could come down on the price?
+- Yes of course, exactly what I'm look for, what is the lowest you will accept?
+- It's also 15 years old. What is the absolute lowest price you'll take for it. 
+- I might be interested, but the price seems too high.
+- Sorry I don't mean to insult you. It does look like a nice bike. What's the lowest that you are willing to go on it?
+- If that is the lowest you can go then okay.
+- That seems a little high. Can you come down some?
+- Yes, what's the lowest you'd be willing to take for it?
+- Yes, it's quite beautiful, but it's a little expensive... Would you be willing to go lower?
+- Hi! Are you willing to come down some on the rent?  I have excellent references and can pay cash today if I like it?
+- I'm somewhat interested, but the price is too high
+- What's the lowest offer you can accept? In my opinion, the starting price is too high, I was expecting around 10k compared to other listings online for similar vehicles
+- Hi. Well, I was wondering if you could come down on the price. I can pay cash.
+- It is, I just don't have that much. Can you come down any?
+- I am interested. It is 2 years old though. Would you be willing to come down in the price?
+- Could we go lower? We are super tight on money but my daughter really needs a bike
+- Can you come down on the price a bit?
+- Okay, I would need to get it cleaned and repaired(if possible). Are you willing to come down on the price some considering I would have additional expenses to get it repaired and cleaned.
+- I am really interested in it and would be willing to meet today with cash in hand. Would you be willing to come down on the price?
+- That sounds great. But can you come down on the price tag a bit?
+- Sounds great. I always thought my flash was weak. I'd like to have this done but your price is too high
+- Nice. What is the lowest offer you can accept, I was hopring around 770-780$ cause I am not sure for the durability and quality.
+- That seems pretty high. Can you go lower?
+- yes i am what is the lowest you can offer it at if i pick it up and pay with cash
+- Hey I am interested in your bike. Would you be able to come down at all with the price?
+- okay, anyways I am interested but the price is way too high for me. Is there anything we can work out?
+- That's a little high. I'm not necessarily needing furnishings. Would you be willing to go lower if I provide my own furnishings?
+- I'm looking at a couple others that are less expensive, but I like the color of yours. Will you go lower if I pick it up?
+- I am interested but the price is way too high for me. Is there anyway we can work that out?
+- I worry about these old bikes, though. I don't want it to fall apart on her right after she gets it. Can you come down on the price at all?
+- What's the lowest you could go?
+- Oh okay, this sounds great, do you think you could go lower on the price though?
+- Oh that is great to know! If i pick the item up are you willing to come down in price?
+- Great. the price is too high for me. Are you willing to negotiate it?
+- Yes would you be willing to come down on the price at all?
+- Since it's got a little wear and tear would you be willing to come down on the price at all?
+- What is the lowest you would be willing to go on this? I have recently moved to this area and do not have any furniture at the moment. I have to start all over.
+- Understood. The only deterrent for me is that the back it cut out. Ill be putting it in an area where it is visible sideways. I have to reboard the back within the next day. Whats your lowest price?
+- Yes i am I would like to check what is the lowest you will accept
+- I sure am! unlike you, im currently  moving into a new place lol. Kind of on a budget at the moment. wondering what the lowest you would take would be.
+- That sounds great are you williing to come down on your price a little bit?
+- What would be the lowest price you could take? I could come pick up the bike myself so you wouldnt have to haul it to a meeting place or my location
+- Indeed I am! What is the lowest you'll accept?
+- Hello, i was looking to purchase your seats for sale. Would you be willing to go lower in price?
+- Yeah but its too high. Do you have any room for negotiation?
+- Would you be willing to come down on the price?
+- Those are great ideas. I am a little bit short of funds right now but I really would like to have this. Is there any way you could come down a few dollars if I pay in cash today?
+- Can you come down a bit on the price? It is a little too expensive for me
+- Excellent!  Are you willing to come down on the price at all?  I'd love to buy it, but the price is a bit high for me.  
+- Yes I am. Can you come down a bit on the asking price?
+- I think I will have to educate myself on this particular item but I have read that they are good to own. Are you willing to come down in price at all?
+- Still too much for me. If I pick it up or pay cash could you go lower?
+- Good, Thanks.  What is the lowest you will go for the set?
+- Well that's fixable.  What is the lowest you can offer for it?
+- What is the lowest you can go?
+- I see it's a 10 unit apartment. Would you be willing to come down on the price more if I can offer to do maintenance for the rest of the units?
+- This is out of my price range. I was hoping to get a better deal on something like this. Would you consider lowering the price? What is the lowest you can go. 
+- Sounds  nice. Would you come down on the price a bit. I was thinking more like 25$.
+- Nope. I gave you my highest price, and I'm not going higher, especially for a used television. Good day.
+- Would you be willing to come down on the price a bit?
+- That's great news!  What's the lowest that you are willing to go?
+- That's so cool I never heard of any clock like this.  I was hoping you would be able to come down on the price a little bit though, maybe I could trade you an item to make it more fair?
+- what is the lowest that you are willing to go?
+- Okay that's fine I am interested in it. Do you have any room for negotiation? The price is way too high for me pleas?
+- Is the price negotiable? Can you come down any on the the price?
+- Is the price negotiable? Can you come down any on the the price?
+- I know, the mileage is great which is why I really want it. However it is a 9 year old hybrid that has an aging battery that is very expensive to replace. What is your lowest acceptable price?
+- Yes I figured that was too low, that's what I was saying.  Is there anything good deal that you could offer to me?
+- I am interested in the 3 piece sofa set you have for sale. What is the lowest price you will take for it?
+- whats the lowest you would take
+- What's the lowest your willing to accept?
+- Yes I can see that. But I feel the price is too high foor a used item. Are you willing to go down a bit?> 
+- I'm also retiring myself which is why I'm wondering if you can come down on the price
+- I really like the area and the unit looks nice. Would you be willing to come down on price some? It is a bit high for my budget
+- Are you willing to go lower?
+- What's your lowest price?
+- okay sounds good to me. WHat about the price? Its way too high for me. Is there room for negotiation here?
+- what is the lowest you will go
+- I appreciate it but that's still a little too high. I can drive out and pick them up myself, I have a truck
+- Is it true there was a murder at this location? Would you be willing to go lower?
+- I see. Well I was hoping for 2 bathrooms but I like that it is newly remodeled. Would you be willing to come down a little on the price? It's way over my budget.
+- Yeah but the price is too high
+
