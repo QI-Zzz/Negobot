@@ -4,7 +4,7 @@ import openai
 
 class Bot:
     
-    openai.api_key = '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'
+    openai.api_key = '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'
 
     def __init__(self):
         
