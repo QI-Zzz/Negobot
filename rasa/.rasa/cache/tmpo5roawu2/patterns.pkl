@@ -1,6 +1,0 @@
-[
-  {
-    "name": "items",
-    "pattern": "(\\bswitch\\b|\\bcamera\\b|\\bvacuum\\b|\\bticket\\b|\\bbike\\b)"
-  }
-]
