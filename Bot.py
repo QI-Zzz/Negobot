@@ -1,9 +1,11 @@
 import re
 import random
 import openai
+import os
 
 class Bot:
     
+    # OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
     openai.api_key = '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'
 
     def __init__(self):

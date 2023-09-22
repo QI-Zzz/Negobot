@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 # from flask_cors import CORS
 from Bot import Bot
 from os import path
+import os
 from sqlalchemy import create_engine, func, insert
 from sqlalchemy.orm import Session
 from model import Base, Question, Conversation
@@ -26,18 +27,23 @@ bot = Bot()
 
 
 # Creat a database
-engine = create_engine("sqlite:///database.db",echo=True)
+# engine = create_engine("sqlite:///database.db",echo=True)
+DATABASE_URL = os.environ.get("DATABASE_URL")
+engine = create_engine(DATABASE_URL)
 connect = engine.connect()
 
-def creat_database(app):
-    if not path.exists('./database.db'):
-        Base.metadata.create_all(bind=engine)
-    print('Created Database!')
+# def creat_database(app):
+#     if not path.exists('./botdb.db'):
+#         Base.metadata.create_all(bind=engine)
+#     print('Created Database!')
+Base.metadata.create_all(engine)
         
 
 def get_user_id():
     with Session(engine) as dbsession:
         number = dbsession.query(func.max(Conversation.user_id)).scalar()
+        if number is None:
+            return 1
         return number + 1
 
 def store_message(user_id, order_turn, role, utterance):

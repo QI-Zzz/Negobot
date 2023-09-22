@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Project for Thesis User Experiments</title>
+    <style>
+        body {
+            background-color: #0b090a;
+            color: #d3d3d3;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #161a1d;
+            text-align: center;
+            padding: 20px;
+            font-size: 2em;
+            color: #e5383b;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .section {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #161a1d;
+            border-radius: 10px;
+        }
+        .hidden-contact {
+            display: none;
+        }
+        .show-contact:hover + .hidden-contact {
+            display: block;
+        }
+        .dynamic-text {
+            color: #ba181b;
+        }
+    </style>
+</head>
+<body>
+    <header>HOME</header>
+    <div class="content">
+        <div class="section">
+            <h2>1. Project Description</h2>
+            <p>Thank you for your interest in participating in our research experiment. The study is divided into two parts: a conversation with the chatbot and a questionnaire to gather feedback on your feelings towards the chatbot. The study is a part of master's thesis investigating the performance of the price bargain negotiation chatbot. As part of the study, conversation and questionnaire data may be collected for further analysis, but only with your permission. No personal information about you will be collected.</p>
+        </div>
+
+        <div class="section">
+            <h2>2. Consent Form</h2>
+            <p>By participating in this study, you agree to the collection of conversation and questionnaire data for further analysis. No personal information about you will be collected.</p>
+        </div>
+
+        <div class="section">
+            <h2>3. Dynamic Text</h2>
+            <div class="dynamic-text" id="dynamicText"></div>
+        </div>
+    </div>
+    <div class="show-contact">Click to show contact information</div>
+    <div class="hidden-contact">Email: example@email.com</div>
+
+    <script>
+        let text = "Welcome to online second-hand shop";
+        let i = 0;
+        let dynamicTextElement = document.getElementById("dynamicText");
+
+        function typeText() {
+            if (i < text.length) {
+                dynamicTextElement.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeText, 100);
+            }
+        }
+
+        typeText();
+    </script>
+</body>
+</html>
