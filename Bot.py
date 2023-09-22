@@ -290,69 +290,69 @@ class Bot:
     
     # def response(self, user_input, message_history):
 
-        intent = self.get_intent(user_input)
+    #     intent = self.get_intent(user_input)
 
-        user_price = self.price_extraction(user_input)
+    #     user_price = self.price_extraction(user_input)
 
-        user_conversation = self.user_conversation
+    #     user_conversation = self.user_conversation
 
-        product = self.product_extraction(user_conversation)
+    #     product = self.product_extraction(user_conversation)
 
-        # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
+    #     # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
 
-        if intent == self.counter_price:
+    #     if intent == self.counter_price:
 
-            prompt = intent(user_price, product)
+    #         prompt = intent(user_price, product)
         
-        # elif intent == self.dis_product_list:
+    #     # elif intent == self.dis_product_list:
         
-        #     prompt = intent(user_conversation)
+    #     #     prompt = intent(user_conversation)
 
-        else:
-            prompt = intent()
+    #     else:
+    #         prompt = intent()
 
-        message_history.append(
-        {
-                "role": "user", "content": "Your primary objective is to use different words from users in your responses.\
-                    Specifically, substitute their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
-                    For instance, if user uses buy, you should use purchase; if user use switch, you should use nintendo.\
-                    Do you understand?"
-            }
-        )
+    #     message_history.append(
+    #     {
+    #             "role": "user", "content": "Your primary objective is to use different words from users in your responses.\
+    #                 Specifically, substitute their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
+    #                 For instance, if user uses buy, you should use purchase; if user use switch, you should use nintendo.\
+    #                 Do you understand?"
+    #         }
+    #     )
 
-        message_history.append(
-            {
-                "role": "assistant", "content": "Yes, I understand and I will use different words from user's and would not ask for user delivery and payment information. "
-            }
-        )
+    #     message_history.append(
+    #         {
+    #             "role": "assistant", "content": "Yes, I understand and I will use different words from user's and would not ask for user delivery and payment information. "
+    #         }
+    #     )
 
-        message_history.append(
-            {"role": "user", "content": f'''{user_input}'''}
-        )
+    #     message_history.append(
+    #         {"role": "user", "content": f'''{user_input}'''}
+    #     )
 
-        message_history.append({"role": "assistant", "content": '''You respond in a short, within three sentences based on instruction:  ''' f'''{prompt}'''})
+    #     message_history.append({"role": "assistant", "content": '''You respond in a short, within three sentences based on instruction:  ''' f'''{prompt}'''})
 
 
-        # conversation.append(user[i])
+    #     # conversation.append(user[i])
 
-        completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", 
-            messages= message_history,
-            temperature=1,
-            max_tokens=256,
-            top_p=1,
-            frequency_penalty=0,
-            presence_penalty=0
-        )
-        reply_content = completion.choices[0].message.content
+    #     completion = openai.ChatCompletion.create(
+    #         model="gpt-3.5-turbo", 
+    #         messages= message_history,
+    #         temperature=1,
+    #         max_tokens=256,
+    #         top_p=1,
+    #         frequency_penalty=0,
+    #         presence_penalty=0
+    #     )
+    #     reply_content = completion.choices[0].message.content
 
-        message_history.append(
-            {"role": "assistant", "content": f'''{reply_content}''' }
-        )
+    #     message_history.append(
+    #         {"role": "assistant", "content": f'''{reply_content}''' }
+    #     )
 
-        # conversation.append(reply_content)
-        return reply_content
-        # print(completion)
+    #     # conversation.append(reply_content)
+    #     return reply_content
+    #     # print(completion)
 
 # message_history = [{"role": "system", "content": '''You are a NegotiationBot, an automated service to sell second-hand stuff and trading on Euro. \
 #                     You do not ask for user payment and delivery information.\
