@@ -29,14 +29,16 @@ bot = Bot()
 # Creat a database
 # engine = create_engine("sqlite:///database.db",echo=True)
 DATABASE_URL = os.environ.get("DATABASE_URL")
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
 engine = create_engine(DATABASE_URL)
 connect = engine.connect()
-
+Base.metadata.create_all(engine)
 # def creat_database(app):
 #     if not path.exists('./botdb.db'):
 #         Base.metadata.create_all(bind=engine)
 #     print('Created Database!')
-Base.metadata.create_all(engine)
+
         
 
 def get_user_id():
