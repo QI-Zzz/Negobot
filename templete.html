@@ -2,78 +2,102 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Chatbot Project for Thesis User Experiments</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Test Invitation</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
+
+        *{
+            font-family: 'Open Sans', sans-serif;
+        }
+
         body {
-            background-color: #0b090a;
-            color: #d3d3d3;
+            padding-top: 100px;
             font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #F0F0F0;
         }
+
         header {
-            background-color: #161a1d;
+            position:fixed;
+            top: 0; left: 0;
+            z-index: 1000;
+            color:#fff;
+            background:#213555;
+            font-size: medium;
             text-align: center;
-            padding: 20px;
-            font-size: 2em;
-            color: #e5383b;
+            box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+            width:100%;
+
         }
-        .content {
-            display: flex;
-            justify-content: space-between;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
             padding: 20px;
-        }
-        .section {
-            flex: 1;
-            margin: 10px;
-            padding: 20px;
-            background-color: #161a1d;
+            border: 1px solid #4F709C;
             border-radius: 10px;
+            background-color: #F0F0F0;
+            flex:1;
         }
-        .hidden-contact {
-            display: none;
+        h2 {
+            color: #213555;
         }
-        .show-contact:hover + .hidden-contact {
-            display: block;
+        p, li {
+            color: #213555;
+            font-size: 18px;
         }
-        .dynamic-text {
-            color: #ba181b;
+        ul {
+            list-style-type: none;
         }
+        .button {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #E5D283;
+            color: #213555;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+
     </style>
 </head>
 <body>
-    <header>HOME</header>
-    <div class="content">
-        <div class="section">
-            <h2>1. Project Description</h2>
-            <p>Thank you for your interest in participating in our research experiment. The study is divided into two parts: a conversation with the chatbot and a questionnaire to gather feedback on your feelings towards the chatbot. The study is a part of master's thesis investigating the performance of the price bargain negotiation chatbot. As part of the study, conversation and questionnaire data may be collected for further analysis, but only with your permission. No personal information about you will be collected.</p>
-        </div>
+    <header>
+        <h1>User Test Invitation</h1>
+    </header>
+    <div class="container">
+        <h2>Hey there! 😊</h2>
+        <p>First off, a big THANK YOU for considering being a part of our little research adventure.</p>
+        <p>Here’s what you’re in for:</p>
+        <li>
+            A fun chat with our chatbot. It's got some second-hand treasures. Maybe something catches your eye?
+        </li>  
+        <li>
+            A quick questionnaire about how you felt about the chatbot.
+        </li>
+        <p>Why are we doing this? It's all for a master’s thesis.</p>
+            
+        <h2>Time Needed</h2> 
+            Just a coffee break! About 10-15 minutes.
+        
+        <h2>Privacy Stuff</h2> 
+            Only anonymous data will be used for our research.
 
-        <div class="section">
-            <h2>2. Consent Form</h2>
-            <p>By participating in this study, you agree to the collection of conversation and questionnaire data for further analysis. No personal information about you will be collected.</p>
-        </div>
+        <h2>Questions? Concerns? </h2>    
+            If something feels off or you just have a question, drop an email to z.zhao-2@student.utwente.nl
+            
+        <h2>Ready to dive in? </h2> 
+            
+        <p>you're 18 or above and cool with joining us, just hit that "YES start now" button below.</p>
+        <p>Thanks for being awesome! 🌟</p>
+        
 
-        <div class="section">
-            <h2>3. Dynamic Text</h2>
-            <div class="dynamic-text" id="dynamicText"></div>
-        </div>
+        <a href="link_to_start_test" class="button">Start Now</a>
     </div>
-    <div class="show-contact">Click to show contact information</div>
-    <div class="hidden-contact">Email: example@email.com</div>
 
-    <script>
-        let text = "Welcome to online second-hand shop";
-        let i = 0;
-        let dynamicTextElement = document.getElementById("dynamicText");
 
-        function typeText() {
-            if (i < text.length) {
-                dynamicTextElement.innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeText, 100);
-            }
-        }
-
-        typeText();
-    </script>
 </body>
 </html>

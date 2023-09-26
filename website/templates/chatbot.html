@@ -18,24 +18,35 @@
 
     <body>
         <header>
-            <h1 >LET'S CHAT {{session['user_id']}}</h1>
+            <h1 >LET'S CHAT</h1>
         </header>
-        <section class="chatbot">
+        <div class="bot_container">
+        <p> Our chatbot's got some cool stuff up to sell. Why not ask and see if anything catches your eye? 😊 
+            Using full-length sentences makes for a smoother chat! Just a heads-up, our bot takes a moment to think. Thanks for hanging tight and being patient! 💬🐢</p>
+        <!-- <section class="chatbot"> -->
             <div class="chatbox">
-                <div class="chatbox__header">
-                    <img src="./static/chatbox-icon.svg">
-                </div>
+                <!-- <div class="messages__item messages__item--bot"> -->
+                <!-- <div class="boticon">
+                    <img src="static/bot.svg" width=40px>
+                </div> -->
+
                 <div class="chatbox__messages">
-                    <div></div>
+                   
                 </div>
                 <div class="chatbox__footer">
                     <input type="text" placeholder="Write a message...">
                     <button class="chatbox__send--footer send__button">Send</button>
-                    <a href="/questions"><button class="btn">Finish</a>
+                </div>
+                
+                <div>
+                    <p>Alrighty, once you're done chatting with the bot (deal or no deal), 
+                       Just click on the 'Go to Questionnaire' button for a quick feedback. 
+                       We'd really appreciate your thoughts! 🌟 Thanks a bunch!</p>
+                    <a href="/questions"><button class="gotoquestion">Go to Questionnaire</a>
                 </div>
             </div>
-
-        </section>
+        <!-- </section> -->
+        </div>
 
         <!-- custom js file link  -->
         <!-- <script>

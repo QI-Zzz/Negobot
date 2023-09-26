@@ -28,6 +28,7 @@ bot = Bot()
 
 # Creat a database
 # engine = create_engine("sqlite:///database.db",echo=True)
+# DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
 DATABASE_URL = os.environ.get("DATABASE_URL")
 if DATABASE_URL.startswith("postgres://"):
     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
@@ -56,9 +57,9 @@ def store_message(user_id, order_turn, role, utterance):
         dbsession.commit()
         return 
     
-def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6):
+def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18):
     with Session(engine) as dbsession:
-        answers_table = insert(Question).values(user_id=user_id,Q1=Q1,Q2=Q2,Q3=Q3,Q4=Q4,Q5=Q5,Q6=Q6)
+        answers_table = insert(Question).values(user_id=user_id,Q1=Q1,Q2=Q2,Q3=Q3,Q4=Q4,Q5=Q5,Q6=Q6,Q7=Q7,Q8=Q8,Q9=Q9,Q10=Q10,Q11=Q11,Q12=Q12,Q13=Q13,Q14=Q14,Q15=Q15,Q16=Q16,Q17=Q17,Q18=Q18)
         # complied = message_table.compile()
         dbsession.execute(answers_table)
         dbsession.commit()
@@ -89,7 +90,10 @@ def index_chatbot():
         store_message(session['user_id'], session['order_turn'], 'user', user_input)
         bot.user_conversation.append(user_input)
         # TODO: check if text is valid
-        response = bot.response(user_input, message_history)
+        if session['user_id'] % 2 == 0:
+            response = bot.response_align(user_input, message_history)
+        else: 
+            response = bot.response_unalign(user_input, message_history)
         message = {"answer": response}
         session['order_turn'] += 1
         store_message(session['user_id'], session['order_turn'], 'bot', response)
@@ -109,7 +113,19 @@ def index_questions():
         q4 = request.form.get('q4', type=int)
         q5 = request.form.get('q5', type=int)
         q6 = request.form.get('q6', type=int)
-        store_answers(session['user_id'],q1,q2,q3,q4,q5,q6)
+        q7 = request.form.get('q7', type=int)
+        q8 = request.form.get('q8', type=int)
+        q9 = request.form.get('q9', type=int)
+        q10 = request.form.get('q10', type=int)
+        q11 = request.form.get('q11', type=int)
+        q12 = request.form.get('q12', type=int)
+        q13 = request.form.get('q13', type=int)
+        q14 = request.form.get('q14', type=int)
+        q15 = request.form.get('q15', type=int)
+        q16 = request.form.get('q16', type=int)
+        q17 = request.form.get('q17', type=int)
+        q18 = request.form.get('q18', type=int)
+        store_answers(session['user_id'],q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18)
         return render_template('/thankyou.html')
     
 
