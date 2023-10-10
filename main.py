@@ -7,31 +7,48 @@ import os
 from sqlalchemy import create_engine, func, insert
 from sqlalchemy.orm import Session
 from model import Base, Question, Conversation
+import openai
+import spacy
+import tenacity
+from sqlalchemy.exc import IntegrityError
 
 
 
 # Creat a Flask Instance
 app = Flask(__name__, template_folder='website/templates', static_folder='website/static')
 app.config['SECRET_KEY'] = 'hfjdshfekotonoot'
+
 # CORS(app)
 
 # Create an instance of the Bot class
+# message_history = [{"role": "system", "content": '''You are a NegotiationBot, an automated service to sell second-hand stuff and trading on Euro. \
+#                     You do not ask for user any personal information such as payment and delivery information at any point.\
+#                     Your responses should be friendly, open to negotiation, and always be within 3 sentences, ending with a question whenever possible.\
+#                     The second-hand products include: \
+#                     </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
+#                     </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
+#                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
+#                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
+#                     '''}]
 message_history = [{"role": "system", "content": '''You are a NegotiationBot, an automated service to sell second-hand stuff and trading on Euro. \
-                    You do not ask for user payment and delivery information.\
-                    The product includes:
-                    Product name: Switch; Product model: OLED version; Product price: €200; Product description: blue and red, bought one year ago, small scratch on screen;
-                    Product name: Coffee machine: Product model: Nespresso Lattissima One; Product price: €350; Product description: white, bought two years ago, perfect condition;
-                    Product name: Vacuum cleaner: Product model: Philips Series 8000 XC8043/01; Product price: €300; Product description: black, bought one and half years ago, perfect condition;
-                    Product name: Camera: Product model: Fujifilm X-T5 Body; Product price: €800; Product description: silver, bought one and half year ago, perfect condition;'''}]
+                    You do not ask for user any personal information such as payment and delivery information at any point.\
+                    Your responses should be friendly, persuasive, and always be within 3 sentences.\
+                    Try not to start reponses with "let me know".\
+                    The second-hand products include: \
+                    </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
+                    </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
+                    </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
+                    </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
+                    '''}]
 bot = Bot()
 
 
 # Creat a database
 # engine = create_engine("sqlite:///database.db",echo=True)
-# DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
-DATABASE_URL = os.environ.get("DATABASE_URL")
-if DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
+DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
+# DATABASE_URL = os.environ.get("DATABASE_URL")
+# if DATABASE_URL.startswith("postgres://"):
+#     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
 engine = create_engine(DATABASE_URL)
 connect = engine.connect()
 Base.metadata.create_all(engine)
@@ -57,9 +74,9 @@ def store_message(user_id, order_turn, role, utterance):
         dbsession.commit()
         return 
     
-def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18):
+def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22):
     with Session(engine) as dbsession:
-        answers_table = insert(Question).values(user_id=user_id,Q1=Q1,Q2=Q2,Q3=Q3,Q4=Q4,Q5=Q5,Q6=Q6,Q7=Q7,Q8=Q8,Q9=Q9,Q10=Q10,Q11=Q11,Q12=Q12,Q13=Q13,Q14=Q14,Q15=Q15,Q16=Q16,Q17=Q17,Q18=Q18)
+        answers_table = insert(Question).values(user_id=user_id,Q1=Q1,Q2=Q2,Q3=Q3,Q4=Q4,Q5=Q5,Q6=Q6,Q7=Q7,Q8=Q8,Q9=Q9,Q10=Q10,Q11=Q11,Q12=Q12,Q13=Q13,Q14=Q14,Q15=Q15,Q16=Q16,Q17=Q17,Q18=Q18,Q19=Q19,Q20=Q20,Q21=Q21,Q22=Q22)
         # complied = message_table.compile()
         dbsession.execute(answers_table)
         dbsession.commit()
@@ -75,28 +92,116 @@ def index():
 # Creat a route of chatbot
 @app.route('/chatbot', methods=['GET', 'POST'])
 def index_chatbot():
+
     if request.method == 'GET':
         return render_template("chatbot.html")
     elif request.method == 'POST':
         # user_input = request.form['user_input']
         # return bot.response(user_input)
         # # return render_template('chatbot.html', msg=msg, bot_response=response)
-        if session.get('order_turn'):
+        # print("1")
+        if session.get('order_turn') != None:
+            # print("2")
+            # print(session.get('order_turn'))
+            # print(type(session.get('order_turn')))
             session['order_turn'] += 1
+            # print("3")
         else:
             session['order_turn']=0
-
+            # print("4")
         user_input = request.get_json().get("message")
-        store_message(session['user_id'], session['order_turn'], 'user', user_input)
+
+        # message = {"answer": response}
+
+        try:
+            store_message(session['user_id'], session['order_turn'], 'user', user_input)
+            try:
+                if session['user_id'] % 2 == 0:
+                    response = bot.response_align(user_input, message_history)         
+                else: 
+                    response = bot.response_unalign(user_input, message_history)
+            except openai.error.APIError as e:
+                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟APIError"
+                pass
+            except openai.error.APIConnectionError as e:
+                response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch! 🌟APIConnectionError"
+                pass
+            except openai.error.RateLimitError as e:
+                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RateLimitError"
+                pass
+            except openai.error.Timeout as e:
+                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟Timeout"
+                pass
+            except openai.error.InvalidRequestError as e:
+                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌InvalidRequestError"
+                pass
+            except openai.error.AuthenticationError as e:
+                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌AuthenticationError"
+                pass
+            except openai.error.ServiceUnavailableError as e:
+                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌ServiceUnavailableError"
+                pass
+            except tenacity.RetryError as e:
+                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RetryError"
+                pass
+            except Exception as e:
+                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌Internal error"
+                pass
+        except IntegrityError as e:
+            # with Session(engine) as dbsession:
+            #     dbsession.rollback()
+            response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟APIErrorIntegrityError"
+            
+            # message = {"answer": response}
+            
+
+    
         bot.user_conversation.append(user_input)
         # TODO: check if text is valid
-        if session['user_id'] % 2 == 0:
-            response = bot.response_align(user_input, message_history)
-        else: 
-            response = bot.response_unalign(user_input, message_history)
+        # try:
+        #     if session['user_id'] % 2 == 0:
+        #         response = bot.response_align(user_input, message_history)         
+        #     else: 
+        #         response = bot.response_unalign(user_input, message_history)
+        # except openai.error.APIError as e:
+        #     response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟APIError"
+        #     pass
+        # except openai.error.APIConnectionError as e:
+        #     response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch! 🌟APIConnectionError"
+        #     pass
+        # except openai.error.RateLimitError as e:
+        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RateLimitError"
+        #     pass
+        # except openai.error.Timeout as e:
+        #     response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟Timeout"
+        #     pass
+        # except openai.error.InvalidRequestError as e:
+        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌InvalidRequestError"
+        #     pass
+        # except openai.error.AuthenticationError as e:
+        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌AuthenticationError"
+        #     pass
+        # except openai.error.ServiceUnavailableError as e:
+        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌ServiceUnavailableError"
+        #     pass
+        # except tenacity.RetryError as e:
+        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RetryError"
+        #     pass
+        # except Exception as e:
+        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌Internal error"
+        #     pass
+
+
+
         message = {"answer": response}
         session['order_turn'] += 1
+        # try:
         store_message(session['user_id'], session['order_turn'], 'bot', response)
+        # except IntegrityError as e:
+            # with Session(engine) as dbsession:
+            #     dbsession.rollback()
+            # response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌IntegrityError"
+        # message = {"answer": response}
         return jsonify(message)
     
 
@@ -125,7 +230,11 @@ def index_questions():
         q16 = request.form.get('q16', type=int)
         q17 = request.form.get('q17', type=int)
         q18 = request.form.get('q18', type=int)
-        store_answers(session['user_id'],q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18)
+        q19 = request.form.get('q19', type=int)
+        q20 = request.form.get('q20', type=int)
+        q21 = request.form.get('q21', type=int)
+        q22 = request.form.get('q22', type=int)
+        store_answers(session['user_id'],q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22)
         return render_template('/thankyou.html')
     
 

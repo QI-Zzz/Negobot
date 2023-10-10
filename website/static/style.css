@@ -15,7 +15,7 @@ header {
     z-index: 1000;
     color:#fff;
     background:#213555;
-    font-size: medium;
+    font-size: 18px;
     text-align: center;
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
     width:100%;
@@ -31,6 +31,7 @@ body {
 }
 h2 {
     color: #213555;
+    font-size: 18px;
 }
 p, li {
     color: #213555;
@@ -43,7 +44,7 @@ ul {
 
 .home_button{
     display: inline-block;
-    padding: 10px 15px;
+    padding: 8px 12px;
     background-color: #E5D283;
     color: #213555;
     text-decoration: none;
@@ -53,7 +54,8 @@ ul {
 }
 .home_container {
     max-width: 800px;
-    margin: 0 auto;
+    
+    margin: auto auto;
     padding: 20px;
     border: 1px solid #4F709C;
     border-radius: 10px;
@@ -218,25 +220,10 @@ ul {
 } */
 
 /* questions page */
-.question label{
-    color: #213555;
-    font-size: 20px;
-    text-align: center;
-    background-color:#B8B8B8 ;
-    font-weight: bold;
-    margin-top: 15px;
+.form-page {
+    display: none;
 }
-
-.question .options{
-    color: #213555;
-    font-size: 18px;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5px;
-    margin-top: 10px;
-}
-
-.question {
+.form-page {
     display: flex; 
     flex-direction: column; 
     max-width: 1000px;
@@ -248,6 +235,27 @@ ul {
     flex: auto;
 
 }
+.form-page label{
+    color: #213555;
+    font-size: 16px;
+    text-align: center;
+    background-color:#B8B8B8 ;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.form-page .options{
+    color: #213555;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    margin-top: 10px;
+}
+
+
+
+
 
 .submit_button {
     /* display: inline-block; */
@@ -256,41 +264,86 @@ ul {
     color: #213555;
     /* text-decoration: none; */
     border-radius: 5px;
-    margin-top: 20px;
     font-weight: bold;
-    display:flex;
-    flex-direction:column;
-    margin-top: 20px;
-    margin-left:1350px;
-    /* margin-block-end: revert; */
-    /* margin: 0 auto; */
-    border-radius: 10px;
-    flex:1;
-
 }
 
 
 
 
-@media (max-width:768px){
+/* phone size */
+@media (max-width: 500px){
 
     html{
-        font-size :55%
-    }
-
-}
-
-@media (max-width:500px){
-
-    html{
-        font-size :50%
+        font-size :70%
     }
 
     header{
-        display: flex;
+        font-size: 20%;
+    }
+    h2{
+        font-size: 70%;
+    }
+    p, li{
+        font-size: 70%;
+    }
+
+    .form-page .options{
+        flex-direction: column; /* stack options vertically */
         align-items: center;
-        justify-content: space-between;
-        padding:0 1rem;
+        font-size: 1.2rem; /* further increase font size for options */
+    }
+    /* .home_container {
+        padding: 12px;
+    } */
+    body{
+        padding-top: 100px;
+    }
+}
+
+/* tablet */
+@media (max-width: 800px){
+
+    html{
+        font-size :80%
+    }
+
+    header{
+        font-size: 80%;
+    }
+    h2{
+        font-size: 80%;
+    }
+    p, li{
+        font-size: 80%;
+    }
+
+    .form-page .options{
+        font-size: 1.5rem; /* further increase font size for options */
+        flex-direction: column; /* stack options vertically */
+        align-items: center;
+    }
+
+}
+
+/* laptop */
+@media (max-width: 1200px){
+
+    html{
+        font-size :90%
+    }
+
+    header{
+        font-size: 90%;
+    }
+    h2{
+        font-size: 90%;
+    }
+    p, li{
+        font-size: 90%;
+    }
+
+    .form-page .options{
+        font-size: 1.5rem; /* further increase font size for options */
     }
 
 }

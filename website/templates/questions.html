@@ -13,16 +13,15 @@
 
         <!-- custom css file -->
         <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
-      
+        
     </head>
 
     <body>
         <header>
-            <h1>JUST FEW QUESTIONS</h1>
+            <h1>JUST A FEW QUESTIONS</h1>
         </header>
-        <section class="questions">
-            <form action="/questions", method="POST">
-                <div class="question">
+            <form class ="questions" action="/questions", method="POST">
+                <div class="form-page" id="page1">
                     <label>This chatbot provides sufficient information.</label>
                     <div class="options">
                         <input type="radio" name="q1" value="1" required>Strongly Disagree
@@ -33,8 +32,7 @@
                         <input type="radio" name="q1" value="6" required>Agree
                         <input type="radio" name="q1" value="7" required>Strongly Agree
                     </div>
-                </div>
-                <div class="question">
+
                     <label>Through this chatbot, I get the information I need on time.</label>
                     <div class="options">
                         <input type="radio" name="q2" value="1" required>Strongly Disagree
@@ -45,8 +43,7 @@
                         <input type="radio" name="q2" value="6" required>Agree
                         <input type="radio" name="q2" value="7" required>Strongly Agree
                     </div>
-                </div>
-                <div class="question">
+
                     <label>Information provided by this chatbot is in a useful format.</label>
                     <div class="options">
                         <input type="radio" name="q3" value="1" required>Strongly Disagree
@@ -57,8 +54,7 @@
                         <input type="radio" name="q3" value="6" required>Agree
                         <input type="radio" name="q3" value="7" required>Strongly Agree
                     </div>
-                </div>
-                <div class="question">
+   
                     <label>Information provided by this chatbot is clear.</label>
                     <div class="options">
                         <input type="radio" name="q4" value="1" required>Strongly Disagree
@@ -69,8 +65,7 @@
                         <input type="radio" name="q4" value="6" required>Agree
                         <input type="radio" name="q4" value="7" required>Strongly Agree
                     </div>
-                </div>
-                <div class="question">
+
                     <label>Information provided by this chatbot is accurate.</label>
                     <div class="options">
                         <input type="radio" name="q5" value="1" required>Strongly Disagree
@@ -81,9 +76,7 @@
                         <input type="radio" name="q5" value="6" required>Agree
                         <input type="radio" name="q5" value="7" required>Strongly Agree
                     </div>
-                </div>
 
-                <div class="question">
                     <label>Information provided by this chatbot is reliable.</label>
                     <div class="options">
                         <input type="radio" name="q6" value="1" required>Strongly Disagree
@@ -94,9 +87,7 @@
                         <input type="radio" name="q6" value="6" required>Agree
                         <input type="radio" name="q6" value="7" required>Strongly Agree
                     </div>
-                </div>                
-                
-                <div class="question">
+
                     <label>I was absorbed in the conversation with the chatbot.</label>
                     <div class="options">
                         <input type="radio" name="q7" value="1" required>Strongly Disagree
@@ -107,10 +98,12 @@
                         <input type="radio" name="q7" value="6" required>Agree
                         <input type="radio" name="q7" value="7" required>Strongly Agree
                     </div>
+                    <button type="button" class='submit_button' onclick="navigate(-1)">Previous</button>
+                    <button type="button" class='submit_button' onclick="navigate(1)">Next</button>
                 </div>
 
-                <div class="question">
-                    <label>I enjoy a conversation with the chatbot</label>
+                <div class="form-page" id="page2" style="display:none;">
+                    <label>I enjoyed the conversation with the chatbot</label>
                     <div class="options">
                         <input type="radio" name="q8" value="1" required>Strongly Disagree
                         <input type="radio" name="q8" value="2" required>Disagree
@@ -120,10 +113,8 @@
                         <input type="radio" name="q8" value="6" required>Agree
                         <input type="radio" name="q8" value="7" required>Strongly Agree
                     </div>
-                </div>
 
-                <div class="question">
-                    <label>It is fun and pleasant to share a conversation with the chatbot. </label>
+                    <label>It was fun and pleasant to have a conversation with the chatbot. </label>
                     <div class="options">
                         <input type="radio" name="q9" value="1" required>Strongly Disagree
                         <input type="radio" name="q9" value="2" required>Disagree
@@ -133,10 +124,8 @@
                         <input type="radio" name="q9" value="6" required>Agree
                         <input type="radio" name="q9" value="7" required>Strongly Agree
                     </div>
-                </div>
 
-                <div class="question">
-                    <label>The conversation with the chatbot is exciting.</label>
+                    <label>The conversation with the chatbot was exciting.</label>
                     <div class="options">
                         <input type="radio" name="q10" value="1" required>Strongly Disagree
                         <input type="radio" name="q10" value="2" required>Disagree
@@ -146,10 +135,8 @@
                         <input type="radio" name="q10" value="6" required>Agree
                         <input type="radio" name="q10" value="7" required>Strongly Agree
                     </div>
-                </div>
-                
-                <div class="question">
-                    <label>My interaction with the chatbot is clear and understandable.</label>
+
+                    <label>The chatbot has a modern-looking interface.</label>
                     <div class="options">
                         <input type="radio" name="q11" value="1" required>Strongly Disagree
                         <input type="radio" name="q11" value="2" required>Disagree
@@ -159,10 +146,8 @@
                         <input type="radio" name="q11" value="6" required>Agree
                         <input type="radio" name="q11" value="7" required>Strongly Agree
                     </div>
-                </div>
-                
-                <div class="question">
-                    <label>Interaction with the chatbot does not require a lot of my mental effort.</label>
+
+                    <label> The chatbot gave me a prompt response.</label>
                     <div class="options">
                         <input type="radio" name="q12" value="1" required>Strongly Disagree
                         <input type="radio" name="q12" value="2" required>Disagree
@@ -172,10 +157,8 @@
                         <input type="radio" name="q12" value="6" required>Agree
                         <input type="radio" name="q12" value="7" required>Strongly Agree
                     </div>
-                </div>
-                
-                <div class="question">
-                    <label>I find the chatbot to be easy to use.</label>
+
+                    <label>The chatbot has visually appealing materials.</label>
                     <div class="options">
                         <input type="radio" name="q13" value="1" required>Strongly Disagree
                         <input type="radio" name="q13" value="2" required>Disagree
@@ -185,10 +168,8 @@
                         <input type="radio" name="q13" value="6" required>Agree
                         <input type="radio" name="q13" value="7" required>Strongly Agree
                     </div>
-                </div>
-                
-                <div class="question">
-                    <label>I have faith in what the chatbot is telling me.</label>
+
+                    <label> The chatbot gave me individual attention.</label>
                     <div class="options">
                         <input type="radio" name="q14" value="1" required>Strongly Disagree
                         <input type="radio" name="q14" value="2" required>Disagree
@@ -198,11 +179,8 @@
                         <input type="radio" name="q14" value="6" required>Agree
                         <input type="radio" name="q14" value="7" required>Strongly Agree
                     </div>
-                </div>
 
-                
-                <div class="question">
-                    <label>The chatbot is honest.</label>
+                    <label>I have faith in what the chatbot is telling me.</label>
                     <div class="options">
                         <input type="radio" name="q15" value="1" required>Strongly Disagree
                         <input type="radio" name="q15" value="2" required>Disagree
@@ -212,9 +190,13 @@
                         <input type="radio" name="q15" value="6" required>Agree
                         <input type="radio" name="q15" value="7" required>Strongly Agree
                     </div>
+                <button type="button" class='submit_button' onclick="navigate(-1)">Previous</button>
+                <button type="button" class='submit_button' onclick="navigate(1)">Next</button>
                 </div>
-                <div class="question">
-                    <label>The chatbot is trustworthy.</label>
+
+                
+                <div class="form-page" id="page3" style="display:none;">
+                    <label>The chatbot is honest.</label>
                     <div class="options">
                         <input type="radio" name="q16" value="1" required>Strongly Disagree
                         <input type="radio" name="q16" value="2" required>Disagree
@@ -224,11 +206,8 @@
                         <input type="radio" name="q16" value="6" required>Agree
                         <input type="radio" name="q16" value="7" required>Strongly Agree
                     </div>
-                </div>
 
-                
-                <div class="question">
-                    <label>I can trust the information provided by the chatbot</label>
+                    <label>The chatbot is trustworthy.</label>
                     <div class="options">
                         <input type="radio" name="q17" value="1" required>Strongly Disagree
                         <input type="radio" name="q17" value="2" required>Disagree
@@ -238,10 +217,8 @@
                         <input type="radio" name="q17" value="6" required>Agree
                         <input type="radio" name="q17" value="7" required>Strongly Agree
                     </div>
-                </div>
-                
-                <div class="question">
-                    <label>Overall, I am satisfaced with the chatbot.</label>
+
+                    <label>I can trust the information provided by the chatbot</label>
                     <div class="options">
                         <input type="radio" name="q18" value="1" required>Strongly Disagree
                         <input type="radio" name="q18" value="2" required>Disagree
@@ -251,17 +228,99 @@
                         <input type="radio" name="q18" value="6" required>Agree
                         <input type="radio" name="q18" value="7" required>Strongly Agree
                     </div>
-                </div>
 
-                
-                <button class="submit_button">Submit</a>
-        </section>
+                    <label>My overall experience of chatbot was very satisfactory.</label>
+                    <div class="options">
+                        <input type="radio" name="q19" value="1" required>Strongly Disagree
+                        <input type="radio" name="q19" value="2" required>Disagree
+                        <input type="radio" name="q19" value="3" required>Somewhat Disagree
+                        <input type="radio" name="q19" value="4" required>Neutral
+                        <input type="radio" name="q19" value="5" required>Somewhat Agree
+                        <input type="radio" name="q19" value="6" required>Agree
+                        <input type="radio" name="q19" value="7" required>Strongly Agree
+                    </div>
 
-        <!-- jquery cdn link  -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+                    <label>My overall experience of chatbot was very pleased.</label>
+                    <div class="options">
+                        <input type="radio" name="q20" value="1" required>Strongly Disagree
+                        <input type="radio" name="q20" value="2" required>Disagree
+                        <input type="radio" name="q20" value="3" required>Somewhat Disagree
+                        <input type="radio" name="q20" value="4" required>Neutral
+                        <input type="radio" name="q20" value="5" required>Somewhat Agree
+                        <input type="radio" name="q20" value="6" required>Agree
+                        <input type="radio" name="q20" value="7" required>Strongly Agree
+                    </div>
 
-        <!-- custom js file link  -->
-        <!-- <script src="/script.js"></script>  -->
+                    <label>My overall experience of chatbot was very contented.</label>
+                    <div class="options">
+                        <input type="radio" name="q21" value="1" required>Strongly Disagree
+                        <input type="radio" name="q21" value="2" required>Disagree
+                        <input type="radio" name="q21" value="3" required>Somewhat Disagree
+                        <input type="radio" name="q21" value="4" required>Neutral
+                        <input type="radio" name="q21" value="5" required>Somewhat Agree
+                        <input type="radio" name="q21" value="6" required>Agree
+                        <input type="radio" name="q21" value="7" required>Strongly Agree
+                    </div>
+
+                    <label>My overall experience of chatbot was absolutely delightful.</label>
+                    <div class="options">
+                        <input type="radio" name="q22" value="1" required>Strongly Disagree
+                        <input type="radio" name="q22" value="2" required>Disagree
+                        <input type="radio" name="q22" value="3" required>Somewhat Disagree
+                        <input type="radio" name="q22" value="4" required>Neutral
+                        <input type="radio" name="q22" value="5" required>Somewhat Agree
+                        <input type="radio" name="q22" value="6" required>Agree
+                        <input type="radio" name="q22" value="7" required>Strongly Agree
+                    </div>
+              
+                    <button type="button" class="submit_button" onclick="navigate(-1)">Previous</button>
+                    <button type="submit" class="submit_button">Submit</button>
+                    </div>
+                </form>
+
+
+                <script>
+                    let currentPage = 1;
+        
+                    function navigate(offset) {
+                        if (offset > 0 && !isFormFilled(currentPage)) {
+                            alert('Please answer all questions before proceeding.');
+                            return;
+                        }
+                        // Hide the current page
+                        document.getElementById('page' + currentPage).style.display = 'none';
+        
+                        // Update the current page number
+                        currentPage += offset;
+        
+                        // Show the new page
+                        document.getElementById('page' + currentPage).style.display = 'flex';
+                    }
+
+                    function isFormFilled(pageNumber) {
+                        // Get all radio buttons on the current page
+                        const radioButtons = document.querySelectorAll('#page' + pageNumber + ' input[type="radio"]');
+                        
+                        // Check if at least one radio button is checked for each question
+                        let currentName = '';
+                        let isOneChecked = false;
+                        for (const radioButton of radioButtons) {
+                            if (radioButton.name !== currentName) {
+                                // When we encounter a new question name, check if at least one button was checked for the previous question
+                                if (currentName !== '' && !isOneChecked) {
+                                    return false;  // A question was not answered
+                                }
+                                // Update current question name and reset the check flag
+                                currentName = radioButton.name;
+                                isOneChecked = false;
+                            }
+                            // Update the check flag if a checked radio button is found
+                            isOneChecked |= radioButton.checked;
+                        }
+                        // Check the last group of radio buttons
+                        return isOneChecked;
+                    }
+                </script>
     </body>
 
 </html>

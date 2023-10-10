@@ -17,11 +17,11 @@ class Chatbot{
 
         sendButton.addEventListener("click", ()=> this.onSendButton(chat))
 
-        const node = chat.querySelector('user_input').addEventListener('keypress', ({key}) =>{
-            if (key.code === 'Enter'){
-                this.onSendButton(chat)
-            }
-        })
+        // const node = chat.querySelector('user_input').addEventListener('keypress', ({key}) =>{
+        //     if (key.code === 'Enter'){
+        //         this.onSendButton(chat)
+        //     }
+        // })
   
         // node.addEventListener('keydown', ({key}) =>{
         //     if (key.code === 'Enter'){

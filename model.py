@@ -44,5 +44,9 @@ class Question(Base):
     Q16: Mapped[int] = mapped_column(Integer, nullable=False)
     Q17: Mapped[int] = mapped_column(Integer, nullable=False)
     Q18: Mapped[int] = mapped_column(Integer, nullable=False)
+    Q19: Mapped[int] = mapped_column(Integer, nullable=False)
+    Q20: Mapped[int] = mapped_column(Integer, nullable=False)
+    Q21: Mapped[int] = mapped_column(Integer, nullable=False)
+    Q22: Mapped[int] = mapped_column(Integer, nullable=False)
 
     # conversation: Mapped[List['Conversation',]] = relationship(back_populates='user')
