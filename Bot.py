@@ -10,8 +10,8 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
-
-class Bot:
+NER = spacy.load("en_core_web_sm")
+class Bot():
 
     OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
     # openai.api_key = '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'
@@ -37,7 +37,8 @@ class Bot:
         self.counter_attempts = 0
         self.user_conversation = []
         self.product_mentioned = ""
-        self.NER = spacy.load("en_core_web_sm")
+        self.turn = 0
+        self.NER = NER
         # self.products_mentioned =str
 
     def get_intent(self, text):
@@ -128,8 +129,13 @@ class Bot:
         processed_text = self.NER(text)
         noun_phrases = [chunk.text for chunk in processed_text.noun_chunks]
         joined_text = " ".join(noun_phrases)
-        extracted_products = process.extract(joined_text, products, limit=4, scorer=fuzz.partial_ratio)
-        mapped_products = []
+
+        if len(text)>14:
+            extracted_products = process.extract(joined_text, products, limit=4, scorer=fuzz.partial_ratio)
+            mapped_products = []
+        else:
+            extracted_products = process.extract(text, products, limit=4, scorer=fuzz.partial_ratio)
+            mapped_products = []
         # for product, score in extracted_products:
         for index in extracted_products:
             # if score > 60:  # Adjust the threshold as per your requirement
@@ -157,7 +163,7 @@ class Bot:
 
     def product_list(self):
 
-        return "Only provide selling product type and price and ask users which one want to buy."
+        return "Only provide selling <Product><Type> and <Price> and ask users which one want to buy."
     
 
     def greet(self):
@@ -165,11 +171,11 @@ class Bot:
         return "Greet the user."
 
     def thanks(self):
-        return "Only thanks to user for reaching the deal"
+        return "Thanks to user for reaching the deal and wish they have a great day."
 
     def dis_product_list(self):
         self.counter_attempts = 0 
-        return "Reject user offer and provide product name and price again."
+        return "Reject user offer and provide product type and price again."
 
     def counter_price(self, user_price, product):
   
@@ -183,17 +189,30 @@ class Bot:
             #     return f"Apology for only selling one product at one time and ask the user reinput"
 
             if self.counter_attempts == 1:
+                if user_price !=0:
+                    if user_price >= self.listed_price[product]:
 
-                if user_price >= self.listed_price[product]:
+                        return f"Agree with user's deal"
+                    
+                    else:
 
-                    return f"Agree with user's deal"
-                
+                        # return f"Insisting on the original price of {self.listed_price[product]}."
+                        if  self.listed_price[product]*0.98 < user_price < self.listed_price[product]:
+                        
+                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]))
+
+                            return f"Countering with a price of {self.price_offer}."
+                        
+                        elif user_price <=  self.listed_price[product]*0.98:
+                            
+                            self.price_offer = int(random.uniform(self.listed_price[product]*0.98, self.listed_price[product]))
+
+                            return f"Countering with a price of {self.price_offer}."
                 else:
-
-                    return f"Insisting on the original price of {self.listed_price[product]}."
+                    return f"Ask the user offer a price."    
                 
             
-            elif self.counter_attempts == 2:
+            if self.counter_attempts == 2:
 
                 if user_price != 0:
 
@@ -315,15 +334,15 @@ class Bot:
             
 
     def infor(self):
-        return "Provide product description that user asked about and ask the user whether like game, coffee, photography, music based on the product"
+        return "Provide product description and ask the user: whether they like games if they ask switch; whether they like coffee if they ask coffee machine; whether they enjoy music if they ask piano; whether they are into photography if they ask camera"
 
     def goodbye(self):
-        return "Goodbye the user"
+        return "Say goodbye to user"
         
     def open_conversation(self):
-        return "Generate a response based on previous conversation"
+        return "Generate a response based on previous conversation and lead the conversation back to selling product."
 
-    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(4))
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
     def response_align(self, user_input, message_history):
 
         intent = self.get_intent(user_input)
@@ -360,11 +379,18 @@ class Bot:
 
         if intent == self.counter_price:
 
-            prompt = intent(user_price, self.product_mentioned)
+            if self.product_mentioned != '':
+
+                prompt = intent(user_price, self.product_mentioned)
+
+            else:
+                prompt = "Apology for not sure which product the user talked about and ask the user reinput."
         
         # elif intent == self.product_list:
             
         #     prompt = intent(product)
+ 
+
         else:
             prompt = intent()
 
@@ -378,6 +404,7 @@ class Bot:
                 "role": "user", "content": "Your primary objective is to closely mimic user's choice of words in your responses.\
                     Specifically, mirror their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
                     For instance, if user uses verb buy, you should use verb buy too; if user use noun switch, you should use noun switch too.\
+                    Also in any point, dont ask user personal information.\
                     Do you understand?"
 
             }
@@ -385,7 +412,7 @@ class Bot:
 
         message_history.append(
             {
-                "role": "assistant", "content": "Yes, I understand and I will try to use the same words as user's."
+                "role": "assistant", "content": "Yes, I understand and I will try to use the same words as user's and would not ask for user any personal information."
             }
         )
         message_history.append(
@@ -408,6 +435,11 @@ class Bot:
         )
         reply_content = completion.choices[0].message.content
 
+        index_to_del = [1,2,4]
+        for index in sorted(index_to_del, reverse=True):
+            del message_history[index+2*self.turn]
+        self.turn += 1
+
         message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
         )
@@ -415,7 +447,7 @@ class Bot:
         # conversation.append(reply_content)
         return reply_content
  
-    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(4))
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
     def response_unalign(self, user_input, message_history):
 
         intent = self.get_intent(user_input)
@@ -428,6 +460,7 @@ class Bot:
         # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
         
         product_utterance = self.product_extraction(user_input)
+        
         if product_utterance:
 
             if len(product_utterance) > 1:
@@ -438,16 +471,29 @@ class Bot:
             else :
                 # self.products_mentioned.append(product_utterance)
                 product = product_utterance[0]
+                
                 if product != "None":
                     self.product_mentioned = product
-
+                    self.counter_attempts =0
+        
+        
+        # if intent == self.counter_price:
+        #     print(self.product_mentioned)
+        #     prompt = intent(user_price, self.product_mentioned)
         if intent == self.counter_price:
 
-            prompt = intent(user_price, self.product_mentioned)
-        
+            if self.product_mentioned != '':
+
+                prompt = intent(user_price, self.product_mentioned)
+
+            else:
+                prompt = "Apology for not sure which product the user talked about and ask the user reinput."
         # elif intent == self.dis_product_list:
         
         #     prompt = intent(user_conversation)
+        # elif intent == self.infor:
+            
+        #     prompt = intent(self.product_mentioned)
 
         else:
             prompt = intent()
@@ -462,13 +508,14 @@ class Bot:
                 "role": "user", "content": "Your primary objective is to use different words from users in your responses.\
                     Specifically, substitute their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
                     For instance, if user uses buy, you should use purchase; if user use switch, you should use nintendo.\
+                    Also in any point, dont ask user personal information.\
                     Do you understand?"
             }
         )
 
         message_history.append(
             {
-                "role": "assistant", "content": "Yes, I understand and I will use different words from user's and would not ask for user delivery and payment information. "
+                "role": "assistant", "content": "Yes, I understand and I will use different words from user's and would not ask for user any personal information. "
             }
         )
 
@@ -490,6 +537,11 @@ class Bot:
         )
         reply_content = completion.choices[0].message.content
 
+        index_to_del = [1,2,4]
+        for index in sorted(index_to_del, reverse=True):
+            del message_history[index+2*self.turn]
+        self.turn += 1
+
         message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
         )
@@ -498,36 +550,35 @@ class Bot:
         return reply_content
         # print(completion)
 
-# message_history = [{"role": "system", "content": '''You are a NegotiationBot, an automated service to sell second-hand stuff and trading on Euro. \
-#                     You do not ask for user any personal information such as payment and delivery information at any point.\
-#                     Your responses should be friendly, persuasive, and always be within 3 sentences.\
-#                     Try not to start reponses with "let me know".\
-#                     The second-hand products include: \
-#                     </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
-#                     </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
-#                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
-#                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
-#                     '''}]
-# # NER = spacy.load("en_core_web_sm")
-# bot = Bot()
+message_history = [{"role": "system", "content": '''You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information.\
+                    Your responses should be friendly, persuasive, and concise, typically within 3 sentences.\
+                    When responding to user offers, you should also end your response with questions to keep the conversation engaging.\
+                    The second-hand products include: \
+                    </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
+                    </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
+                    </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
+                    </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
+                    '''}]
+# NER = spacy.load("en_core_web_sm")
+bot = Bot()
 
 
-# while True:
+while True:
 
     
-#     user_input = input("User:") 
-#     bot.user_conversation.append(user_input)
-#     # product = product_extraction(user_conversation)
-#     # conversation.append(user_input)
+    user_input = input("User:") 
+    bot.user_conversation.append(user_input)
+    # product = product_extraction(user_conversation)
+    # conversation.append(user_input)
     
-#     if user_input.lower() == "exit":
-#         break
+    if user_input.lower() == "exit":
+        break
 
-#     else:
-#         # conversation.append(bot.response(user_input))
-#         print("Bot: ", bot.response_align(user_input, message_history))
-#         # print(message_history)
-#         # print(bot.user_conversation)
+    else:
+        # conversation.append(bot.response(user_input))
+        print("Bot: ", bot.response_unalign(user_input, message_history))
+        # print(message_history)
+        # print(bot.user_conversation)
         
 
     

@@ -83,7 +83,7 @@ class Chatbot{
             if (item.name === "bot")
             {
                 html += '<div class="messages__item-container">';
-                html += '<img src="static/bot.svg" width=40px>';
+                html += '<img class="bot_icon" src="static/bot.svg">';
                 html += '<div class="messages__item messages__item--bot">' + item.message + '</div>';
                 html += '</div>';
             }

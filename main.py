@@ -30,16 +30,16 @@ app.config['SECRET_KEY'] = 'hfjdshfekotonoot'
 #                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
 #                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
 #                     '''}]
-message_history = [{"role": "system", "content": '''You are a NegotiationBot, an automated service to sell second-hand stuff and trading on Euro. \
-                    You do not ask for user any personal information such as payment and delivery information at any point.\
-                    Your responses should be friendly, persuasive, and always be within 3 sentences.\
-                    Try not to start reponses with "let me know".\
+message_history = [{"role": "system", "content": '''You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information.\
+                    Your responses should be friendly, persuasive, and concise, typically within 3 sentences.\
+                    When responding to user offers, you should also end your response with questions to keep the conversation engaging.\
                     The second-hand products include: \
                     </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
                     </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
                     '''}]
+
 bot = Bot()
 
 
@@ -121,36 +121,36 @@ def index_chatbot():
                 else: 
                     response = bot.response_unalign(user_input, message_history)
             except openai.error.APIError as e:
-                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟APIError"
+                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.APIConnectionError as e:
-                response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch! 🌟APIConnectionError"
+                response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch!"
                 pass
             except openai.error.RateLimitError as e:
-                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RateLimitError"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.Timeout as e:
-                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟Timeout"
+                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.InvalidRequestError as e:
-                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌InvalidRequestError"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.AuthenticationError as e:
-                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌AuthenticationError"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.ServiceUnavailableError as e:
-                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌ServiceUnavailableError"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except tenacity.RetryError as e:
-                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RetryError"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except Exception as e:
-                response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌Internal error"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
         except IntegrityError as e:
             # with Session(engine) as dbsession:
             #     dbsession.rollback()
-            response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟APIErrorIntegrityError"
+            response = "Oops! Something went wronge. 😅 Please go back to home page and restart the test. Thanks a bunch!"
             
             # message = {"answer": response}
             
@@ -158,39 +158,6 @@ def index_chatbot():
     
         bot.user_conversation.append(user_input)
         # TODO: check if text is valid
-        # try:
-        #     if session['user_id'] % 2 == 0:
-        #         response = bot.response_align(user_input, message_history)         
-        #     else: 
-        #         response = bot.response_unalign(user_input, message_history)
-        # except openai.error.APIError as e:
-        #     response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟APIError"
-        #     pass
-        # except openai.error.APIConnectionError as e:
-        #     response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch! 🌟APIConnectionError"
-        #     pass
-        # except openai.error.RateLimitError as e:
-        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RateLimitError"
-        #     pass
-        # except openai.error.Timeout as e:
-        #     response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch! 🌟Timeout"
-        #     pass
-        # except openai.error.InvalidRequestError as e:
-        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌InvalidRequestError"
-        #     pass
-        # except openai.error.AuthenticationError as e:
-        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌AuthenticationError"
-        #     pass
-        # except openai.error.ServiceUnavailableError as e:
-        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌ServiceUnavailableError"
-        #     pass
-        # except tenacity.RetryError as e:
-        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌RetryError"
-        #     pass
-        # except Exception as e:
-        #     response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌Internal error"
-        #     pass
-
 
 
         message = {"answer": response}

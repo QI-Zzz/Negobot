@@ -40,6 +40,23 @@ p, li {
 ul {
     list-style-type: none;
 }
+
+.thankyou{
+    background-color:#213555
+}
+
+.thankyou p{
+    color: #F0F0F0;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
 /* homepage */
 
 .home_button{
@@ -87,11 +104,11 @@ ul {
     /* display: inline-block; */
     padding: 10px 15px;
     background-color: #E5D283;
-    color: #213555;
+    /* color: #213555; */
     /* text-decoration: none; */
     border-radius: 5px;
     /* margin-top: 20px; */
-    font-weight: bold;
+    font-weight: 600;
 }
 
 /* header */
@@ -167,6 +184,10 @@ ul {
     margin-top: 10px;
 }
 
+.bot_icon{
+    width:40px
+}
+
 /* FOOTER */
 .chatbox__footer {
     display: flex;
@@ -189,6 +210,7 @@ ul {
     text-align: left;
     color: #213555;
 }
+
 .gotoquestion{
     display: inline-block;
     padding: 10px 15px;
@@ -228,7 +250,7 @@ ul {
     flex-direction: column; 
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 5px;
     /* border: 1px solid #4F709C; */
     border-radius: 10px;
     background-color: #F0F0F0;
@@ -254,12 +276,20 @@ ul {
 }
 
 
-
+.pre_button{
+        /* display: inline-block; */
+        padding: 2px ;
+        background-color: #E5D283;
+        color: #213555;
+        /* text-decoration: none; */
+        border-radius: 5px;
+        font-weight: bold;
+}
 
 
 .submit_button {
     /* display: inline-block; */
-    padding: 10px 15px;
+    padding: 2px;
     background-color: #E5D283;
     color: #213555;
     /* text-decoration: none; */
@@ -271,69 +301,14 @@ ul {
 
 
 /* phone size */
-@media (max-width: 500px){
-
-    html{
-        font-size :70%
-    }
-
-    header{
-        font-size: 20%;
-    }
-    h2{
-        font-size: 70%;
-    }
-    p, li{
-        font-size: 70%;
-    }
-
-    .form-page .options{
-        flex-direction: column; /* stack options vertically */
-        align-items: center;
-        font-size: 1.2rem; /* further increase font size for options */
-    }
-    /* .home_container {
-        padding: 12px;
-    } */
-    body{
-        padding-top: 100px;
-    }
-}
-
-/* tablet */
-@media (max-width: 800px){
-
-    html{
-        font-size :80%
-    }
-
-    header{
-        font-size: 80%;
-    }
-    h2{
-        font-size: 80%;
-    }
-    p, li{
-        font-size: 80%;
-    }
-
-    .form-page .options{
-        font-size: 1.5rem; /* further increase font size for options */
-        flex-direction: column; /* stack options vertically */
-        align-items: center;
-    }
-
-}
-
-/* laptop */
-@media (max-width: 1200px){
+@media (max-width: 414px){
 
     html{
         font-size :90%
     }
 
     header{
-        font-size: 90%;
+        font-size: 80%;
     }
     h2{
         font-size: 90%;
@@ -343,8 +318,94 @@ ul {
     }
 
     .form-page .options{
-        font-size: 1.5rem; /* further increase font size for options */
+        flex-direction: column; /* stack options vertically */
+        align-items: center;
+        font-size: 12px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    /* .home_container {
+        padding: 12px;
+    } */
+    .form-page label{
+        font-size: 13px;
+        margin-top: 5px;
+        font-weight: 500;
+    }
+    body{
+        padding-top: 70px;
+    }
+    .messages__item {
+        margin-top: 0;
+        background: #E0E0E0;
+        padding: 6px 10px;
+        max-width: 60%;
+    }
+    
+    .messages__item--bot{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: var(--primary);
+        color: #213555;
+        background-color: #E5D283;
+        margin-left: 5px;
+        font-size: 60%;
+    }
+    .messages__item--typing {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 60%;
+    }
+    
+    .messages__item--user {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: var(--primary);
+        color: #fff;
+        background-color: #213555;
+        font-size: 60%;
     }
 
-}
+    .bot_icon{
+        width: 30px;
+    }
 
+    .send__button {
+        padding: 5px 8px;
+    }
+
+    .chatbox__footer {
+        padding: 6px 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .gotoquestion{
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 80%;
+    }
+
+    .pre_button{
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .submit_button{
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .thankyou p{
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+}

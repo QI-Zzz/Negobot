@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>question</title>
+        <title>thanks a lot</title>
 
         <!-- font cdn link -->
         <link rel="stylesheet" 
@@ -12,7 +12,6 @@
         />
 
         <!-- custom css file -->
-        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/> -->
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap');
 
@@ -31,7 +30,7 @@ header {
     z-index: 1000;
     color:#fff;
     background:#213555;
-    font-size: medium;
+    font-size: 18px;
     text-align: center;
     box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
     width:100%;
@@ -47,6 +46,7 @@ body {
 }
 h2 {
     color: #213555;
+    font-size: 18px;
 }
 p, li {
     color: #213555;
@@ -55,6 +55,208 @@ p, li {
 ul {
     list-style-type: none;
 }
+
+.thankyou{
+    background-color:#213555
+}
+
+.thankyou p{
+    color: #F0F0F0;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+/* homepage */
+
+.home_button{
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #E5D283;
+    color: #213555;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.home_container {
+    max-width: 800px;
+    
+    margin: auto auto;
+    padding: 20px;
+    border: 1px solid #4F709C;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    flex:1;
+}
+
+
+
+/* Chatpage */
+/* section */
+/* .chatbot{
+    padding: 7% 5%;
+    padding-top: 13;
+} */
+
+.bot_container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #4F709C;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+    flex:1;
+}
+
+/* button */
+.send__button {
+    /* display: inline-block; */
+    padding: 10px 15px;
+    background-color: #E5D283;
+    /* color: #213555; */
+    /* text-decoration: none; */
+    border-radius: 5px;
+    /* margin-top: 20px; */
+    font-weight: 600;
+}
+
+/* header */
+/* .chatbox__header {
+    margin-right: 10px;
+} */
+
+
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+    font-size: 24px;
+}
+
+/* .messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+} */
+
+.messages__item--user {
+    margin-left: auto;
+}
+
+.messages__item--bot {
+    margin-right: auto;
+}
+
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 0;
+    background: #E0E0E0;
+    padding: 8px 12px;
+    max-width: 70%;
+}
+
+.messages__item--bot{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: var(--primary);
+    color: #213555;
+    background-color: #E5D283;
+    margin-left: 10px;
+}
+.messages__item--typing {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages__item--user {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--primary);
+    color: #fff;
+    background-color: #213555;
+}
+
+.messages__item-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.bot_icon{
+    width:40px
+}
+
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-align: left;
+    color: #213555;
+}
+
+.gotoquestion{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #E5D283;
+    color: #213555;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* .chatbox__send--footer {
+    color: black;
+} */
+
+/* .chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px;
+    background: white;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+} */
+
+/* questions page */
 .form-page {
     display: none;
 }
@@ -63,7 +265,7 @@ ul {
     flex-direction: column; 
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 10px;
+    padding-top: 5px;
     /* border: 1px solid #4F709C; */
     border-radius: 10px;
     background-color: #F0F0F0;
@@ -89,12 +291,20 @@ ul {
 }
 
 
-
+.pre_button{
+        /* display: inline-block; */
+        padding: 2px ;
+        background-color: #E5D283;
+        color: #213555;
+        /* text-decoration: none; */
+        border-radius: 5px;
+        font-weight: bold;
+}
 
 
 .submit_button {
     /* display: inline-block; */
-    padding: 10px 15px;
+    padding: 2px;
     background-color: #E5D283;
     color: #213555;
     /* text-decoration: none; */
@@ -102,145 +312,131 @@ ul {
     font-weight: bold;
 }
 
-@media (max-width:768px){
 
-html{
-    font-size :55%
-}
 
-.form-page .options{
-        font-size: 1.5rem; /* slightly increase font size for options */
+
+/* phone size */
+@media (max-width: 414px){
+
+    html{
+        font-size :90%
+    }
+
+    header{
+        font-size: 80%;
+    }
+    h2{
+        font-size: 90%;
+    }
+    p, li{
+        font-size: 90%;
+    }
+
+    .form-page .options{
         flex-direction: column; /* stack options vertically */
-        align-items: center; /* center-align items */
+        align-items: center;
+        font-size: 12px;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    /* .home_container {
+        padding: 12px;
+    } */
+    .form-page label{
+        font-size: 13px;
+        margin-top: 5px;
+        font-weight: 500;
+    }
+    body{
+        padding-top: 70px;
+    }
+    .messages__item {
+        margin-top: 0;
+        background: #E0E0E0;
+        padding: 6px 10px;
+        max-width: 60%;
+    }
+    
+    .messages__item--bot{
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: var(--primary);
+        color: #213555;
+        background-color: #E5D283;
+        margin-left: 5px;
+        font-size: 60%;
+    }
+    .messages__item--typing {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 60%;
+    }
+    
+    .messages__item--user {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background: var(--primary);
+        color: #fff;
+        background-color: #213555;
+        font-size: 60%;
     }
 
-.form-page label{
-    font-size :150%;
-}
-
-}
-
-
-@media (max-width:500px){
-
-html{
-    font-size :50%
-}
-
-
-.form-page .options{
-        font-size: 1.5rem; /* further increase font size for options */
+    .bot_icon{
+        width: 30px;
     }
+
+    .send__button {
+        padding: 5px 8px;
+    }
+
+    .chatbox__footer {
+        padding: 6px 10px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .gotoquestion{
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 80%;
+    }
+
+    .pre_button{
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .submit_button{
+        font-weight: 600;
+        font-size: 12px;
+    }
+
+    .thankyou p{
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
+}
+
+
+
         </style>
-        
+
     </head>
 
-    <body>
-        <header>
-            <h1>JUST A FEW QUESTIONS</h1>
-        </header>
-            <form class ="questions" action="/questions", method="POST">
-                <div class="form-page" id="page1">
+    <body class="thankyou">
 
-                    <label>This chatbot provides sufficient information.</label>
-                    <div class="options">
-                        <input type="radio" name="q1" value="1" required>Strongly Disagree
-                        <input type="radio" name="q1" value="2" required>Disagree
-                        <input type="radio" name="q1" value="3" required>Somewhat Disagree
-                        <input type="radio" name="q1" value="4" required>Neutral
-                        <input type="radio" name="q1" value="5" required>Somewhat Agree
-                        <input type="radio" name="q1" value="6" required>Agree
-                        <input type="radio" name="q1" value="7" required>Strongly Agree
-                    </div>
-      
-                    <label>Through this chatbot, I get the information I need on time.</label>
-                    <div class="options">
-                        <input type="radio" name="q2" value="1" required>Strongly Disagree
-                        <input type="radio" name="q2" value="2" required>Disagree
-                        <input type="radio" name="q2" value="3" required>Somewhat Disagree
-                        <input type="radio" name="q2" value="4" required>Neutral
-                        <input type="radio" name="q2" value="5" required>Somewhat Agree
-                        <input type="radio" name="q2" value="6" required>Agree
-                        <input type="radio" name="q2" value="7" required>Strongly Agree
-                    </div>
-                
-                <button type="button" class='submit_button' onclick="navigate(1)">Next</button>
-                </div>
-                <div class="form-page" id="page2" style="display:none;">
-                
-                    <label>Information provided by this chatbot is in a useful format.</label>
-                    <div class="options">
-                        <input type="radio" name="q3" value="1" required>Strongly Disagree
-                        <input type="radio" name="q3" value="2" required>Disagree
-                        <input type="radio" name="q3" value="3" required>Somewhat Disagree
-                        <input type="radio" name="q3" value="4" required>Neutral
-                        <input type="radio" name="q3" value="5" required>Somewhat Agree
-                        <input type="radio" name="q3" value="6" required>Agree
-                        <input type="radio" name="q3" value="7" required>Strongly Agree
-                    </div>
-               
-                    <label>Information provided by this chatbot is clear.</label>
-                    <div class="options">
-                        <input type="radio" name="q4" value="1" required>Strongly Disagree
-                        <input type="radio" name="q4" value="2" required>Disagree
-                        <input type="radio" name="q4" value="3" required>Somewhat Disagree
-                        <input type="radio" name="q4" value="4" required>Neutral
-                        <input type="radio" name="q4" value="5" required>Somewhat Agree
-                        <input type="radio" name="q4" value="6" required>Agree
-                        <input type="radio" name="q4" value="7" required>Strongly Agree
-                    </div>
-                
-            
-                
-                    <label>Information provided by this chatbot is accurate.</label>
-                    <div class="options">
-                        <input type="radio" name="q5" value="1" required>Strongly Disagree
-                        <input type="radio" name="q5" value="2" required>Disagree
-                        <input type="radio" name="q5" value="3" required>Somewhat Disagree
-                        <input type="radio" name="q5" value="4" required>Neutral
-                        <input type="radio" name="q5" value="5" required>Somewhat Agree
-                        <input type="radio" name="q5" value="6" required>Agree
-                        <input type="radio" name="q5" value="7" required>Strongly Agree
-                    </div>
-                
+        <p>Thank you for participating in our experiment! Have a wonderful day ahead.😊</p>
 
-                
-                    <label>Information provided by this chatbot is reliable.</label>
-                    <div class="options">
-                        <input type="radio" name="q6" value="1" required>Strongly Disagree
-                        <input type="radio" name="q6" value="2" required>Disagree
-                        <input type="radio" name="q6" value="3" required>Somewhat Disagree
-                        <input type="radio" name="q6" value="4" required>Neutral
-                        <input type="radio" name="q6" value="5" required>Somewhat Agree
-                        <input type="radio" name="q6" value="6" required>Agree
-                        <input type="radio" name="q6" value="7" required>Strongly Agree
-                    </div>
-                           
 
-                <a><button type="submit" class="submit_button">Submit</a>
-                </div>
-            </form>
 
-        <!-- jquery cdn link  -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-
-        <!-- custom js file link  -->
-        <!-- <script src="/script.js"></script>  -->
-        <script>
-            let currentPage = 1;
-
-            function navigate(offset) {
-                // Hide the current page
-                document.getElementById('page' + currentPage).style.display = 'none';
-
-                // Update the current page number
-                currentPage += offset;
-
-                // Show the new page
-                document.getElementById('page' + currentPage).style.display = 'flex';
-            }
-        </script>
     </body>
 
 </html>

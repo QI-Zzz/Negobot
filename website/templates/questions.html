@@ -98,8 +98,8 @@
                         <input type="radio" name="q7" value="6" required>Agree
                         <input type="radio" name="q7" value="7" required>Strongly Agree
                     </div>
-                    <button type="button" class='submit_button' onclick="navigate(-1)">Previous</button>
-                    <button type="button" class='submit_button' onclick="navigate(1)">Next</button>
+                    <!-- <button type="button" class='pre_button' onclick="navigate(-1)">Previous</button> -->
+                    <button type="button" class='submit_button' onclick="navigate(1)">Next(1/3)</button>
                 </div>
 
                 <div class="form-page" id="page2" style="display:none;">
@@ -190,8 +190,8 @@
                         <input type="radio" name="q15" value="6" required>Agree
                         <input type="radio" name="q15" value="7" required>Strongly Agree
                     </div>
-                <button type="button" class='submit_button' onclick="navigate(-1)">Previous</button>
-                <button type="button" class='submit_button' onclick="navigate(1)">Next</button>
+                <button type="button" class='pre_button' onclick="navigate(-1)">Previous</button>
+                <button type="button" class='submit_button' onclick="navigate(1)">Next(2/3)</button>
                 </div>
 
                 
@@ -273,7 +273,7 @@
                         <input type="radio" name="q22" value="7" required>Strongly Agree
                     </div>
               
-                    <button type="button" class="submit_button" onclick="navigate(-1)">Previous</button>
+                    <button type="button" class="pre_button" onclick="navigate(-1)">Previous</button>
                     <button type="submit" class="submit_button">Submit</button>
                     </div>
                 </form>
@@ -295,6 +295,8 @@
         
                         // Show the new page
                         document.getElementById('page' + currentPage).style.display = 'flex';
+
+                        window.scrollTo(0,0)
                     }
 
                     function isFormFilled(pageNumber) {
