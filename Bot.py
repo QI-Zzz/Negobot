@@ -550,35 +550,35 @@ class Bot():
         return reply_content
         # print(completion)
 
-message_history = [{"role": "system", "content": '''You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information.\
-                    Your responses should be friendly, persuasive, and concise, typically within 3 sentences.\
-                    When responding to user offers, you should also end your response with questions to keep the conversation engaging.\
-                    The second-hand products include: \
-                    </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
-                    </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
-                    </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
-                    </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
-                    '''}]
-# NER = spacy.load("en_core_web_sm")
-bot = Bot()
+# message_history = [{"role": "system", "content": '''You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information.\
+#                     Your responses should be friendly, persuasive, and concise, typically within 3 sentences.\
+#                     When responding to user offers, you should also end your response with questions to keep the conversation engaging.\
+#                     The second-hand products include: \
+#                     </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
+#                     </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
+#                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
+#                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
+#                     '''}]
+# # NER = spacy.load("en_core_web_sm")
+# bot = Bot()
 
 
-while True:
+# while True:
 
     
-    user_input = input("User:") 
-    bot.user_conversation.append(user_input)
-    # product = product_extraction(user_conversation)
-    # conversation.append(user_input)
+#     user_input = input("User:") 
+#     bot.user_conversation.append(user_input)
+#     # product = product_extraction(user_conversation)
+#     # conversation.append(user_input)
     
-    if user_input.lower() == "exit":
-        break
+#     if user_input.lower() == "exit":
+#         break
 
-    else:
-        # conversation.append(bot.response(user_input))
-        print("Bot: ", bot.response_unalign(user_input, message_history))
-        # print(message_history)
-        # print(bot.user_conversation)
+#     else:
+#         # conversation.append(bot.response(user_input))
+#         print("Bot: ", bot.response_unalign(user_input, message_history))
+#         # print(message_history)
+#         # print(bot.user_conversation)
         
 
     
