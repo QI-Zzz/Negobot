@@ -30,15 +30,16 @@ app.config['SECRET_KEY'] = 'hfjdshfekotonoot'
 #                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
 #                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
 #                     '''}]
-message_history = [{"role": "system", "content": '''You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information.\
-                    Your responses should be friendly, persuasive, and concise, typically within 3 sentences.\
-                    When responding to user offers, you should also end your response with questions to keep the conversation engaging.\
-                    The second-hand products include: \
-                    </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
-                    </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
-                    </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
-                    </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
-                    '''}]
+message_history = [{
+    "role": "system",
+    "content": "You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information. \
+        Your responses should be friendly, persuasive, and concise, typically within 3 sentences. \
+        When responding to user offers, you should also end your response with questions to keep the conversation engaging. \
+        Products: \
+        [Type: Switch OLED, Price: €200, Description: blue and red, bought one year ago, small scratch on screen, everything included], \
+        [Type: Nespresso Lattissima One, Price: €350, Description:  white, bought two years ago, perfect condition, with some capsules], \
+        [Type: Roland FP-30, Price: €500, Description: white, bought one and half years ago, perfect condition, with headphone and pedal], \
+        [Type: Fujifilm X-T5, Price: €800, Description: silver, bought one and half year ago, perfect condition, without lens and memory card]"}]
 
 bot = Bot()
 
@@ -121,7 +122,7 @@ def index_chatbot():
                 else: 
                     response = bot.response_unalign(user_input, message_history)
             except openai.error.APIError as e:
-                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
+                response = "Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.APIConnectionError as e:
                 response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch!"
@@ -130,7 +131,7 @@ def index_chatbot():
                 response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.Timeout as e:
-                response = "Oops! Something went wronge. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
+                response = "Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.InvalidRequestError as e:
                 response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
@@ -150,7 +151,7 @@ def index_chatbot():
         except IntegrityError as e:
             # with Session(engine) as dbsession:
             #     dbsession.rollback()
-            response = "Oops! Something went wronge. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+            response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
             
             # message = {"answer": response}
             

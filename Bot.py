@@ -70,7 +70,7 @@ class Bot():
                     messages=[{"role": "system", "content": "The given text needs to be mapped to precisely one of the intents described below and only give the intent name:\
                                 greet: User only greets;\
                                 ask_list : User asks for what is selling;\
-                                inquiry: User asks specific product information or interested in one product;\
+                                inquiry: User asks specific product information;\
                                 counter_price: User offers price for a product;\
                                 agree:  User agrees and reaches the deal;\
                                 disagree: User rejects the offer;\
@@ -115,7 +115,7 @@ class Bot():
     #     return product
     
     def product_extraction(self, text):
-        products = ["switch", "coffee Machine", "piano", "camera", "roland", "nintendo", "fujifilm", "nespresso"]
+        products = ["switch", "coffee machine", "piano", "camera", "roland", "nintendo", "fujifilm", "nespresso"]
 
         product_mapping = {
             "roland": "piano",
@@ -163,19 +163,19 @@ class Bot():
 
     def product_list(self):
 
-        return "Only provide selling <Product><Type> and <Price> and ask users which one want to buy."
+        return "List only the product type and price, then inquire which one the user wishes to purchase."
     
 
     def greet(self):
 
-        return "Greet the user."
+        return "Extend a warm welcome to the user."
 
     def thanks(self):
-        return "Thanks to user for reaching the deal and wish they have a great day."
+        return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
 
     def dis_product_list(self):
         self.counter_attempts = 0 
-        return "Reject user offer and provide product type and price again."
+        return f"Politely decline the user's offer and suggest alternative products along with their prices."
 
     def counter_price(self, user_price, product):
   
@@ -192,7 +192,7 @@ class Bot():
                 if user_price !=0:
                     if user_price >= self.listed_price[product]:
 
-                        return f"Agree with user's deal"
+                        return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                     
                     else:
 
@@ -201,15 +201,17 @@ class Bot():
                         
                             self.price_offer = int(random.uniform(user_price, self.listed_price[product]))
 
-                            return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."
+                            # return f"Countering with a price of {self.price_offer}."                            
                         
                         elif user_price <=  self.listed_price[product]*0.98:
                             
                             self.price_offer = int(random.uniform(self.listed_price[product]*0.98, self.listed_price[product]))
 
-                            return f"Countering with a price of {self.price_offer}."
+                            # return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                      
                 else:
-                    return f"Ask the user offer a price."    
+                    return f"Prompt the user to suggest a price when they haven't provided one."    
                 
             
             if self.counter_attempts == 2:
@@ -218,7 +220,7 @@ class Bot():
 
                     if user_price >= self.listed_price[product]*0.98:
 
-                        return "Agree with user's deal"
+                        return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                     else:
                     
@@ -226,13 +228,13 @@ class Bot():
                         
                             self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.98))
 
-                            return f"Countering with a price of {self.price_offer}."
-                        
+                            # return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                      
                         elif user_price <=  self.listed_price[product]*0.95:
                             
                             self.price_offer = int(random.uniform(self.listed_price[product]*0.95, self.listed_price[product]*0.98))
-
-                            return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."
+                            # return f"Countering with a price of {self.price_offer}."
                             
 
                 else: 
@@ -246,14 +248,14 @@ class Bot():
                     #     self.price_offer = int(random.uniform(self[product]*0.95, self.listed_price[product]*0.98))
 
                     #     return f"Countering with a price of {self.price_offer}."
-                    return f"Ask the user offer a price."
+                    return f"Prompt the user to suggest a price when they haven't provided one."
             
             elif self.counter_attempts == 3:
                 if user_price != 0:
 
                     if user_price >= self.listed_price[product]*0.95:
 
-                        return "Agree with user's deal"
+                        return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                     else:
                     
@@ -261,17 +263,17 @@ class Bot():
                         
                             self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.95))
 
-                            return f"Countering with a price of {self.price_offer}."
-                        
+                            # return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                     
                         elif user_price <=  self.listed_price[product]*0.90:
                             
                             self.price_offer = int(random.uniform(self.listed_price[product]*0.90, self.listed_price[product]*0.95))
 
-                            return f"Countering with a price of {self.price_offer}."
-                            
+                            # return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                           
 
                 else: 
-                    return f"Ask the user offer a price."
+                    return f"Prompt the user to suggest a price when they haven't provided one."
                     
                     # if user_price >= self.listed_price[product]*0.95:
 
@@ -288,7 +290,7 @@ class Bot():
 
                     if user_price >= self.listed_price[product]*0.90:
 
-                        return "Agree with user's deal"
+                        return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                     else:
                     
@@ -296,17 +298,17 @@ class Bot():
                         
                             self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.90))
 
-                            return f"Countering with a price of {self.price_offer}."
-                        
+                            # return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                    
                         elif user_price <=  self.listed_price[product]*0.85:
                             
                             self.price_offer = int(random.uniform(self.listed_price[product]*0.85, self.listed_price[product]*0.90))
-
-                            return f"Countering with a price of {self.price_offer}."
+                            return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."
+                            # return f"Countering with a price of {self.price_offer}."
                             
 
                 else: 
-                    return f"Ask the user offer a price."
+                    return f"Prompt the user to suggest a price when they haven't provided one."
                     
                     # if user_price >= self.listed_price[product]*0.90:
 
@@ -323,24 +325,24 @@ class Bot():
 
                 if user_price >=  self.listed_price[product]*0.85:
 
-                    return "Agree with user's deal"
+                    return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                 else:
                     
                     self.counter_attempts = 0
-                    return "Reject user offer and provide product name and price again."
+                    return f"Politely decline the user's offer and suggest alternative products along with their prices."
                     
 
             
 
     def infor(self):
-        return "Provide product description and ask the user: whether they like games if they ask switch; whether they like coffee if they ask coffee machine; whether they enjoy music if they ask piano; whether they are into photography if they ask camera"
+        return f"When the user asks about a specific product, respond with a product description and then ask a relevant question based on their choice. For example, if they ask about the Switch, provide the description and then ask if they like games. If they ask about the coffee machine, provide the description and then ask if they enjoy coffee. if they ask about the camera, provide the description and then ask if they like photography. If they ask about the piano, provide the description and then ask if they enjoy playing piano.Keep the responses concise."
 
     def goodbye(self):
-        return "Say goodbye to user"
+        return f"Bid farewell to the user and wish them a wonderful day."
         
     def open_conversation(self):
-        return "Generate a response based on previous conversation and lead the conversation back to selling product."
+        return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
 
     @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
     def response_align(self, user_input, message_history):
@@ -384,7 +386,7 @@ class Bot():
                 prompt = intent(user_price, self.product_mentioned)
 
             else:
-                prompt = "Apology for not sure which product the user talked about and ask the user reinput."
+                prompt = f"Apologize for the oversight regarding the product in question and kindly request the user to specify it again."
         
         # elif intent == self.product_list:
             
@@ -395,7 +397,7 @@ class Bot():
             prompt = intent()
 
         if twoproduct:
-            prompt = "Apology for only selling one product at one time and ask the user reinput"
+            prompt = f"Express regret for the limitation of selling only one item at a time and kindly ask the user to select a single product."
             # self.user_conversation =[]
             self.counter_attempts = 0
 
@@ -424,21 +426,35 @@ class Bot():
 
         # conversation.append(user[i])
 
-        completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", 
-            messages= message_history,
-            temperature=1,
-            max_tokens=256,
-            top_p=0.5,
-            frequency_penalty=0,
-            presence_penalty=0.5
-        )
-        reply_content = completion.choices[0].message.content
+        if intent == self.open_conversation:
+            completion = openai.ChatCompletion.create(
+                model="gpt-4", 
+                messages= message_history,
+                temperature=1,
+                max_tokens=256,
+                top_p=0.5,
+                frequency_penalty=1,
+                presence_penalty=0.5
+            )
+            reply_content = completion.choices[0].message.content
 
-        index_to_del = [1,2,4]
-        for index in sorted(index_to_del, reverse=True):
-            del message_history[index+2*self.turn]
-        self.turn += 1
+        else:
+
+            completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", 
+                messages= message_history,
+                temperature=1,
+                max_tokens=256,
+                top_p=0.5,
+                frequency_penalty=1,
+                presence_penalty=0.5
+            )
+            reply_content = completion.choices[0].message.content
+
+        # index_to_del = [1,2,4]
+        # for index in sorted(index_to_del, reverse=True):
+        #     del message_history[index+2*self.turn]
+        # self.turn += 1
 
         message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
@@ -487,7 +503,7 @@ class Bot():
                 prompt = intent(user_price, self.product_mentioned)
 
             else:
-                prompt = "Apology for not sure which product the user talked about and ask the user reinput."
+                prompt = f"Apologize for the oversight regarding the product in question and kindly request the user to specify it again."
         # elif intent == self.dis_product_list:
         
         #     prompt = intent(user_conversation)
@@ -499,7 +515,7 @@ class Bot():
             prompt = intent()
 
         if twoproduct:
-            prompt = "Apology for only selling one product at one time and ask the user reinput"
+            prompt = f"Express regret for the limitation of selling only one item at a time and kindly ask the user to select a single product."
             self.user_conversation =[]
             self.counter_attempts = 0
 
@@ -525,16 +541,17 @@ class Bot():
 
         message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
 
-
+        model_name = "gpt-4" if intent == self.open_conversation else "gpt-3.5-turbo"
         completion = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo", 
-            messages= message_history,
-            temperature=1,
-            max_tokens=256,
-            top_p=0.5,
-            frequency_penalty=0,
-            presence_penalty=0.5
-        )
+                model=model_name, 
+                messages= message_history,
+                temperature=1,
+                max_tokens=256,
+                top_p=0.5,
+                frequency_penalty=1,
+                presence_penalty=0.5
+            )
+
         reply_content = completion.choices[0].message.content
 
         index_to_del = [1,2,4]
@@ -550,15 +567,16 @@ class Bot():
         return reply_content
         # print(completion)
 
-# message_history = [{"role": "system", "content": '''You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information.\
-#                     Your responses should be friendly, persuasive, and concise, typically within 3 sentences.\
-#                     When responding to user offers, you should also end your response with questions to keep the conversation engaging.\
-#                     The second-hand products include: \
-#                     </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
-#                     </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
-#                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
-#                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
-#                     '''}]
+# message_history = [{
+#     "role": "system",
+#     "content": "You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information. \
+#         Your responses should be friendly, persuasive, and concise, typically within 3 sentences. \
+#         When responding to user offers, you should also end your response with questions to keep the conversation engaging. \
+#         Products: \
+#         [Type: Switch OLED, Price: €200, Description: blue and red, bought one year ago, small scratch on screen, everything included], \
+#         [Type: Nespresso Lattissima One, Price: €350, Description:  white, bought two years ago, perfect condition, with some capsules], \
+#         [Type: Roland FP-30, Price: €500, Description: white, bought one and half years ago, perfect condition, with headphone and pedal], \
+#         [Type: Fujifilm X-T5, Price: €800, Description: silver, bought one and half year ago, perfect condition, without lens and memory card]"}]
 # # NER = spacy.load("en_core_web_sm")
 # bot = Bot()
 
@@ -576,8 +594,8 @@ class Bot():
 
 #     else:
 #         # conversation.append(bot.response(user_input))
-#         print("Bot: ", bot.response_unalign(user_input, message_history))
-#         # print(message_history)
+#         print("Bot: ", bot.response_align(user_input, message_history))
+#         print(message_history)
 #         # print(bot.user_conversation)
         
 
