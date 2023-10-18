@@ -15,7 +15,6 @@ class Bot():
 
     OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
     # openai.api_key = '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'
-    
 
     def __init__(self):
         
@@ -40,7 +39,6 @@ class Bot():
         self.turn = 0
         self.NER = NER
         # self.products_mentioned =str
-
     def get_intent(self, text):
 
         user_intent = self.classify_intent(text)
@@ -178,7 +176,8 @@ class Bot():
         return f"Politely decline the user's offer and suggest alternative products along with their prices."
 
     def counter_price(self, user_price, product):
-  
+            # print("User price: " + f"{user_price}" + "product: " + product)
+            # print( "Listed Price" + self.listed_price[product])
             self.counter_attempts += 1
 
             if user_price is None: user_price = 0
@@ -215,7 +214,7 @@ class Bot():
                 
             
             if self.counter_attempts == 2:
-
+                
                 if user_price != 0:
 
                     if user_price >= self.listed_price[product]*0.98:
@@ -363,6 +362,7 @@ class Bot():
         #     return f"Apology for only selling one product at one time and ask the user reinput"
 
         product_utterance = self.product_extraction(user_input)
+       
         if product_utterance:
 
             if len(product_utterance) > 1:
@@ -373,10 +373,12 @@ class Bot():
             else :
                 # self.products_mentioned.append(product_utterance)
                 product = product_utterance[0]
+          
                 if product != "None":
                     if product != self.product_mentioned:
                         self.product_mentioned = product
                         self.counter_attempts =0
+                        
     
         # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
         
@@ -610,7 +612,7 @@ class Bot():
 #     else:
 #         # conversation.append(bot.response(user_input))
 #         print("Bot: ", bot.response_align(user_input, message_history))
-#         print(message_history)
+#         # print(message_history)
 #         # print(bot.user_conversation)
         
 
