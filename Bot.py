@@ -374,14 +374,17 @@ class Bot():
                 # self.products_mentioned.append(product_utterance)
                 product = product_utterance[0]
                 if product != "None":
-                    self.product_mentioned = product
-                    self.counter_attempts = 0
+                    if product != self.product_mentioned:
+                        self.product_mentioned = product
+                        self.counter_attempts =0
     
         # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
-
+        print(self.product_mentioned)
         if intent == self.counter_price:
+        
 
             if self.product_mentioned != '':
+                print(self.product_mentioned)
 
                 prompt = intent(user_price, self.product_mentioned)
 
@@ -451,10 +454,10 @@ class Bot():
             )
             reply_content = completion.choices[0].message.content
 
-        # index_to_del = [1,2,4]
-        # for index in sorted(index_to_del, reverse=True):
-        #     del message_history[index+2*self.turn]
-        # self.turn += 1
+        index_to_del = [1,2,4]
+        for index in sorted(index_to_del, reverse=True):
+            del message_history[index+2*self.turn]
+        self.turn += 1
 
         message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
@@ -489,8 +492,9 @@ class Bot():
                 product = product_utterance[0]
                 
                 if product != "None":
-                    self.product_mentioned = product
-                    self.counter_attempts =0
+                    if product != self.product_mentioned:
+                        self.product_mentioned = product
+                        self.counter_attempts =0
         
         
         # if intent == self.counter_price:
