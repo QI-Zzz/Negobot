@@ -379,12 +379,11 @@ class Bot():
                         self.counter_attempts =0
     
         # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
-        print(self.product_mentioned)
+        
         if intent == self.counter_price:
         
 
             if self.product_mentioned != '':
-                print(self.product_mentioned)
 
                 prompt = intent(user_price, self.product_mentioned)
 
@@ -545,9 +544,9 @@ class Bot():
 
         message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
 
-        model_name = "gpt-4" if intent == self.open_conversation else "gpt-3.5-turbo"
-        completion = openai.ChatCompletion.create(
-                model=model_name, 
+        if intent == self.open_conversation:
+            completion = openai.ChatCompletion.create(
+                model="gpt-4", 
                 messages= message_history,
                 temperature=1,
                 max_tokens=256,
@@ -555,8 +554,20 @@ class Bot():
                 frequency_penalty=1,
                 presence_penalty=0.5
             )
+            reply_content = completion.choices[0].message.content
 
-        reply_content = completion.choices[0].message.content
+        else:
+
+            completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", 
+                messages= message_history,
+                temperature=1,
+                max_tokens=256,
+                top_p=0.5,
+                frequency_penalty=1,
+                presence_penalty=0.5
+            )
+            reply_content = completion.choices[0].message.content
 
         index_to_del = [1,2,4]
         for index in sorted(index_to_del, reverse=True):
