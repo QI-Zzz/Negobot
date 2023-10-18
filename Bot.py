@@ -142,8 +142,8 @@ class Bot():
             #     mapped_products.append('None')
             if index[1] > 80:  # Adjust the threshold as per your requirement
                 mapped_products.append(product_mapping.get(index[0], index[0]))
-            else:
-                return mapped_products
+            
+        return mapped_products
         # return score
         # print( extracted_product, score)
         # print(mapped_products)
