@@ -22,14 +22,7 @@ app.config['SECRET_KEY'] = 'hfjdshfekotonoot'
 
 # Create an instance of the Bot class
 # message_history = [{"role": "system", "content": '''You are a NegotiationBot, an automated service to sell second-hand stuff and trading on Euro. \
-#                     You do not ask for user any personal information such as payment and delivery information at any point.\
-#                     Your responses should be friendly, open to negotiation, and always be within 3 sentences, ending with a question whenever possible.\
-#                     The second-hand products include: \
-#                     </product><Type>: Video game console ; <Price>: €200; <Description>: Switch OLED version, blue and red, bought one year ago, small scratch on screen, everying included </product>
-#                     </product><Type>: Coffee machine; <Price>: €350; <Description>: Nespresso Lattissima One, white, bought two years ago, perfect condition, with some capcules </product>
-#                     </product><Type>: Digital piano; <Price>: €500; <Description>: Roland FP-30, white, bought one and half years ago, perfect condition, with headphone and pedal </product>
-#                     </product><Type>: Camera; <Price>: €800; <Description>: Fujifilm X-T5, silver, bought one and half year ago, perfect condition, without lense and memory card </product>
-#                     '''}]
+
 message_history = [{
     "role": "system",
     "content": "You are a NegotiationBot tasked with selling second-hand items in Euros and English without requesting personal information. \
@@ -86,6 +79,7 @@ def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16
 # Creat a route of home page
 @app.route('/')
 def index():
+    bot.reset()
     session['user_id'] = get_user_id()
     store_message(session['user_id'], -1, 'user', ":)")
     return render_template('home.html')
@@ -95,6 +89,7 @@ def index():
 def index_chatbot():
 
     if request.method == 'GET':
+        bot.reset()
         return render_template("chatbot.html")
     elif request.method == 'POST':
         # user_input = request.form['user_input']
@@ -209,4 +204,5 @@ def index_questions():
 
 
 if __name__ == '__main__':
+    
     app.run(debug=True)

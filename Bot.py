@@ -39,6 +39,12 @@ class Bot():
         self.turn = 0
         self.NER = NER
         # self.products_mentioned =str
+    def reset(self):
+        self.price_offer = 0
+        self.counter_attempts = 0
+        self.user_conversation = []
+        self.turn = 0
+
     def get_intent(self, text):
 
         user_intent = self.classify_intent(text)
