@@ -187,7 +187,8 @@ class Bot():
             # print( "Listed Price" + self.listed_price[product])
             self.counter_attempts += 1
 
-            if user_price is None: user_price = 0
+            if user_price is None: 
+                user_price = 0
 
             # if len(product) >6:
             #     self.counter_attempts = self.counter_attempts-1
@@ -220,7 +221,7 @@ class Bot():
                     return f"Prompt the user to suggest a price when they haven't provided one."    
                 
             
-            if self.counter_attempts == 2:
+            elif self.counter_attempts == 2:
                 
                 if user_price != 0:
 
