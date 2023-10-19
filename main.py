@@ -102,7 +102,7 @@ def update_user_parameters(user_id, counter_attempts, product_mentioned, turn):
 def index():
     session['user_id'] = get_user_id()
     store_message(session['user_id'], -1, 'user', ":)")
-    store_user(session['user_id'], 0, None, 0)
+    store_user(session.get('user_id'), 0, None, 0)
     return render_template('home.html')
 
 # Creat a route of chatbot
