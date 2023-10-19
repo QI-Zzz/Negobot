@@ -187,6 +187,9 @@ def index_chatbot():
             # response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌IntegrityError"
         # message = {"answer": response}
         update_user_parameters(session.get('user_id'),bot.counter_attempts, bot.product_mentioned, bot.turn)
+        print(bot.counter_attempts)
+        print(bot.product_mentioned)
+        print(bot.turn)
         return jsonify(message)
     
 
