@@ -30,7 +30,7 @@ class Bot():
             # "error" : self.error
         }
 
-        self.listed_price = {"switch": 200, "coffee": 350, "camera": 800, "piano": 500}
+        self.listed_price = {"switch": 200, "coffee": 350, "camera": 800, "piano": 500} 
         # self.lowest_price = {product: price*0.85 for product, price in self.listed_price.items()}
         self.price_offer = 0
         self.counter_attempts = 0
@@ -39,11 +39,6 @@ class Bot():
         self.turn = 0
         self.NER = NER
         # self.products_mentioned =str
-    def reset(self):
-        self.price_offer = 0
-        self.counter_attempts = 0
-        self.user_conversation = []
-        self.turn = 0
 
     def get_intent(self, text):
 
