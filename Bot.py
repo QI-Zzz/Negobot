@@ -463,10 +463,10 @@ class Bot():
             )
             reply_content = completion.choices[0].message.content
 
-        index_to_del = [1,2,4]
-        for index in sorted(index_to_del, reverse=True):
-            del message_history[index+2*self.turn]
-        self.turn += 1
+        # index_to_del = [1,2,4]
+        # for index in sorted(index_to_del, reverse=True):
+        #     del message_history[index+2*self.turn]
+        # self.turn += 1
 
         message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
@@ -579,10 +579,10 @@ class Bot():
             )
             reply_content = completion.choices[0].message.content
 
-        index_to_del = [1,2,4]
-        for index in sorted(index_to_del, reverse=True):
-            del message_history[index+2*self.turn]
-        self.turn += 1
+        # index_to_del = [1,2,4]
+        # for index in sorted(index_to_del, reverse=True):
+        #     del message_history[index+2*self.turn]
+        # self.turn += 1
 
         message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
