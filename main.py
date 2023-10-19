@@ -85,10 +85,8 @@ def index():
 # Creat a route of chatbot
 @app.route('/chatbot', methods=['GET', 'POST'])
 def index_chatbot():
-    bot = Bot()
-    print(bot.counter_attempts)
     if request.method == 'GET':
-        
+        bot = Bot()
         return render_template("chatbot.html")
     elif request.method == 'POST':
         print(bot.counter_attempts)
