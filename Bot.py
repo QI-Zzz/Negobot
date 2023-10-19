@@ -35,9 +35,9 @@ class Bot():
         self.listed_price = {"switch": 200, "coffee": 350, "camera": 800, "piano": 500} 
         # self.lowest_price = {product: price*0.85 for product, price in self.listed_price.items()}
         self.price_offer = 0
-        self.counter_attempts = 0
-        self.product_mentioned = ''
-        self.turn = 0
+        # self.counter_attempts = 0
+        # self.product_mentioned = ''
+        # self.turn = 0
         self.NER = NER
     
     def update(self, counter_attempts, product_mentioned, turn):
