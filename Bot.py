@@ -10,6 +10,8 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
+from flask import session
+
 NER = spacy.load("en_core_web_sm")
 class Bot():
 
@@ -34,11 +36,16 @@ class Bot():
         # self.lowest_price = {product: price*0.85 for product, price in self.listed_price.items()}
         self.price_offer = 0
         self.counter_attempts = 0
-        self.user_conversation = []
-        self.product_mentioned = ""
+        self.product_mentioned = ''
         self.turn = 0
         self.NER = NER
+        
         # self.products_mentioned =str
+    def reset(self,counter_attempts, product_mentioned, turn):
+        self.counter_attempts = counter_attempts
+        self.product_mentioned = product_mentioned
+        self.turn = turn
+
 
     def get_intent(self, text):
 
@@ -403,7 +410,6 @@ class Bot():
 
         if twoproduct:
             prompt = f"Express regret for the limitation of selling only one item at a time and kindly ask the user to select a single product."
-            # self.user_conversation =[]
             self.counter_attempts = 0
 
         message_history.append(
@@ -522,7 +528,7 @@ class Bot():
 
         if twoproduct:
             prompt = f"Express regret for the limitation of selling only one item at a time and kindly ask the user to select a single product."
-            self.user_conversation =[]
+            
             self.counter_attempts = 0
 
         message_history.append(

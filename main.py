@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, jsonify, session, redirect
 from flask_sqlalchemy import SQLAlchemy
+from dataclasses import dataclass
 # from flask_cors import CORS
 from Bot import Bot
 from os import path
@@ -34,7 +35,7 @@ message_history = [{
         [Type: Roland FP-30, Price: €500, Description: white, bought one and half years ago, perfect condition, with headphone and pedal], \
         [Type: Fujifilm X-T5, Price: €800, Description: silver, bought one and half year ago, perfect condition, without lens and memory card]"}]
 
-
+bot = Bot()
 # Creat a database
 # engine = create_engine("sqlite:///database.db",echo=True)
 # DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
@@ -48,6 +49,7 @@ Base.metadata.create_all(engine)
 #     if not path.exists('./botdb.db'):
 #         Base.metadata.create_all(bind=engine)
 #     print('Created Database!')
+
 
         
 
@@ -77,18 +79,21 @@ def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16
 # Creat a route of home page
 @app.route('/')
 def index():
-    
     session['user_id'] = get_user_id()
     store_message(session['user_id'], -1, 'user', ":)")
+    session['counter_attempts'] = 0
+    session['product_mentioned'] = ''
+    session['turn'] = 0
     return render_template('home.html')
 
 # Creat a route of chatbot
 @app.route('/chatbot', methods=['GET', 'POST'])
 def index_chatbot():
     if request.method == 'GET':
-        bot = Bot()
+        bot.reset(session['counter_attempts'],session['product_mentioned'],session['turn'])
         return render_template("chatbot.html")
     elif request.method == 'POST':
+        
         print(bot.counter_attempts)
         # user_input = request.form['user_input']
         # return bot.response(user_input)
@@ -147,12 +152,7 @@ def index_chatbot():
             response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
             
             # message = {"answer": response}
-            
-
-    
-        bot.user_conversation.append(user_input)
-        # TODO: check if text is valid
-
+        
 
         message = {"answer": response}
         session['order_turn'] += 1
