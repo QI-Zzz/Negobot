@@ -5,9 +5,9 @@ from dataclasses import dataclass
 from Bot import Bot
 from os import path
 import os
-from sqlalchemy import create_engine, func, insert
+from sqlalchemy import create_engine, func, insert, select, update
 from sqlalchemy.orm import Session
-from model import Base, Question, Conversation
+from model import Base, Question, Conversation, User
 import openai
 import spacy
 import tenacity
@@ -68,6 +68,13 @@ def store_message(user_id, order_turn, role, utterance):
         dbsession.commit()
         return 
     
+def store_user(user_id, counter_attempts, product_mentioned,turn):
+    with Session(engine) as dbsession:
+        user_table = insert(User).values(user_id=user_id, counter_attempts=counter_attempts,product_mentioned=product_mentioned, turn=turn)
+        dbsession.execute(user_table)
+        dbsession.commit()
+        return
+    
 def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16,Q17,Q18,Q19,Q20,Q21,Q22):
     with Session(engine) as dbsession:
         answers_table = insert(Question).values(user_id=user_id,Q1=Q1,Q2=Q2,Q3=Q3,Q4=Q4,Q5=Q5,Q6=Q6,Q7=Q7,Q8=Q8,Q9=Q9,Q10=Q10,Q11=Q11,Q12=Q12,Q13=Q13,Q14=Q14,Q15=Q15,Q16=Q16,Q17=Q17,Q18=Q18,Q19=Q19,Q20=Q20,Q21=Q21,Q22=Q22)
@@ -75,26 +82,42 @@ def store_answers(user_id,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11,Q12,Q13,Q14,Q15,Q16
         dbsession.execute(answers_table)
         dbsession.commit()
         return 
+def select_user_parameters(user_id):
+    with Session(engine) as dbsession:
+        stmt = select(User).where(User.user_id == user_id)
+        result = dbsession.execute(stmt)
+        for user_obj in result.scalars():
+            return user_obj
+        
+def update_user_parameters(user_id, counter_attempts, product_mentioned, turn):
+    with Session(engine) as dbsession:
+        stmt = update(User).where(User.user_id == user_id).values(counter_attempts =counter_attempts, product_mentioned=product_mentioned, turn=turn)
+        dbsession.execute(stmt)
+        dbsession.commit()
+        return
+    
 
 # Creat a route of home page
 @app.route('/')
 def index():
     session['user_id'] = get_user_id()
     store_message(session['user_id'], -1, 'user', ":)")
-    session['counter_attempts'] = 0
-    session['product_mentioned'] = ''
-    session['turn'] = 0
+    store_user(session['user_id'], 0, None, 0)
     return render_template('home.html')
 
 # Creat a route of chatbot
 @app.route('/chatbot', methods=['GET', 'POST'])
 def index_chatbot():
     if request.method == 'GET':
-        bot.reset(session['counter_attempts'],session['product_mentioned'],session['turn'])
         return render_template("chatbot.html")
     elif request.method == 'POST':
-        
-        print(bot.counter_attempts)
+        userInfo = select_user_parameters(session.get('user_id'))
+        print(userInfo.counter_attempts)
+        print(userInfo.product_mentioned)
+        print(userInfo.turn)
+        bot.update(userInfo.counter_attempts, userInfo.product_mentioned, userInfo.turn)
+
+        # print(bot.counter_attempts)
         # user_input = request.form['user_input']
         # return bot.response(user_input)
         # # return render_template('chatbot.html', msg=msg, bot_response=response)
@@ -163,6 +186,7 @@ def index_chatbot():
             #     dbsession.rollback()
             # response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌IntegrityError"
         # message = {"answer": response}
+        update_user_parameters(session.get('user_id'),bot.counter_attempts, bot.product_mentioned, bot.turn)
         return jsonify(message)
     
 

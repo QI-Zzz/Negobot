@@ -8,6 +8,13 @@ from typing import List
 class Base(DeclarativeBase):
     pass
 
+class User(Base):
+    __tablename__ = 'user'
+    user_id: Mapped[int] = mapped_column (primary_key=True)
+    counter_attempts: Mapped[int] = mapped_column (Integer, nullable=False)
+    product_mentioned: Mapped[str] = mapped_column(Text, nullable=True)
+    turn: Mapped[int] = mapped_column(Integer, nullable=False)
+
 
 
 class Conversation(Base):

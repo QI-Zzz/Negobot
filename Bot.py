@@ -10,7 +10,7 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
-from flask import session
+from sqlalchemy import create_engine, func, insert
 
 NER = spacy.load("en_core_web_sm")
 class Bot():
@@ -39,9 +39,8 @@ class Bot():
         self.product_mentioned = ''
         self.turn = 0
         self.NER = NER
-        
-        # self.products_mentioned =str
-    def reset(self,counter_attempts, product_mentioned, turn):
+    
+    def update(self, counter_attempts, product_mentioned, turn):
         self.counter_attempts = counter_attempts
         self.product_mentioned = product_mentioned
         self.turn = turn
@@ -384,6 +383,7 @@ class Bot():
           
                 if product != "None":
                     if product != self.product_mentioned:
+
                         self.product_mentioned = product
                         self.counter_attempts =0
                         
