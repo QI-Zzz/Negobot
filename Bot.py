@@ -317,7 +317,7 @@ class Bot():
     def open_conversation(self):
         return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
 
-    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
     def response_align(self, user_input):
 
         intent = self.get_intent(user_input)
@@ -430,10 +430,10 @@ class Bot():
             )
             reply_content = completion.choices[0].message.content
 
-        # index_to_del = [1,2,4]
-        # for index in sorted(index_to_del, reverse=True):
-        #     del message_history[index+2*self.turn]
-        # self.turn += 1
+        index_to_del = [1,2,4]
+        for index in sorted(index_to_del, reverse=True):
+            del self.message_history[index+2*self.turn]
+        self.turn += 1
 
         self.message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
@@ -442,7 +442,7 @@ class Bot():
         # conversation.append(reply_content)
         return reply_content
  
-    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
     def response_unalign(self, user_input):
 
         intent = self.get_intent(user_input)
@@ -546,10 +546,10 @@ class Bot():
             )
             reply_content = completion.choices[0].message.content
 
-        # index_to_del = [1,2,4]
-        # for index in sorted(index_to_del, reverse=True):
-        #     del message_history[index+2*self.turn]
-        # self.turn += 1
+        index_to_del = [1,2,4]
+        for index in sorted(index_to_del, reverse=True):
+            del self.message_history[index+2*self.turn]
+        self.turn += 1
 
         self.message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }

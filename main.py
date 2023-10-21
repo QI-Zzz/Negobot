@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify, session, redirect
 from flask_sqlalchemy import SQLAlchemy
 from dataclasses import dataclass
-# from flask_cors import CORS
 from Bot import Bot
 from os import path
 import os
@@ -171,26 +170,15 @@ def index_chatbot():
             except tenacity.RetryError as e:
                 response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
-            # except Exception as e:
-            #     response = "Exception: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
-            #     pass
+            except Exception as e:
+                response = "Exception: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                pass
         except IntegrityError as e:
-            # with Session(engine) as dbsession:
-            #     dbsession.rollback()
             response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
-            
-            # message = {"answer": response}
-        
-
         message = {"answer": response}
         session['order_turn'] += 1
         # try:
         store_message(session['user_id'], session['order_turn'], 'bot', response)
-        # except IntegrityError as e:
-            # with Session(engine) as dbsession:
-            #     dbsession.rollback()
-            # response = "Oh no! 🙀 Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience! 🙌IntegrityError"
-        # message = {"answer": response}
         update_user_parameters(session.get('user_id'),bot.counter_attempts, bot.product_mentioned, bot.turn, bot.message_history)
         print(bot.counter_attempts)
         print(bot.product_mentioned)
