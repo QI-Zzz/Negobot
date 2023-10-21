@@ -10,13 +10,11 @@ from tenacity import (
     stop_after_attempt,
     wait_random_exponential,
 )
-from sqlalchemy import create_engine, func, insert
 
 NER = spacy.load("en_core_web_sm")
 class Bot():
 
     OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
-    # openai.api_key = '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'
 
     def __init__(self):
         
@@ -40,10 +38,11 @@ class Bot():
         # self.turn = 0
         self.NER = NER
     
-    def update(self, counter_attempts, product_mentioned, turn):
+    def update(self, counter_attempts, product_mentioned, turn, message_history):
         self.counter_attempts = counter_attempts
         self.product_mentioned = product_mentioned
         self.turn = turn
+        self.message_history = message_history
 
 
     def get_intent(self, text):
@@ -183,17 +182,11 @@ class Bot():
         return f"Politely decline the user's offer and suggest alternative products along with their prices."
 
     def counter_price(self, user_price, product):
-            # print("User price: " + f"{user_price}" + "product: " + product)
-            # print( "Listed Price" + self.listed_price[product])
+
             self.counter_attempts += 1
 
             if user_price is None: 
                 user_price = 0
-
-            # if len(product) >6:
-            #     self.counter_attempts = self.counter_attempts-1
-            #     products = [prod.strip() for prod in product.split(',')]
-            #     return f"Apology for only selling one product at one time and ask the user reinput"
 
             if self.counter_attempts == 1:
                 if user_price !=0:
@@ -245,16 +238,7 @@ class Bot():
                             
 
                 else: 
-                    
-                    # if user_price >= self.listed_price[product]*0.98:
 
-                    #     return "Agree with user's deal."
-                
-                    # else:
-                    
-                    #     self.price_offer = int(random.uniform(self[product]*0.95, self.listed_price[product]*0.98))
-
-                    #     return f"Countering with a price of {self.price_offer}."
                     return f"Prompt the user to suggest a price when they haven't provided one."
             
             elif self.counter_attempts == 3:
@@ -282,15 +266,6 @@ class Bot():
                 else: 
                     return f"Prompt the user to suggest a price when they haven't provided one."
                     
-                    # if user_price >= self.listed_price[product]*0.95:
-
-                    #     return "Agree with user's deal."
-                
-                    # else:
-                    
-                    #     self.price_offer = int(random.uniform(self[product]*0.90, self.listed_price[product]*0.95))
-
-                    #     return f"Countering with a price of {self.price_offer}."
 
             elif self.counter_attempts == 4:
                 if user_price != 0:
@@ -317,15 +292,6 @@ class Bot():
                 else: 
                     return f"Prompt the user to suggest a price when they haven't provided one."
                     
-                    # if user_price >= self.listed_price[product]*0.90:
-
-                    #     return "Agree with user's deal."
-                
-                    # else:
-                    
-                    #     self.price_offer = int(random.uniform(self[product]*0.85, self.listed_price[product]*0.90))
-
-                    #     return f"Countering with a price of {self.price_offer}."
 
             
             else:
@@ -351,8 +317,8 @@ class Bot():
     def open_conversation(self):
         return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
 
-    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
-    def response_align(self, user_input, message_history):
+    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+    def response_align(self, user_input):
 
         intent = self.get_intent(user_input)
 
@@ -413,7 +379,7 @@ class Bot():
             prompt = f"Express regret for the limitation of selling only one item at a time and kindly ask the user to select a single product."
             self.counter_attempts = 0
 
-        message_history.append(
+        self.message_history.append(
         {
                 "role": "user", "content": "Your primary objective is to closely mimic user's choice of words in your responses.\
                     Specifically, mirror their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
@@ -424,16 +390,17 @@ class Bot():
             }
         )
 
-        message_history.append(
+    
+        self.message_history.append(
             {
                 "role": "assistant", "content": "Yes, I understand and I will try to use the same words as user's and would not ask for user any personal information."
             }
         )
-        message_history.append(
+        self.message_history.append(
             {"role": "user", "content": f'''{user_input}'''}
         )
 
-        message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
+        self.message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
 
 
         # conversation.append(user[i])
@@ -441,7 +408,7 @@ class Bot():
         if intent == self.open_conversation:
             completion = openai.ChatCompletion.create(
                 model="gpt-4", 
-                messages= message_history,
+                messages= self.message_history,
                 temperature=1,
                 max_tokens=256,
                 top_p=0.5,
@@ -454,7 +421,7 @@ class Bot():
 
             completion = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo", 
-                messages= message_history,
+                messages= self.message_history,
                 temperature=1,
                 max_tokens=256,
                 top_p=0.5,
@@ -468,15 +435,15 @@ class Bot():
         #     del message_history[index+2*self.turn]
         # self.turn += 1
 
-        message_history.append(
+        self.message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
         )
 
         # conversation.append(reply_content)
         return reply_content
  
-    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
-    def response_unalign(self, user_input, message_history):
+    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+    def response_unalign(self, user_input):
 
         intent = self.get_intent(user_input)
 
@@ -532,7 +499,7 @@ class Bot():
             
             self.counter_attempts = 0
 
-        message_history.append(
+        self.message_history.append(
         {
                 "role": "user", "content": "Your primary objective is to use different words from users in your responses.\
                     Specifically, substitute their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
@@ -542,22 +509,22 @@ class Bot():
             }
         )
 
-        message_history.append(
+        self.message_history.append(
             {
                 "role": "assistant", "content": "Yes, I understand and I will use different words from user's and would not ask for user any personal information. "
             }
         )
 
-        message_history.append(
+        self.message_history.append(
             {"role": "user", "content": f'''{user_input}'''}
         )
 
-        message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
+        self.message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
 
         if intent == self.open_conversation:
             completion = openai.ChatCompletion.create(
                 model="gpt-4", 
-                messages= message_history,
+                messages= self.message_history,
                 temperature=1,
                 max_tokens=256,
                 top_p=0.5,
@@ -570,7 +537,7 @@ class Bot():
 
             completion = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo", 
-                messages= message_history,
+                messages= self.message_history,
                 temperature=1,
                 max_tokens=256,
                 top_p=0.5,
@@ -584,7 +551,7 @@ class Bot():
         #     del message_history[index+2*self.turn]
         # self.turn += 1
 
-        message_history.append(
+        self.message_history.append(
             {"role": "assistant", "content": f'''{reply_content}''' }
         )
 

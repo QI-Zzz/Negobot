@@ -8,42 +8,48 @@ class Chatbot{
         }
 
         this.wholemessage = [];
+
+        this.requestInProgress = false;
     }
 
     // const chatbox = document.querySelector(".chatbox");
 
     display(){
         const {chat, sendButton} = this.args
+        const textField = chat.querySelector('input');
 
-        sendButton.addEventListener("click", ()=> this.onSendButton(chat))
+        sendButton.addEventListener("click", ()=> {
+            if (!this.requestInProgress){
+            this.onSendButton(chat)}
+        });
+        
+        
 
-        // const node = chat.querySelector('user_input').addEventListener('keypress', ({key}) =>{
-        //     if (key.code === 'Enter'){
-        //         this.onSendButton(chat)
-        //     }
-        // })
-  
-        // node.addEventListener('keydown', ({key}) =>{
-        //     if (key.code === 'Enter'){
-        //         this.onSendButton(chat)
-        //     }
-        // })
-
-        // function nameOfYourEventListener(){
-        //     document.querySelector("#yourInputID").addEventListener("keydown", function (e){
-        //     if (e.code === 'Enter'){
-        //         newNote(e); //function that you run for add the content to the list
-        //     }});
+        textField.addEventListener("keydown", (e) => {
+            if (!this.requestInProgress && e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+                e.preventDefault();
+                this.onSendButton(chat)
+            }
+        });
 
     }
 
     onSendButton(chatbot){
+
+        // if (this.requestInProgress){
+        //     return
+        // }
+
         var textField = chatbot.querySelector('input')
         let text1 = textField.value
 
         if(text1 === ""){
             return
         }
+
+        this.requestInProgress = true;
+        // textField.disabled = true;
+        // sendButton.disabled = true;
 
         let user_input = {name: "user", message: text1}
         this.wholemessage.push(user_input);
@@ -66,12 +72,23 @@ class Chatbot{
             this.wholemessage.pop();
             let bot_input = {name: "bot", message: r.answer}
             this.wholemessage.push(bot_input);
+            // this.requestInProgress = false;
+            // textField.disabled = false;
+            // sendButton.disabled = false;
             this.updateChatText(chatbot)
             textField.value = ''
+            this.requestInProgress = false;
+            // textField.disabled = false;
+            // sendButton.disabled = false;
+
         }).catch((error) => {
             console.error('Error:', error);
             this.updateChatText(chatbot)
             textField.value = ''
+            this.requestInProgress = false;
+            // textField.disabled = false;
+            // sendButton.disabled = false;
+
         }
         )
     }    

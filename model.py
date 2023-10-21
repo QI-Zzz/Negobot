@@ -1,7 +1,7 @@
-# from . import db
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 from sqlalchemy import Text, Integer
-from typing import List
+from sqlalchemy.dialects.postgresql import JSONB
+
 
 
 
@@ -14,6 +14,7 @@ class User(Base):
     counter_attempts: Mapped[int] = mapped_column (Integer, nullable=False)
     product_mentioned: Mapped[str] = mapped_column(Text, nullable=True)
     turn: Mapped[int] = mapped_column(Integer, nullable=False)
+    message_history: Mapped[str] = mapped_column(JSONB, nullable=False)
 
 
 
@@ -55,5 +56,6 @@ class Question(Base):
     Q20: Mapped[int] = mapped_column(Integer, nullable=False)
     Q21: Mapped[int] = mapped_column(Integer, nullable=False)
     Q22: Mapped[int] = mapped_column(Integer, nullable=False)
+    Q23: Mapped[str] = mapped_column(Text, nullable=True)
 
     # conversation: Mapped[List['Conversation',]] = relationship(back_populates='user')

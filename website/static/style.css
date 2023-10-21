@@ -297,6 +297,13 @@ ul {
     font-weight: bold;
 }
 
+input[type=text]{
+    border-radius: 4px;
+    border: 1px solid #213555;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
 
 
 
