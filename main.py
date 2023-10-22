@@ -29,10 +29,10 @@ message_history = [{
         Your responses should be friendly, persuasive, and concise, typically within 3 sentences. \
         When responding to user offers, you should also end your response with questions to keep the conversation engaging. \
         Products: \
-        [Type: Switch OLED, Price: €200, Description: blue and red, bought one year ago, small scratch on screen, everything included], \
-        [Type: Nespresso Lattissima One, Price: €350, Description:  white, bought two years ago, perfect condition, with some capsules], \
-        [Type: Roland FP-30, Price: €500, Description: white, bought one and half years ago, perfect condition, with headphone and pedal], \
-        [Type: Fujifilm X-T5, Price: €800, Description: silver, bought one and half year ago, perfect condition, without lens and memory card]"}]
+        [Type: Game Console, Name: Switch OLED, Price: €200, Description: blue and red, bought one year ago, small scratch on screen, everything included], \
+        [Type: Coffee Machine, Name: Nespresso Lattissima One, Price: €350, Description:  white, bought two years ago, perfect condition, with some capsules], \
+        [Type: Digital Piano, Name: Roland FP-30, Price: €500, Description: white, bought one and half years ago, perfect condition, with headphone and pedal], \
+        [Type: Camera, Name: Fujifilm X-T5, Price: €800, Description: silver, bought one and half year ago, perfect condition, without lens and memory card]"}]
 
 bot = Bot()
 # Creat a database
@@ -147,34 +147,34 @@ def index_chatbot():
                 else: 
                     response = bot.response_unalign(user_input)
             except openai.error.APIError as e:
-                response = "Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
+                response = "APIError:Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.APIConnectionError as e:
-                response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch!"
+                response = "ConnectionError: Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch!"
                 pass
             except openai.error.RateLimitError as e:
-                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "RateLimitError: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.Timeout as e:
-                response = "Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
+                response = "Timeou: Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.InvalidRequestError as e:
-                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "InvalidRequestErro: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.AuthenticationError as e:
-                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "AuthenticationError: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.ServiceUnavailableError as e:
-                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "ServiceUnavailableError: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except tenacity.RetryError as e:
-                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "RetryError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
                 pass
             except Exception as e:
-                response = "Exception: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "Exception: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
                 pass
         except IntegrityError as e:
-            response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+            response = "IntegrityError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
         message = {"answer": response}
         session['order_turn'] += 1
         # try:
