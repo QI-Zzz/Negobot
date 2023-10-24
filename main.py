@@ -115,10 +115,10 @@ def index_chatbot():
         return render_template("chatbot.html")
     elif request.method == 'POST':
         userInfo = select_user_parameters(session.get('user_id'))
-        print(userInfo.counter_attempts)
-        print(userInfo.product_mentioned)
-        print(userInfo.turn)
-        print(message_history)
+        # print(userInfo.counter_attempts)
+        # print(userInfo.product_mentioned)
+        # print(userInfo.turn)
+        # print(message_history)
         bot.update(userInfo.counter_attempts, userInfo.product_mentioned, userInfo.turn, userInfo.message_history)
 
         # print(bot.counter_attempts)
@@ -180,10 +180,10 @@ def index_chatbot():
         # try:
         store_message(session['user_id'], session['order_turn'], 'bot', response)
         update_user_parameters(session.get('user_id'),bot.counter_attempts, bot.product_mentioned, bot.turn, bot.message_history)
-        print(bot.counter_attempts)
-        print(bot.product_mentioned)
-        print(bot.turn)
-        print(bot.message_history)
+        # print(bot.counter_attempts)
+        # print(bot.product_mentioned)
+        # print(bot.turn)
+        # print(bot.message_history)
         return jsonify(message)
     
 

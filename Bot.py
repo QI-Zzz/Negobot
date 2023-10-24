@@ -9,7 +9,9 @@ from tenacity import (
     retry,
     stop_after_attempt,
     wait_random_exponential,
-    wait_fixed
+    wait_fixed,
+    wait_random,
+    stop_after_delay
 )
 
 NER = spacy.load("en_core_web_sm")
@@ -77,7 +79,7 @@ class Bot():
                                 ask_list : User asks for what is selling;\
                                 inquiry: User asks specific product information;\
                                 counter_price: User offers price for a product;\
-                                agree:  User agrees and reaches the deal;\
+                                agree: User agrees to buy the products;\
                                 disagree: User rejects the offer;\
                                 goodbye: User says goodbye;\
                                 open_conversation: chitchat;"},
@@ -120,14 +122,15 @@ class Bot():
     #     return product
     
     def product_extraction(self, text):
-        products = ["switch", "coffee machine", "piano", "camera", "roland", "nintendo", "fujifilm", "nespresso"]
+        products = ["switch", "coffee machine", "piano", "camera", "roland", "nintendo", "fujifilm", "nespresso", 'game console']
 
         product_mapping = {
             "roland": "piano",
             "nintendo": "switch",
             "fujifilm":"camera",
             "nespresso":"coffee",
-            "coffee Machine":"coffee"
+            "coffee Machine":"coffee",
+            "game console": "switch",
         }
         # NER = spacy.load("en_core_web_sm")
         
@@ -159,16 +162,18 @@ class Bot():
 
         numbers = re.findall(r'\d+(?:\.\d+)?', text)
 
-        if not numbers:
+        valid_numbers = [float(num) for num in numbers if float(num) > 100]
+
+        if not valid_numbers:
             return None
 
-        user_price = min(float(num) for num in numbers)
+        user_price = min(valid_numbers)
         return user_price 
 
 
     def product_list(self):
 
-        return "List only the product Type, Name and Price, then inquire which one the user wishes to purchase."
+        return "List only the product Type and Price, then inquire which one the user wishes to purchase."
     
 
     def greet(self):
@@ -176,7 +181,7 @@ class Bot():
         return "Extend a warm welcome to the user."
 
     def thanks(self):
-        return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
+        return f"Express gratitude to the user for finalizing the agreement without mentioning the price and hope they have an excellent day."
 
     def dis_product_list(self):
         self.counter_attempts = 0 
@@ -318,7 +323,7 @@ class Bot():
     def open_conversation(self):
         return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
 
-    @retry(wait=wait_fixed(5), stop=stop_after_attempt(5))
+    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(25))
     def response_align(self, user_input):
 
         intent = self.get_intent(user_input)
@@ -443,7 +448,7 @@ class Bot():
         # conversation.append(reply_content)
         return reply_content
  
-    @retry(wait=wait_fixed(5), stop=stop_after_attempt(5))
+    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(25))
     def response_unalign(self, user_input):
 
         intent = self.get_intent(user_input)
@@ -451,9 +456,6 @@ class Bot():
         user_price = self.price_extraction(user_input)
 
         twoproduct = False
-
-
-        # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
         
         product_utterance = self.product_extraction(user_input)
         

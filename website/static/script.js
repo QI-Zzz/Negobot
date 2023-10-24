@@ -36,9 +36,6 @@ class Chatbot{
 
     onSendButton(chatbot){
 
-        // if (this.requestInProgress){
-        //     return
-        // }
 
         var textField = chatbot.querySelector('input')
         let text1 = textField.value
