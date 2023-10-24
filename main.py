@@ -37,10 +37,10 @@ message_history = [{
 bot = Bot()
 # Creat a database
 # engine = create_engine("sqlite:///database.db",echo=True)
-DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
-# DATABASE_URL = os.environ.get("DATABASE_URL")
-# if DATABASE_URL.startswith("postgres://"):
-#     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
+# DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
+DATABASE_URL = os.environ.get("DATABASE_URL")
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
 engine = create_engine(DATABASE_URL)
 connect = engine.connect()
 Base.metadata.create_all(engine)
@@ -115,10 +115,10 @@ def index_chatbot():
         return render_template("chatbot.html")
     elif request.method == 'POST':
         userInfo = select_user_parameters(session.get('user_id'))
-        # print(userInfo.counter_attempts)
-        # print(userInfo.product_mentioned)
-        # print(userInfo.turn)
-        # print(message_history)
+        print(userInfo.counter_attempts)
+        print(userInfo.product_mentioned)
+        print(userInfo.turn)
+        print(message_history)
         bot.update(userInfo.counter_attempts, userInfo.product_mentioned, userInfo.turn, userInfo.message_history)
 
         # print(bot.counter_attempts)
@@ -170,9 +170,9 @@ def index_chatbot():
             except tenacity.RetryError as e:
                 response = "RetryError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
                 pass
-            # except Exception as e:
-            #     response = "Exception: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
-            #     pass
+            except Exception as e:
+                response = "Exception: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+                pass
         except IntegrityError as e:
             response = "IntegrityError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
         message = {"answer": response}
