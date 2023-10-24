@@ -37,10 +37,10 @@ message_history = [{
 bot = Bot()
 # Creat a database
 # engine = create_engine("sqlite:///database.db",echo=True)
-# DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
-DATABASE_URL = os.environ.get("DATABASE_URL")
-if DATABASE_URL.startswith("postgres://"):
-    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
+DATABASE_URL = "postgresql://postgres:Aptx4869@localhost:5432/botdb"
+# DATABASE_URL = os.environ.get("DATABASE_URL")
+# if DATABASE_URL.startswith("postgres://"):
+#     DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql://",1)
 engine = create_engine(DATABASE_URL)
 connect = engine.connect()
 Base.metadata.create_all(engine)
@@ -170,9 +170,9 @@ def index_chatbot():
             except tenacity.RetryError as e:
                 response = "RetryError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
                 pass
-            except Exception as e:
-                response = "Exception: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
-                pass
+            # except Exception as e:
+            #     response = "Exception: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+            #     pass
         except IntegrityError as e:
             response = "IntegrityError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
         message = {"answer": response}
@@ -180,10 +180,10 @@ def index_chatbot():
         # try:
         store_message(session['user_id'], session['order_turn'], 'bot', response)
         update_user_parameters(session.get('user_id'),bot.counter_attempts, bot.product_mentioned, bot.turn, bot.message_history)
-        # print(bot.counter_attempts)
-        # print(bot.product_mentioned)
-        # print(bot.turn)
-        # print(bot.message_history)
+        print(bot.counter_attempts)
+        print(bot.product_mentioned)
+        print(bot.turn)
+        print(bot.message_history)
         return jsonify(message)
     
 

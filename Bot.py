@@ -5,14 +5,7 @@ import os
 from thefuzz import process
 from thefuzz import fuzz
 import spacy
-from tenacity import (
-    retry,
-    stop_after_attempt,
-    wait_random_exponential,
-    wait_fixed,
-    wait_random,
-    stop_after_delay
-)
+from tenacity import *
 
 NER = spacy.load("en_core_web_sm")
 class Bot():
@@ -69,7 +62,7 @@ class Bot():
     #     return data['intent']['name']
     
 
-    @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
+    @retry(wait=wait_random(min=1, max=3), stop=stop_after_delay(6))
     def classify_intent(self, text):
         # try:
             completion = openai.ChatCompletion.create(
@@ -129,7 +122,7 @@ class Bot():
             "nintendo": "switch",
             "fujifilm":"camera",
             "nespresso":"coffee",
-            "coffee Machine":"coffee",
+            "coffee machine":"coffee",
             "game console": "switch",
         }
         # NER = spacy.load("en_core_web_sm")
@@ -188,7 +181,8 @@ class Bot():
         return f"Politely decline the user's offer and suggest alternative products along with their prices."
 
     def counter_price(self, user_price, product):
-
+            
+   
             self.counter_attempts += 1
 
             if user_price is None: 
@@ -322,8 +316,10 @@ class Bot():
         
     def open_conversation(self):
         return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
+    
+        
 
-    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(25))
+    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(22))
     def response_align(self, user_input):
 
         intent = self.get_intent(user_input)
@@ -448,7 +444,7 @@ class Bot():
         # conversation.append(reply_content)
         return reply_content
  
-    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(25))
+    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(22))
     def response_unalign(self, user_input):
 
         intent = self.get_intent(user_input)
