@@ -70,7 +70,7 @@ class Bot():
                     messages=[{"role": "system", "content": "The given text needs to be mapped to precisely one of the intents described below and only give the intent name:\
                                 greet: User only greets;\
                                 ask_list : User asks for what is selling;\
-                                inquiry: User asks specific product information;\
+                                inquiry: User asks about switch or camera or piano or coffee machine information;\
                                 counter_price: User offers price for a product;\
                                 agree: User agrees to buy the products;\
                                 disagree: User rejects the offer;\
@@ -145,8 +145,8 @@ class Bot():
             #     mapped_products.append('None')
             if index[1] > 80:  # Adjust the threshold as per your requirement
                 mapped_products.append(product_mapping.get(index[0], index[0]))
-            
-        return mapped_products
+            else:
+                return mapped_products
         # return score
         # print( extracted_product, score)
         # print(mapped_products)
@@ -155,13 +155,23 @@ class Bot():
 
         numbers = re.findall(r'\d+(?:\.\d+)?', text)
 
-        valid_numbers = [float(num) for num in numbers if float(num) > 100]
+        valid_numbers = [float(num) for num in numbers if float(num) > 20]
 
         if not valid_numbers:
             return None
 
         user_price = min(valid_numbers)
         return user_price 
+    # def price_extraction(self, text):
+
+    #     numbers = re.findall(r'\d+(?:\.\d+)?', text)
+
+    #     if not numbers:
+    #         return None
+
+    #     user_price = min(float(num) for num in numbers)
+    #     return user_price 
+
 
 
     def product_list(self):
@@ -180,10 +190,10 @@ class Bot():
         self.counter_attempts = 0 
         return f"Politely decline the user's offer and suggest alternative products along with their prices."
 
-    def counter_price(self, user_price, product):
+    def counter_price(self, user_price, product, is_retry):
             
-   
-            self.counter_attempts += 1
+            if not is_retry:
+                self.counter_attempts += 1
 
             if user_price is None: 
                 user_price = 0
@@ -309,7 +319,11 @@ class Bot():
             
 
     def infor(self):
-        return f"When the user asks about a specific product, respond with a product description and then ask a relevant question based on their choice. For example, if they ask about the Switch, provide the description and then ask if they like games. If they ask about the coffee machine, provide the description and then ask if they enjoy coffee. if they ask about the camera, provide the description and then ask if they like photography. If they ask about the piano, provide the description and then ask if they enjoy playing piano.Keep the responses concise."
+        return f"When the user asks about a specific product, respond with a product description and then ask a relevant '''wh''' word-based question about their choice. For example:\
+                If they ask about the Switch, provide the description and then ask, 'What kind of games do you prefer?'\
+                If they ask about the coffee machine, provide the description and then ask, 'What type of coffee do you like?'\
+                If they ask about the camera, provide the description and then ask, 'What subjects do you enjoy photographing?'\
+                If they ask about the piano, provide the description and then ask, 'When did you start playing the piano?"
 
     def goodbye(self):
         return f"Bid farewell to the user and wish them a wonderful day."
@@ -317,10 +331,11 @@ class Bot():
     def open_conversation(self):
         return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
     
-        
+    def before_retry(retry_state):
+        retry_state.args = (True, ) + retry_state.args[1:]   
 
-    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(22))
-    def response_align(self, user_input):
+    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(22), before=before_retry)
+    def response_align(self, user_input, is_retry=False):
 
         intent = self.get_intent(user_input)
 
@@ -350,11 +365,10 @@ class Bot():
                 # self.products_mentioned.append(product_utterance)
                 product = product_utterance[0]
           
-                if product != "None":
-                    if product != self.product_mentioned:
+                if product != self.product_mentioned:
 
-                        self.product_mentioned = product
-                        self.counter_attempts =0
+                    self.product_mentioned = product
+                    self.counter_attempts =0
                         
     
         # message_history = [{"role": "system", "content": "Use the alternative words as" f"{user_input}" "in response"}]
@@ -364,7 +378,7 @@ class Bot():
 
             if self.product_mentioned != '':
 
-                prompt = intent(user_price, self.product_mentioned)
+                prompt = intent(user_price, self.product_mentioned, is_retry)
 
             else:
                 prompt = f"Apologize for the oversight regarding the product in question and kindly request the user to specify it again."
@@ -444,8 +458,8 @@ class Bot():
         # conversation.append(reply_content)
         return reply_content
  
-    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(22))
-    def response_unalign(self, user_input):
+    @retry(wait=wait_random(min=1, max=10), stop=stop_after_delay(22), before=before_retry)
+    def response_unalign(self, user_input, is_retry =False):
 
         intent = self.get_intent(user_input)
 
@@ -466,10 +480,9 @@ class Bot():
                 # self.products_mentioned.append(product_utterance)
                 product = product_utterance[0]
                 
-                if product != "None":
-                    if product != self.product_mentioned:
-                        self.product_mentioned = product
-                        self.counter_attempts =0
+                if product != self.product_mentioned:
+                    self.product_mentioned = product
+                    self.counter_attempts =0
         
         
         # if intent == self.counter_price:
@@ -479,7 +492,7 @@ class Bot():
 
             if self.product_mentioned != '':
 
-                prompt = intent(user_price, self.product_mentioned)
+                prompt = intent(user_price, self.product_mentioned, is_retry)
 
             else:
                 prompt = f"Apologize for the oversight regarding the product in question and kindly request the user to specify it again."

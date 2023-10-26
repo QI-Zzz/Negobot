@@ -1,3 +1,7 @@
+function timeout(ms) {
+    return new Promise((_, reject) => setTimeout(() => reject(new Error('Request timed out')), ms));
+}
+
 class Chatbot{
 
     constructor(){
@@ -33,6 +37,7 @@ class Chatbot{
         });
 
     }
+ 
 
     onSendButton(chatbot){
 
@@ -54,41 +59,56 @@ class Chatbot{
         let thinking_input = { name: "bot", message: "Thinking..." };
         this.wholemessage.push(thinking_input);
         this.updateChatText(chatbot);
+        textField.value = '';
 
-        fetch('/chatbot', {
+        Promise.race([
+            fetch('/chatbot', {
             
-            method: 'POST',
-            body: JSON.stringify({message: text1}),
-            mode: 'cors',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-        })
+                method: 'POST',
+                body: JSON.stringify({message: text1}),
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            }),
+
+            timeout(29000)
+        ])
+
+        // fetch('/chatbot', {
+            
+        //     method: 'POST',
+        //     body: JSON.stringify({message: text1}),
+        //     mode: 'cors',
+        //     headers: {
+        //         'Content-Type': 'application/json'
+        //     },
+        // })
         .then (r => r.json())
         .then (r => {
             this.wholemessage.pop();
             let bot_input = {name: "bot", message: r.answer}
             this.wholemessage.push(bot_input);
-            // this.requestInProgress = false;
-            // textField.disabled = false;
-            // sendButton.disabled = false;
+ 
             this.updateChatText(chatbot)
-            textField.value = ''
+            // textField.value = ''
             this.requestInProgress = false;
-            // textField.disabled = false;
-            // sendButton.disabled = false;
+
 
         }).catch((error) => {
             console.error('Error:', error);
+            if (error.message === "Request timed out") {
+                this.wholemessage.push({name: "bot", message: "Timeout: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"});
+            }
             this.updateChatText(chatbot)
-            textField.value = ''
+            // textField.value = ''
             this.requestInProgress = false;
-            // textField.disabled = false;
-            // sendButton.disabled = false;
 
         }
         )
-    }    
+    }
+
+    
 
 
     updateChatText(chatbot){
@@ -111,18 +131,6 @@ class Chatbot{
         chatmessage.innerHTML = html;
     }
 
-
-
-
-    // const createChatLi = (message, className) => {
-    //     // Create a chat <li> element with passed message and className
-    //     const chatLi = document.createElement("li");
-    //     chatLi.classList.add("chat", ${className});
-    //     let chatContent = className === "outgoing" ? <p></p> : <span class="material-symbols-outlined">smart_toy</span><p></p>;
-    //     chatLi.innerHTML = chatContent;
-    //     chatLi.querySelector("p").textContent = message;
-    //     return chatLi; // return chat <li> element
-    // }
     
 }
 
