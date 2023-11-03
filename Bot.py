@@ -75,7 +75,7 @@ class Bot():
                                 agree: User agrees to buy the products;\
                                 disagree: User rejects the offer;\
                                 goodbye: User says goodbye;\
-                                open_conversation: chitchat;"},
+                                open_conversation: User is talking about what they like, their hobby, personal lifestyle, and personal experience.;"},
                                 {
                                     "role": "user", "content": f"{text}"
                                 }
