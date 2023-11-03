@@ -207,16 +207,16 @@ class Bot():
                     else:
 
                         # return f"Insisting on the original price of {self.listed_price[product]}."
-                        if  self.listed_price[product]*0.98 < user_price < self.listed_price[product]:
+                        if  self.listed_price[product]*0.95 < user_price < self.listed_price[product]:
                         
                             self.price_offer = int(random.uniform(user_price, self.listed_price[product]))
 
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."
                             # return f"Countering with a price of {self.price_offer}."                            
                         
-                        elif user_price <=  self.listed_price[product]*0.98:
+                        elif user_price <=  self.listed_price[product]*0.95:
                             
-                            self.price_offer = int(random.uniform(self.listed_price[product]*0.98, self.listed_price[product]))
+                            self.price_offer = int(random.uniform(self.listed_price[product]*0.95, self.listed_price[product]))
 
                             # return f"Countering with a price of {self.price_offer}."
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                      
@@ -228,21 +228,21 @@ class Bot():
                 
                 if user_price != 0:
 
-                    if user_price >= self.listed_price[product]*0.98:
+                    if user_price >= self.listed_price[product]*0.95:
 
                         return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                     else:
                     
-                        if  self.listed_price[product]*0.95 < user_price < self.listed_price[product]*0.98:
+                        if  self.listed_price[product]*0.88 < user_price < self.listed_price[product]*0.95:
                         
-                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.98))
+                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.95))
 
                             # return f"Countering with a price of {self.price_offer}."
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                      
-                        elif user_price <=  self.listed_price[product]*0.95:
+                        elif user_price <=  self.listed_price[product]*0.88:
                             
-                            self.price_offer = int(random.uniform(self.listed_price[product]*0.95, self.listed_price[product]*0.98))
+                            self.price_offer = int(random.uniform(self.listed_price[product]*0.88, self.listed_price[product]*0.95))
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."
                             # return f"Countering with a price of {self.price_offer}."
                             
@@ -254,21 +254,21 @@ class Bot():
             elif self.counter_attempts == 3:
                 if user_price != 0:
 
-                    if user_price >= self.listed_price[product]*0.95:
+                    if user_price >= self.listed_price[product]*0.88:
 
                         return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                     else:
                     
-                        if  self.listed_price[product]*0.90 < user_price < self.listed_price[product]*0.95:
+                        if  self.listed_price[product]*0.80 < user_price < self.listed_price[product]*0.88:
                         
-                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.95))
+                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.88))
 
                             # return f"Countering with a price of {self.price_offer}."
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                     
-                        elif user_price <=  self.listed_price[product]*0.90:
+                        elif user_price <=  self.listed_price[product]*0.80:
                             
-                            self.price_offer = int(random.uniform(self.listed_price[product]*0.90, self.listed_price[product]*0.95))
+                            self.price_offer = int(random.uniform(self.listed_price[product]*0.80, self.listed_price[product]*0.88))
 
                             # return f"Countering with a price of {self.price_offer}."
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                           
@@ -280,21 +280,21 @@ class Bot():
             elif self.counter_attempts == 4:
                 if user_price != 0:
 
-                    if user_price >= self.listed_price[product]*0.90:
+                    if user_price >= self.listed_price[product]*0.80:
 
                         return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
                     else:
                     
-                        if  self.listed_price[product]*0.85 < user_price < self.listed_price[product]*0.90:
+                        if  self.listed_price[product]*0.75 < user_price < self.listed_price[product]*0.80:
                         
-                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.90))
+                            self.price_offer = int(random.uniform(user_price, self.listed_price[product]*0.80))
 
                             # return f"Countering with a price of {self.price_offer}."
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."                    
-                        elif user_price <=  self.listed_price[product]*0.85:
+                        elif user_price <=  self.listed_price[product]*0.75:
                             
-                            self.price_offer = int(random.uniform(self.listed_price[product]*0.85, self.listed_price[product]*0.90))
+                            self.price_offer = int(random.uniform(self.listed_price[product]*0.75, self.listed_price[product]*0.80))
                             return f"Politely decline the user's proposal, ignored the system's listed price, and present a counteroffer at {self.price_offer}."
                             # return f"Countering with a price of {self.price_offer}."
                             
@@ -306,7 +306,7 @@ class Bot():
             
             else:
 
-                if user_price >=  self.listed_price[product]*0.85:
+                if user_price >=  self.listed_price[product]*0.75:
 
                     return f"Express gratitude to the user for finalizing the agreement and hope they have an excellent day."
                 
