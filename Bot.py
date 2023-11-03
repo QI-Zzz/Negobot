@@ -70,7 +70,7 @@ class Bot():
                     messages=[{"role": "system", "content": "The given text needs to be mapped to precisely one of the intents described below and only give the intent name:\
                                 greet: User only greets;\
                                 ask_list : User asks for what is selling;\
-                                inquiry: User asks about switch or camera or piano or coffee machine information;\
+                                inquiry:  User asks for specific product information about camera, switch, piano, coffee machine;\
                                 counter_price: User offers price for a product;\
                                 agree: User agrees to buy the products;\
                                 disagree: User rejects the offer;\
