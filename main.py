@@ -115,10 +115,6 @@ def index_chatbot():
         return render_template("chatbot.html")
     elif request.method == 'POST':
         userInfo = select_user_parameters(session.get('user_id'))
-        print(userInfo.counter_attempts)
-        print(userInfo.product_mentioned)
-        print(userInfo.turn)
-        print(message_history)
         bot.update(userInfo.counter_attempts, userInfo.product_mentioned, userInfo.turn, userInfo.message_history)
 
         # print(bot.counter_attempts)
@@ -147,43 +143,40 @@ def index_chatbot():
                 else: 
                     response = bot.response_unalign(user_input)
             except openai.error.APIError as e:
-                response = "APIError:Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
+                response = "Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.APIConnectionError as e:
-                response = "ConnectionError: Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch!"
+                response = "Uh-oh! 🙈 It seems like there might be a mistake with the internet connection. Could you please give it another try? 🔄 Thanks a bunch!"
                 pass
             except openai.error.RateLimitError as e:
-                response = "RateLimitError: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.Timeout as e:
-                response = "Timeou: Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
+                response = "Oops! Something went wrong. 😅 Please give it another moment and try typing your message again. Thanks a bunch!"
                 pass
             except openai.error.InvalidRequestError as e:
-                response = "InvalidRequestErro: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.AuthenticationError as e:
-                response = "AuthenticationError: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except openai.error.ServiceUnavailableError as e:
-                response = "ServiceUnavailableError: Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
+                response = "Oh no! 😅  Something went a bit sideways. Could you please refresh the page 🔄 and let's start our chat again? Thank you for your patience!"
                 pass
             except tenacity.RetryError as e:
-                response = "RetryError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+                response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
                 pass
             except Exception as e:
-                response = "Exception: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+                response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
                 pass
         except IntegrityError as e:
-            response = "IntegrityError: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
+            response = "Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"
         message = {"answer": response}
         session['order_turn'] += 1
         # try:
         store_message(session['user_id'], session['order_turn'], 'bot', response)
         update_user_parameters(session.get('user_id'),bot.counter_attempts, bot.product_mentioned, bot.turn, bot.message_history)
-        print(bot.counter_attempts)
-        print(bot.product_mentioned)
-        print(bot.turn)
-        print(bot.message_history)
+
         return jsonify(message)
     
 
