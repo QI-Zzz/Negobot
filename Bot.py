@@ -329,7 +329,7 @@ class Bot():
         return f"Bid farewell to the user and wish them a wonderful day."
         
     def open_conversation(self):
-        return f"Craft a reply referencing the prior conversation and guide the conversation to sell product."
+        return f"Craft a reply referencing the prior conversation and prompt the user to suggest a price."
     
     def before_retry(retry_state):
         retry_state.args = (True, ) + retry_state.args[1:]   
