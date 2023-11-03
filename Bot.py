@@ -421,7 +421,8 @@ class Bot():
 
         # conversation.append(user[i])
 
-        completion = openai.ChatCompletion.create(
+        if intent == self.open_conversation:
+            completion = openai.ChatCompletion.create(
                 model="gpt-4", 
                 messages= self.message_history,
                 temperature=1,
@@ -430,8 +431,20 @@ class Bot():
                 frequency_penalty=1,
                 presence_penalty=0.5
             )
-        reply_content = completion.choices[0].message.content
+            reply_content = completion.choices[0].message.content
 
+        else:
+
+            completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", 
+                messages= self.message_history,
+                temperature=1,
+                max_tokens=256,
+                top_p=0.5,
+                frequency_penalty=1,
+                presence_penalty=0.5
+            )
+            reply_content = completion.choices[0].message.content
 
         index_to_del = [1,2,4]
         for index in sorted(index_to_del, reverse=True):
@@ -520,7 +533,8 @@ class Bot():
 
         self.message_history.append({"role": "assistant", "content":  f'''{prompt}'''})
 
-        completion = openai.ChatCompletion.create(
+        if intent == self.open_conversation:
+            completion = openai.ChatCompletion.create(
                 model="gpt-4", 
                 messages= self.message_history,
                 temperature=1,
@@ -529,7 +543,20 @@ class Bot():
                 frequency_penalty=1,
                 presence_penalty=0.5
             )
-        reply_content = completion.choices[0].message.content
+            reply_content = completion.choices[0].message.content
+
+        else:
+
+            completion = openai.ChatCompletion.create(
+                model="gpt-3.5-turbo", 
+                messages= self.message_history,
+                temperature=1,
+                max_tokens=256,
+                top_p=0.5,
+                frequency_penalty=1,
+                presence_penalty=0.5
+            )
+            reply_content = completion.choices[0].message.content
 
         index_to_del = [1,2,4]
         for index in sorted(index_to_del, reverse=True):
