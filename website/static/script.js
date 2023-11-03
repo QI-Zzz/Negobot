@@ -98,7 +98,7 @@ class Chatbot{
         }).catch((error) => {
             console.error('Error:', error);
             if (error.message === "Request timed out") {
-                this.wholemessage.push({name: "bot", message: "Timeout: Oops! Something went wrong. 😅 Please go back to home page and restart the test. Thanks a bunch!"});
+                this.wholemessage.push({name: "bot", message: "Oops! Something went wrong. 😅 Please type it again!"});
             }
             this.updateChatText(chatbot)
             // textField.value = ''
