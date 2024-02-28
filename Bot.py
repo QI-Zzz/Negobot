@@ -90,29 +90,7 @@ class Bot():
             user_intent = completion.choices[0].message.content
 
             return user_intent
-        # except Exception as e:
-        #     return "error"
-    
-    # @retry(wait=wait_random_exponential(min=1, max=60), stop=stop_after_attempt(6))
-    # def product_extraction(self, text):
 
-    #     completion = openai.ChatCompletion.create(
-    #             model="gpt-3.5-turbo", 
-    #             messages=[{"role": "system", "content": "Your task is only to choose product from this product list: [Switch, Coffee, Camera, Piano]. If no product mentioned, return [None]. And the returned format like[Switch]"},
-    #                     #   {"role": "system", "content": "You need to only choose product name from the list [Switch, Coffee, Camera, Piano] is being referred to in the text and return in List"}
-    #                         {"role": "user", "content": f"{text}"}
-    #                     ],
-    #             temperature=0,
-    #             max_tokens=20,
-    #             top_p=1,
-    #             frequency_penalty=0,
-    #             presence_penalty=0
-        
-    #     )
-
-    #     product = completion.choices[0].message.content.strip()
-
-    #     return product
     
     def product_extraction(self, text):
         products = ["switch", "coffee machine", "piano", "camera", "roland", "nintendo", "fujifilm", "nespresso", 'game console']
@@ -162,15 +140,6 @@ class Bot():
 
         user_price = min(valid_numbers)
         return user_price 
-    # def price_extraction(self, text):
-
-    #     numbers = re.findall(r'\d+(?:\.\d+)?', text)
-
-    #     if not numbers:
-    #         return None
-
-    #     user_price = min(float(num) for num in numbers)
-    #     return user_price 
 
 
 
@@ -397,9 +366,8 @@ class Bot():
 
         self.message_history.append(
         {
-                "role": "user", "content": "Your primary objective is to closely mimic user's choice of words in your responses.\
-                    Specifically, mirror their prepositions, nouns, tenses, modals, verbs, product names, and hedges.\
-                    For instance, if user uses verb buy, you should use verb buy too; if user use noun switch, you should use noun switch too.\
+                "role": "user", "content": "Your primary objective is to try to use same word in" f'''{user_input}''' "in your reponses.\
+                    For instance, if user uses verb hey, you should use verb hey too; if user use noun switch, you should use noun switch too.\
                     Also in any point, dont ask user personal information.\
                     Do you understand?"
 
@@ -409,7 +377,7 @@ class Bot():
     
         self.message_history.append(
             {
-                "role": "assistant", "content": "Yes, I understand and I will try to use the same words as user's and would not ask for user any personal information."
+                "role": "assistant", "content": "Yes, I understand and I will try to use the same words as in" f'''{user_input}''' "and would not ask for user any personal information."
             }
         )
         self.message_history.append(
@@ -523,7 +491,7 @@ class Bot():
 
         self.message_history.append(
             {
-                "role": "assistant", "content": "Yes, I understand and I will use different words from user's and would not ask for user any personal information. "
+                "role": "assistant", "content": "Yes, I understand and I will use different words from f'''{user_input}'''and would not ask for user any personal information. "
             }
         )
 
